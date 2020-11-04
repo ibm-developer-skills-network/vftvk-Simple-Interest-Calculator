@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+
+            Amount <input type="number" id="principal"><br/>
+            Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="display()"> <span>10.25 %</span><br/>
+            Amount <input type="number" id="principal"><br/><br/>
+            Interest Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="display()">
+            <span id="srate">10.25 %</span><br/><br/>
+            No. of Years <select name="years" id="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+@@ -22,13 +22,12 @@ <h1>Simple Interest Calculator</h1>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                         </select><br/>
+            Interest : <span id="result"></span><br/>
+            <button onclick="compute()">Compute Interest</button>
+                         </select><br/><br/>
+            <span id="result"></span>
+            <button onclick="compute()">Compute Interest</button>
+            <footer>
+                <p>Copyright: Everyone Can Get Rich</p>
+            </footer>
+        </div>
+    </body>
+</html>
+</html> 
+ 21  script.js 
+@@ -1,12 +1,17 @@
+function compute() {
+    var principal = document.getElementById("principal").value;
+    var rate = document.getElementById("rate").value;
+    var years = document.getElementById("years").value;
+    var interest = principal * years * rate / 100;
+}
+function fyear() {
+    return document.getElementById("years").value + 2020;
+    var principal = document.getElementById("principal");
+    var rate = document.getElementById("rate");
+    var years = document.getElementById("years");
+    var interest = principal.value * years.value * rate.value / 100;
+    var fyear = 2020 + years.value * 1;
+    if (principal.value <= 0){
+    	alert("Enter a positive number");
+        principal.focus();
+        return false;
+    }
+    return document.getElementById("result").innerHTML = "If you deposit \<mark\>" + principal.value + "\<\/mark\>,\<br\>" + "at an interest rate of \<mark\>" + rate.value + "%\<\/mark\>.\<br\>" + "You will receive an amount of \<mark\>" + interest + "\<\/mark\>,\<br\>" + "in the year \<mark\>" + fyear + "\<\/mark\>\<br\>\<br\>";
+}
+function display() {
+    var 
+    var rselected = document.getElementById("rate").value;
+    return document.getElementById("srate").innerHTML = rselected;
+}
