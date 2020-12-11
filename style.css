@@ -1,4 +1,41 @@
-body {background-color:tan;}
-h1{color:green;}
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+}
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-smooth: auto;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #444;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+}
+h1 {
+  color: grey;
+  font: verdana;
+}
+.main {
+  background-color: white;
+  color: black;
+  width: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  margin: auto;
+}
 
-
+.highlight {
+  background-color: yellow;
+}
