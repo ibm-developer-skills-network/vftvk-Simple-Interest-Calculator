@@ -1,30 +1,37 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/> 
-        No. of Years <select id="years" type="number"><br/>
-            <option value=1>1</option>
-            <option value=2>2</option>
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-            <option value=6>6</option>
-            <option value=7>7</option>
-            <option value=8>8</option>
-            <option value=9>9</option>
-            <option value=10>10</option>
-        Interest : <input type="range" min="1" max="20" step="0.25" value="10.25" id="years"><span>10.25 %</span><br>
-
-        <button onclick="compute()">Compute Interest</button>
-        <span id="result"></span>
-        <footer>@copy;Everyone Can Get Rich</footer>
-        </div>
-    </body>
-        </html>
+<head>
+	<title>Simple Interest Calculator</title>
+	<link type="text/css"  href="style.css"  rel="stylesheet ">
+	<script  src="script.js"></script>
+</head>
+<body>
+<div class="simple-interest">
+	<h1>Simple Interest Calculator</h1>
+<table>
+	<tr><td>Amount:</td><td> <input id="amount" type="text"/></td></tr>
+	<tr><td>Interest Rate:</td><td> <input  type="range" min="0.5" max="30" value="0.5"  onchange="rateValue(this.value);"><span><output id="rateInput" >0.5</output>%</span></td></tr>
+	<tr><td>No. of Years</td><td> <select id="selectId" type="number">
+         <option value=1>1</option>
+         <option value=2>2</option>
+         <option value=3>3</option>
+         <option value=4>4</option>
+         <option value=5>5</option>
+         <option value=6>6</option>
+         <option value=7>7</option>
+         <option value=8>8</option>
+         <option value=9>9</option>
+         <option value=10>10</option>
+      </select></td></tr>
+      <tr>
+      	<td><button onclick="calculate()">Compute Interest</button></td>
+      </tr>
+</table>
+<p id="resultat"></p>
+<div>
+<p>&copy; Everyone Can Get Rich<p>
+</div>
+</div>
+</body>
+</html>
