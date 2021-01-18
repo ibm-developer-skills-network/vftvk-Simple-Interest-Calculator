@@ -4,7 +4,36 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1>Simple Interest Calculator</h1><html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+
+        Amount <input type="number"  id="principal">  <br/>
+        Rate <input type="number"  id="rate">  <br/> 
+        No. of Years <select id="years" type="number"><br/>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+        Interest : <input type="range" min="1" max="20" step="0.25" value="10.25" id="years"><span>10.25 %</span><br>
+
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result"></span>
+        <footer>@copy;Everyone Can Get Rich</footer>
+        </div>
+    </body>
+</html>
 
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="number"  id="rate">  <br/>
