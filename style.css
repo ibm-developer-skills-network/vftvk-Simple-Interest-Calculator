@@ -11,10 +11,7 @@ body {
 	background-color: #000000;
 
 }
-h2{
-	text-align: center;
-}
-.simple-interest {
+.maindiv {
 	position: relative;
 	display: flex;
 	flex-direction: column;
