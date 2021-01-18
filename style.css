@@ -1,14 +1,33 @@
-body {background-color:black;
-font:arial;
-font-color:white;}
-h1{color:gray;
-font:verdana;}
-.maindiv{
-  background-color:white;
-  font-color:black;
-  width:300 px;
-  padding:20px;
-  border-radius: 25px;
-  align:center;
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000000;
+
 }
+h2{
+	text-align: center;
+}
+.simple-interest {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 25rem;
+	margin: 0;
+	padding: 2.5rem;
+	background-color: whitesmoke ;
+	border-radius: 0.3125rem;
+	box-shadow: 0 0 1.875rem rgba(black,0.3);
+	
+	
+}
+		
+		
+	
 
