@@ -1,13 +1,16 @@
 body {
+	/* background page is black */
 	background-color:black; 
 	font-family:arial; 
 	color:white;
 }
 h1 {
+	/* title is grey colored, font verdana */
 	color:grey; 
 	font-family:verdana;
 }
 .maindiv {
+	/* principal part of screen is writtem black on white */
 	background-color:white; 
 	color:black; 
 	font-family:verdana;
@@ -15,4 +18,8 @@ h1 {
 	padding:20px;
 	border-radius:20px;
 	margin:auto;
+}
+.resultFont {
+	/*  all result texts will be displayed on yellow background */
+	background-color:yellow;
 }
