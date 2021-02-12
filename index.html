@@ -2,16 +2,16 @@
 <html>
     <head>
         <title>Simple Interest Calculator</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>				<!--             Scripts in external file --> 
+    <link rel="stylesheet" href="style.css">		<!--             Styles in external file --> 
     </head>
     <body>
-        <div class='maindiv'>
-            <h1>Simple Interest Calculator</h1>
+        <div class='maindiv'>						<!--             Main div containing calculation fields --> 
+            <h1>Simple Interest Calculator</h1>		<!--             Title line --> 
 
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate" min=1 max =20 step=0.25 value=10.25>  
-            <span id=rateSpan> 10.25% </span><br/>
+            Amount <input type="number"  id="principal" onchange='positiveAmount();'>  <br/><br>				<!--             Principal amount field --> 
+            Rate <input type="range"  id="rate" min=1 max =20 step=0.25 value=10.25 onchange='sliderValue();'>  <!--             rate field slider format with changed value displayed--> 
+            <span id=rateSpan> 10.25% </span><br/><br>														
             No. of Years <select  id="years"> 
                         <option value=1>1</option>
                         <option value=2>2</option>
@@ -23,14 +23,14 @@
                         <option value=8>8</option>
                         <option value=9>9</option>
                         <option value=10>10</option>
-            </select>
-            <br/>
-            Interest : <span id="result"></span><br>
+            </select><br>
+            <br/><br>
 
-            <button onclick="compute()">Compute Interest</button>
+            <button onclick="compute()">Compute Interest</button>												<!--             Calculation button --> 
             <br><br>
-            <div id=result></div>
-            <footer>&copy; Everyone Can Get Rich</footer>
+            <div id=result></div><br>
+            <footer>&copy; Everyone Can Get Rich</footer>														<!--             Copyright line --> 
         </div>
+		
     </body>
 </html>
