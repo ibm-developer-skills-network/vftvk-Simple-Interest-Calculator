@@ -1,16 +1,43 @@
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Web App - Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div>
+            <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            
+            
+            <form oninput="x.value=parseFloat(rate.value) + '%' ">
+                Amount &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"  id="principal"> <br><br> 
+                Interest Rate
+                <input type="range" min="1.0" max="20.0" value="10.0" id="rate" step="0.1">
+                <output name="x" for="rate">10.0%</output>
+                <br/><br>
+            
+                No. of Years &nbsp;&nbsp;<select name="years"  id="years">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                </select> <br/>
+            </form>
+            <p>
+                <button onclick="compute()">Compute Interest</button>
+            </p>
+            
+           
+            <p id="result"></p> 
 
-        <button onclick="compute()">Compute</button>
+            &copy; Everyone Can Get Rich
+        </div>
     </body>
 </html>
