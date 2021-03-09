@@ -1,7 +1,6 @@
 function output(Rate) {
   document.querySelector('#Rate').value = Rate
 }
-
 function calculate() {
   var x = document.getElementById("amount").value;
   var y = document.getElementById("Rate").value;
