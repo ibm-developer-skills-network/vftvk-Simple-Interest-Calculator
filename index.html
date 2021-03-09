@@ -1,16 +1,43 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+<head>
+<link rel="stylesheet" href="CSSCAlculator.css">
+</head>
+  <div>
+    <title>Simple Interest Calculator</title>
+    <h2>
+      SIMPLE INTEREST CALCULATOR
+    </h2>
+    <table>
+      <tr>
+        <td>Principal Amount </td>
+        <th><input type="text" size="20" id="amount" placeholder="Enter Principal Amount" ;></th>
+      </tr>
+      <tr>
+        <td>Interest Rate %</td>
+        <td><input type="range" min="0" max="10" step="0.5" value="0" id="slider" oninput="output(value)">
+          <output for="slider" id="Rate" &nbsp>0</output></td>
+      </tr>
+      <br><br>
+      <tr>
+        <td>No of Years</td>
+        <td><input type="number" id="Years" min="1" max="10" size="10" placeholder="0"></td>
+      </tr>
+    </table>
+    <br>
+    <center>
+      <button onclick="calculate()">Compute Interest</button>
+    </center>
+    <br>
+    <center>
+     <p/ id="result" ;>
+    </center>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+    <br>
+    <center>
+      &#169;Everyone gets Loaded
+    </center>
+
+  </div>
 </html>
