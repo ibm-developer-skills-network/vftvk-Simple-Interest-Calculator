@@ -1,4 +1,31 @@
-body {background-color:tan;}
-h1{color:green;}
+h2 { 
+  font-family: Georgia, serif;
+  text-align: center;
+ font-size: 100%;
+ }
+
+div {
+width: 400px;
+  height: 450px;
+  font-family: Georgia, serif;
+  padding: 2px;
+  border: 6px solid black;
+  border-radius: 25px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-left: 10px;
+  font-family: Georgia, serif;
+
+}
+
+resultcolour {
+  color: red;
+}
 
 
