@@ -1,14 +1,29 @@
-function output(Rate) {
-  document.querySelector('#Rate').value = Rate
-}
-function calculate() {
-  var x = document.getElementById("amount").value;
-  var y = document.getElementById("Rate").value;
-  var z = document.getElementById("Years").value;
-  var totalInterest = (x * y * z / 100);
+function compute() {
+  var principal = document.getElementById("principal").value;
+  if (principal < 1) {
+    alert("Enter a positive number");
+    document.getElementById("principal").select();
+    document.getElementById("principal").focus();
+    return;
+  }
+  var rate = document.getElementById("rate").value;
+  var years = document.getElementById("years").value;
+  var interest = principal * years * rate / 100
   var currentYear = new Date().getFullYear();
-  var totalYears = +currentYear + +z;
+  var totalyears = +currentYear + +years;
 
-  text = "You will receive an amount of " + "</p><resultcolour>" + + totalInterest + "</resultcolour></p>" + " in the Year " + totalYears;
-  result.innerHTML = text ;
-} 
+
+  Line1 = '<br>If you deposit ' + principal + '<br>';
+  Line2 = ' at an interest rate of ' + rate + '%' + '<br>';
+  Line3 = ' you will receive an amount of ' + interest + '<br>';
+  Line4 = ' in the year ' + totalyears + '<br>';
+
+  document.getElementById("result").innerHTML = Line1 + Line2 + Line3 + Line4;
+}
+
+function showVal(newVal)
+{
+    //display value of slider
+    document.getElementById("sliderValue").innerHTML=newVal;
+
+}
