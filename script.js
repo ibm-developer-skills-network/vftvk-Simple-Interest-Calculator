@@ -13,10 +13,10 @@ function compute() {
   var totalyears = +currentYear + +years;
 
 
-  Line1 = '<br>If you deposit ' + principal + '<br>';
-  Line2 = ' at an interest rate of ' + rate + '%' + '<br>';
-  Line3 = ' you will receive an amount of ' + interest + '<br>';
-  Line4 = ' in the year ' + totalyears + '<br>';
+  Line1 = '<br>If you deposit<mark> ' + principal + '</mark><br>';
+  Line2 = ' at an interest rate of <mark>' + rate + '%' + '</mark><br>';
+  Line3 = ' you will receive an amount of <mark>' + interest + '</mark><br>';
+  Line4 = ' in the year<mark> ' + totalyears + '</mark><br>';
 
   document.getElementById("result").innerHTML = Line1 + Line2 + Line3 + Line4;
 }
@@ -24,6 +24,6 @@ function compute() {
 function showVal(newVal)
 {
     //display value of slider
-    document.getElementById("sliderValue").innerHTML=newVal;
+    document.getElementById("sliderValue").innerHTML=newVal + "%";
 
 }
