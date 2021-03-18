@@ -1,4 +1,38 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
 
+h1 {
+    color: lightgray;
+    min-width: 350px;
+}
 
+.maindiv {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    min-width: 350px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    min-width: 350px;
+    max-width: 350px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 5px;
+    text-align: left;
+    /* border: 2px solid black; */
+}
+
+#but {
+    text-align: center;
+}
