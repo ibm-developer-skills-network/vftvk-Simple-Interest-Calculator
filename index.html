@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
@@ -22,7 +22,8 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
-                <option value="10">10</option><br/>
+                <option value="10">10</option>
+            </select><br/>
         Interest : <input type="range" min="1" max="20" step="0.25" value="10.25"> <span id="result">10.25%</span><br>
 
         <button onclick="compute()">Compute Interest</button>
