@@ -3,7 +3,7 @@ function compute(principal,rate,year)
   var principal= document.getElementById("principal").value;
   var p= parseInt(document.getElementById("principal").value)
   var rate= document.getElementById("rang").value;
-  var r= parseInt(document.getElementById("rang").value);
+  var r= parseFloat(document.getElementById("rang").value);
   var year=document.getElementById("years").value;
   var y= parseInt(document.getElementById("years").value);
   
