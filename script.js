@@ -3,7 +3,7 @@ function compute(principal,rate,year)
   var principal= document.getElementById("principal").value;
   var p= parseInt(document.getElementById("principal").value);
   
-   if (p == 0 || p<0 || p==""){
+   if (p == 0 || p<0 || p == " "){
     alert("Enter a positive number");
     return false;
    }
