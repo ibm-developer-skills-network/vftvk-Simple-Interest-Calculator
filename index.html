@@ -10,7 +10,7 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        No. of Years
+        No. of Years 
             <select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -22,15 +22,15 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </select><br/>
-        Interest : <input type="range" min="1" max="20" step="0.25" value="10.25" onchange="show_value(this.value)" id="rang"> <span id="slider_value">10.25%</span><br>
+                </select><br>
+        Interest Rate: <input type="range" min="1" max="20" step="0.25" value="10.25" onchange="show_value(this.value)" id="rang"> <span id="slider_value" >10.25%</span><br>
 
-        <button onclick="compute()">Compute Interest</button></br>
-            If you deposit<span id="p"></span></br>
-            at an interest rate of span<span id="r"></span></br>
-            You will receive an amout of<span id="result"></span></br>
-            in the year<span id="y"></span>
-    
+          <button onclick="compute()">Compute Interest</button></br>
+      If you deposit <span class="highlight" id="p"></span></br>
+  at an interest rate of <span class="highlight" id="r"></span></br>
+You will receive an amount of <span class="highlight"  id="result"></span></br>
+in the year <span class="highlight"  id="y"></span>
+                
                 <footer>&copy;Everyone Can Get Rich</footer>
         </div>
     </body>
