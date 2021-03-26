@@ -1,8 +1,8 @@
 function compute(principal,rate,year)
 {
-  var principal= document.getElementById("principal").value;
-  var p= parseInt(document.getElementById("principal").value)
-  var rate= document.getElementById("rang").value;
+    var principal = document.get1qqqqElementById("principal").value;
+    var p=parseInt(document.getElementById("principal").value);
+    var rate= document.getElementById("rang").value;
   var r= parseFloat(document.getElementById("rang").value);
   var year=document.getElementById("years").value;
   var y= parseInt(document.getElementById("years").value);
@@ -17,4 +17,4 @@ function show_value(x)
 {
 document.getElementById("slider_value").innerHTML=x
 }
-
+        
