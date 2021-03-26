@@ -1,9 +1,13 @@
 function compute(principal,rate,year)
 {
   var principal= document.getElementById("principal").value;
-  var p= parseInt(document.getElementById("principal").value)
+  var p= parseInt(document.getElementById("principal").value);
+   if (p == 0 || p<0) {
+    alert("Enter a positive number");
+    return false;
+   }
   var rate= document.getElementById("rang").value;
-  var r= parseInt(document.getElementById("rang").value);
+  var r= parseFloat(document.getElementById("rang").value);
   var year=document.getElementById("years").value;
   var y= parseInt(document.getElementById("years").value);
   
@@ -17,4 +21,4 @@ function show_value(x)
 {
 document.getElementById("slider_value").innerHTML=x
 }
- 
+
