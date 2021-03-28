@@ -1,4 +1,36 @@
-body {background-color:tan;}
-h1{color:green;}
+/* This contains the css styling of the Simple Interest Calculator App */
+body {background-color:black;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: white;
+    padding: 20px;
+}
+h1{color:grey;}
 
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
 
+footer {
+    text-align: right;
+    width: 300px;
+}
+
+.row {
+    padding: 15px;
+}
+
+label {
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+}
+
+input[list]{
+    display: inline-block
+    max-width = 2px;
+}
