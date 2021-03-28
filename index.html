@@ -1,16 +1,51 @@
+<!DOCTYPE html>
 <html>
     <head>
+    <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+        <div class="row">
+            <label for="principal">Amount</label>
+            <input type="number" min="0"  id="principal" name="principal">
+            <br/>
+        </div>
+        
+        <div class="row">
+            <label for="Rate">Rate</label>
+            <input type="range" min=1 max="20" name="rate" step="0.25" onchange="range_val(this.value)" value="10.25" id="rate"> <span id="rate_span">10.25%</span>  <br/>
+         <div class="row">
+                <label for="years">No. of Years</label>
+                <input list="year" id="years">
+                <datalist id="year">
+                    <option value=1>
+                    <option value=2>
+                    <option value=3>
+                    <option value=4>
+                    <option value=5>
+                    <option value=6>
+                    <option value=7>
+                    <option value=8>
+                    <option value=9>
+                    <option value=10>
+                </datalist>
+            </div>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="row">
+            Interest : <span id="result"></span><br>
+        </div>
+         
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result"></span>
+
+    </div>
+
+    <footer>
+        &#169; Olalekan Otaoroju
+    </footer>
     </body>
 </html>
