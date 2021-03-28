@@ -15,13 +15,8 @@ h1{color:grey;}
     text-align: center;
 }
 
-footer {
-    text-align: right;
-    width: 300px;
-}
-
 .row {
-    padding: 15px;
+    padding: 0 9px 10px 10px;
 }
 
 label {
@@ -31,6 +26,11 @@ label {
 }
 
 input[list]{
-    display: inline-block
-    max-width = 2px;
+    display: inline-block;
+    width: 55%;
+}
+
+footer {
+    text-align: right;
+    width: 300px;
 }
