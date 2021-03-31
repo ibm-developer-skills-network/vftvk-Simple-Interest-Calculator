@@ -4,6 +4,7 @@ function compute()
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
     r = p * r/100 * y
+    document.getElementById('result').innerHTML = r;
     
 }
         
