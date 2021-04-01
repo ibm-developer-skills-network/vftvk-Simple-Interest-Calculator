@@ -7,7 +7,7 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" min = 0 max = 100 step="0.01" id="rate"><span id=range_value> <script>document.getElementById("principal").value</script></span><br/>
+        Rate <input type="range" min = 0 max = 100 step="0.01" id="rate"><span id=range_value>0</span><br/>
         No. of Years <select name="select">
                         <option value="value1" selected>1</option>
                         <option value="value2">2</option>
@@ -16,7 +16,7 @@
                         <option value="value5">5</option>
                         <option value="value6">6</option>
 </select>  <br/>
-        Interest : <span id="result">0</span><br>
+        Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute</button>
     </body>
