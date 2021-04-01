@@ -17,6 +17,6 @@ function compute()
 
   function cambioRango()
   {    
-    document.getElementById('result').innerHTML=document.getElementById('rate').value;
+    document.getElementById('range_value').innerHTML=document.getElementById('rate').value;
   }
         
