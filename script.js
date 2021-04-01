@@ -7,15 +7,11 @@ function compute()
     document.getElementById('result').innerHTML = r;
     
 }
-
-  addEventListener('load',inicio,false);
-
-  function inicio()
-  {
+function inicio()
+{
     document.getElementById('rate').addEventListener('change',cambioRango,false);
   }
-
-  function cambioRango()
+function cambioRango()
   {    
     document.getElementById('range_value').innerHTML=document.getElementById('rate').value;
   }
