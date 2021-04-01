@@ -7,13 +7,16 @@ function compute()
     document.getElementById('result').innerHTML = r;
     
 }
+function inicio()
+{
+   document.getElementById('rate').addEventListener('change',cambioRango,false);
+}
+ function cambioRango()
+{    
+    document.getElementById('range_value').innerHTML=document.getElementById('rate').value;
+}
+function cambio()
+{
 rate.addEventListener('load',inicio,false);
-  function inicio()
-            {
-                document.getElementById('rate').addEventListener('change',cambioRango,false);
-              }
-            function cambioRango()
-              {    
-                document.getElementById('range_value').innerHTML=document.getElementById('rate').value;
-              }
+}
         
