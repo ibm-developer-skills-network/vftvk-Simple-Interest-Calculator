@@ -8,6 +8,7 @@
 
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="range" min = 0 max = 100 step="0.01" id="rate">
+        <span>
         <script>
             addEventListener('load',inicio,false);
   
@@ -19,7 +20,9 @@
               {    
                 document.getElementById('range_value').innerHTML=document.getElementById('rate').value;
               }
-        </script><br/>
+        </script>
+        </span>   
+        <br/>
         No. of Years <select name="select">
                         <option value="value1" selected>1</option>
                         <option value="value2">2</option>
