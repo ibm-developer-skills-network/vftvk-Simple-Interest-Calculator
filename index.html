@@ -8,7 +8,14 @@
 
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="range" min = 0 max = 100  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        No. of Years <select name="select">
+                        <option value="value1" selected>1</option>
+                        <option value="value2">2</option>
+                        <option value="value3">3</option>
+                        <option value="value4">4</option>
+                        <option value="value5">5</option>
+                        <option value="value6">6</option>
+</select>  <br/>
         Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute</button>
