@@ -6,4 +6,5 @@ function compute()
     r = p * r/100 * y
     document.getElementById('result').innerHTML = r;
     
+}
         
