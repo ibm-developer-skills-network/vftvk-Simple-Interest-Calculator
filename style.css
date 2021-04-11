@@ -1,6 +1,6 @@
 body {background-color:black; font:arial; color:white;}
 h1{color:grey; font:verdana;}
-div{background-color:white; color:black; width:300px; padding:20px;
+div.maindiv{background-color:white; color:black; width:300px; padding:20px;
 border-radius:25px; text-align:center;}
 
 
