@@ -1,16 +1,48 @@
-<html>
+<!DOCTYPE html>
+<title>Simple Intrest Calculator</title>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="maindiv">
+            
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Rate <input type="range"  id="rate" step="0.25" min="1" max="20" value="10.25" > 
+        <span id="rate_val">10.50%</span> <br/>
 
-        <button onclick="compute()">Compute</button>
+        No. of years <select name="dropdown">
+  
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+        <!--fill in the rest of the values--> <br/>
+     <span id="result">
+
+        </span>
+        
+    
+        <button onclick="compute()">Compute Interest</button>
+    <span id="result"  >
+
+    </span>  
+    
+
+    <footer>
+        &#169; This Calculator belongs to Sally Hughes
+    </footer>
+    </div>
     </body>
+
 </html>
+
