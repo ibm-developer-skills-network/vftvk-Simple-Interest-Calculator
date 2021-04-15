@@ -1,11 +1,36 @@
-body {background-color:Black;}
+body {background-color:black;font-family:arial;color:white}
+
+
 h1{color:grey; font-family:verdana}
-.maindiv {
-    color:black; 
-    background-color:white; 
-    width:300px; 
-    padding:20px; 
-    margin: auto; 
-    border-radius:25px;
+#maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto
 }
 
+#formtable {
+    padding-left: 50px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#result {
+    margin-top: 1%;
+}
+
+.button {
+    background-color: #217fcc;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

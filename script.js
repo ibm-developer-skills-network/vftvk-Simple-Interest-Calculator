@@ -1,22 +1,23 @@
-function compute()
-{
-    var principal = document.getElementById("principal").value;
-    var rate = document.getElementById("rate").value;
-    var years = document.getElementById("years").value;
-    var interest = principal * years * rate /100;
-    var year = new Date().getFullYear()+parseInt(years);
-    var amount = interest + principal
+function compute() {
+    var p = document.getElementById("principal").value;
+    if (p <= 0) {
+        alert("Please enter a number greater than zero");
+        document.getElementById("principal").focus();
+        document.getElementById("principal").click();
+        return null;
+    }
+    var r = document.getElementById("rate").value;
+    var y = document.getElementById("years").value;
+    console.log(y);
+    var interest = p * r * y / 100;
+    console.log(p * r);
+    var ndate = new Date();
+    newdate = ndate.getFullYear();
+    newdate += parseInt(y);
+    document.getElementById("result").innerHTML = "<br>" + "If you deposit " + "<span class='highlight'>" + p + '</span>' + '<br>' + ' at an interest rate of ' + "<span class='highlight'>" + r + '</span>' + '%.' + '<br>' + 'You will recive an amount of ' + "<span class='highlight'>" + interest + '</span>' + '<br>' + 'In the year ' + "<span class='highlight'>" + newdate + '</span>';
 }
 
- function updateRate() 
-{
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+function ratechange() {
+    var rchng = document.getElementById("rate").value;
+    document.getElementById("rate-displayer").innerHTML = rchng + '%';
 }
-
-document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
-        
-         function myFunction(rate_v) {
-                                document.getElementById("rate").innerHTML = rate_val;
-                        
-                            }
