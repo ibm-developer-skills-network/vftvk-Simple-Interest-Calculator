@@ -12,6 +12,7 @@ h1  {
     }
 
 .maindiv {
+    width: 400px;
     background-color: #ffffff;
     color: #000;
     padding: 25px;
