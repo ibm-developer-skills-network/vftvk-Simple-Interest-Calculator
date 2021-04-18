@@ -1,4 +1,6 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;font-family:arial;}
+h1{color:grey;font-family:verdana;}
+.maindiv{background:white;color:black;font-family:arial;
+width:300px;padding:20px;border-radius:25px;}
 
 
