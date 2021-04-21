@@ -9,9 +9,11 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years, 10); /* calculate year of earnings */
     /* check for proper principal entered */
     if(principal<=0)
-     {alert("Principal should be greater than 0")}
+     {alert("Principal should be greater than 0")
+     document.getElementById("principal").focus()
+     }
     else 
-        {document.getElementById("result").innerHTML="If you deposit $<mark>"+principal+"</mark>\<br\>at an interest rate of "+rate+"%\<br\>you will receive an amount of $"+amount+",\<br\>in the year "+year+"\<br\>";}
+        {document.getElementById("result").innerHTML="If you deposit <mark>$"+principal+"</mark>\<br\>at an interest rate of <mark>"+rate+"%</mark>\<br\>you will receive an amount of <mark>$"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";}
     
 }
 /* create function to adjust value label on slider */
