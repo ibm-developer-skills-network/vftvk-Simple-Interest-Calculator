@@ -11,7 +11,7 @@ function compute()
     if(principal<=0)
      {alert("Principal should be greater than 0")}
     else 
-        {document.getElementById("result").innerHTML="If you deposit $<mark>"+principal+"</mark>\<br\>at an interest rate of "+rate+"%\<br\>you will receive an amount of $"+amount+",\<br\>in the year "+year+"\<br\>";}
+        {document.getElementById("result").innerHTML="If you deposit $"+principal+"\<br\>at an interest rate of "+rate+"%\<br\>you will receive an amount of $"+amount+",\<br\>in the year "+year+"\<br\>";}
     
 }
 /* create function to adjust value label on slider */
