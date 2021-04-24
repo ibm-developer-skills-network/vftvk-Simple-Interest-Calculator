@@ -1,4 +1,38 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color:black;
+}
+div {
+    background-color:white;
+    width: 375px;
+    margin: 100px;
+    border-radius: 25px;
+    padding: 20px;
+    border: 50px white;
+}
+p {
+    margin:20px;
+}
+h1 {
+    color:grey;
+}
+form {
+    margin-left:50px;
+    display: table;
+    width:330px;
+}
+p {
+    display: table-row;
+}
+label {       
+    display:table-cell;
+    width:120px;
+}
+button {
+    margin-left:50px
+}
+input {
+    display:table-cell;
+}
+p:nth-child(2) {
+    white-space:nowrap;
+}
