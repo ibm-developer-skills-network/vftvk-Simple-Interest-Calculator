@@ -11,7 +11,11 @@ function updateRate()
 }
 function compute()
 {
-    p = document.getElementById("principal").value;
-    
+    var p = document.getElementById("principal").value;
+    var n = document.createElement("p")
+    var tx = document.createTextNode(""+p);  
+    n.appendChild(tx);
+    //n.innerText = p;
+    document.getElementById("result").appendChild(n);
 }
         
