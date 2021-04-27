@@ -11,11 +11,26 @@ function updateRate()
 }
 function compute()
 {
-    var p = document.getElementById("principal").value;
-    var n = document.createElement("p")
-    var tx = document.createTextNode(""+p);  
+    var l = document.createElement("p")
+    var t = document.createTextNode("If you deposit ");
+    l.appendChild(t)
+    
+    var n = document.createElement("mark")
+    var tx = document.createTextNode("1000000");  
     n.appendChild(tx);
-    //n.innerText = p;
-    document.getElementById("result").appendChild(n);
+    l.appendChild(n)
+    document.getElementById("result").appendChild(l);
+
+
+    var p = document.getElementById("principal").value;
+    l = document.createElement("p")
+    t = document.createTextNode("You will recieve an amount of ");
+    l.appendChild(t)
+    n = document.createElement("mark")
+    tx = document.createTextNode(p);  
+    n.appendChild(tx);
+    l.appendChild(n)
+    document.getElementById("result").appendChild(l);
+   
 }
         
