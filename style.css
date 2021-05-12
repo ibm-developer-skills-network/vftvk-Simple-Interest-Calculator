@@ -1,4 +1,23 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color: black;}
+h1 {
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#box-1 {
+    border-radius: 25px;
+    background-color: white;
+    width: 1000px;
+    border: 5px solid black;
+    padding: 100px;
+    margin: 50px;
+}
+
+#interestdata {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
 
 
