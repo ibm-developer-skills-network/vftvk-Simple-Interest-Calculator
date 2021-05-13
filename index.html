@@ -3,36 +3,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="sliderRate()"></body>
-        <div id="box-1">
+    <body></body>
+
+
+        <div class="box-1">
 
             <header>
                 <h1>Simple Interest Calculator</h1>
             </header>
 
-            <form>
-                <div id="box-2">
-                <p>Amount <input type="number" id="principal"></p>
-		        <!-- <p>Rate <input type="number" id="rate"></p> --> 
-		        <p>Interest Rate <input type="range" min="1" max="100" value="50" step="0.50" id="rate"><span id="ratenumber"> 0</span>%</p>
-                <label for="years">No. of Years </label>
-                <input type="number" list="year" name="years" id="years">
-                <datalist id="year">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                </datalist>
-                <p><button onclick="compute()">Compute Interest</button></p>
-                <p><span id="result">Result will be here</span></p>
-            </form>
+            <main>
+                <div class="box-2"></div>
+                <table>
+                    <tr>
+                        <td>Amount</td>
+                        <td><input type="number" id="principal"></td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate</td>
+                        <td><input type="range" min="1" max="100" value="50" step="0.50" id="rate"><span id="ratenumber"> 0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td>No. of Years</td>
+                        <td>
+                            <input type="dropdown" list="year" name="years" id="years">
+                            <datalist id="year">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="compute()">Compute Interest</button></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </main>
+            <section>
+                <table>
+                    <tr>
+                        <td>If you deposit <span class="results" id="deposit">100000</span>,<br>
+                            at an interest rate of <span class="results" id="interestrate">3.5%</span>.<br>
+                            You Will receive an amount of <span class="results" id="receiveamount">17500</span>,<br>
+                            in the year <span class="results" id="receiveyear">2025</span>.</td>
+                    </tr>
+                </table>
+            </section>
+
                 
             <footer>
                 <p>&copy; Everyone Can Get Rich</p>
             </footer>
         
         </div>
+
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

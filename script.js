@@ -13,5 +13,3 @@ function compute()
     y = document.getElementById("years").value; 
     alert(p + r + y); 
 }
-
-        

@@ -6,7 +6,7 @@ h1 {
   text-align: left;
 }
 
-#box-1 {
+.box-1 {
   border-radius: 25px;
   background-color: white;
   width: 500px;
@@ -15,12 +15,25 @@ h1 {
   margin: 30px;
 }
 
-#box-2 {
+.box-2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   margin: 50px;
 }
 
+table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  margin-left: 50px;
+}
+
+td {
+  padding: 5px;
+}
+
+.results {
+  background-color: yellow;
+}
 /* Slidebar */
 
 .slidecontainer {
@@ -28,7 +41,7 @@ h1 {
 }
 
 input[list]{
-  width: 5ch;
+  width: 6ch;
 }
 
 footer {
