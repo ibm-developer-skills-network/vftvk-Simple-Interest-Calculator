@@ -11,8 +11,18 @@
             <section>
                 <div id="interestdata">
                 <p>Amount <input type="number" id="principal"></p>
-                <p>Rate <input type="number" id="rate"></p>
-                <p>No. of Years <input type="number" id="years"></p>
+		        <!-- <p>Rate <input type="number" id="rate"></p> --> 
+		        <p>Rate <input type="range" min="1" max="100" value="50" class="slider" id="rate"></p>
+                <p>Value: <span id="ratenumber"></span></p>
+                <label for="years">No. of Years </label>
+                <input list="year" name="years" id="years">
+                <datalist id="year">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                </datalist>
                 <p>Interest : <span id="result"></span></p>
                 <p><button onclick="compute()">Compute Interest</button></p>
                 </div>
