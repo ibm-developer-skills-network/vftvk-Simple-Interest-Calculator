@@ -1,61 +1,37 @@
 body {background-color: black;}
 h1 {
-    color:grey;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    text-align: center;
+  color:grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  text-align: left;
 }
 
 #box-1 {
-    border-radius: 25px;
-    background-color: white;
-    width: 1000px;
-    border: 5px solid black;
-    padding: 100px;
-    margin: 50px;
+  border-radius: 25px;
+  background-color: white;
+  width: 500px;
+  border: 5px solid black;
+  padding: 30px;
+  margin: 30px;
 }
 
-#interestdata {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
+#box-2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  margin: 50px;
 }
 
 /* Slidebar */
 
 .slidecontainer {
-  width: 100%;
+  width: 25%;
 }
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+input[list]{
+  width: 5ch;
 }
 
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04AA6D;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04AA6D;
-  cursor: pointer;
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
 }

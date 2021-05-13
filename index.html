@@ -1,21 +1,22 @@
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="sliderRate()"></body>
         <div id="box-1">
+
             <header>
                 <h1>Simple Interest Calculator</h1>
             </header>
-            <section>
-                <div id="interestdata">
+
+            <form>
+                <div id="box-2">
                 <p>Amount <input type="number" id="principal"></p>
 		        <!-- <p>Rate <input type="number" id="rate"></p> --> 
-		        <p>Rate <input type="range" min="1" max="100" value="50" class="slider" id="rate"></p>
-                <p>Value: <span id="ratenumber"></span></p>
+		        <p>Interest Rate <input type="range" min="1" max="100" value="50" step="0.50" id="rate"><span id="ratenumber"> 0</span>%</p>
                 <label for="years">No. of Years </label>
-                <input list="year" name="years" id="years">
+                <input type="number" list="year" name="years" id="years">
                 <datalist id="year">
                     <option value="1">
                     <option value="2">
@@ -23,10 +24,15 @@
                     <option value="4">
                     <option value="5">
                 </datalist>
-                <p>Interest : <span id="result"></span></p>
                 <p><button onclick="compute()">Compute Interest</button></p>
-                </div>
-        </section>
+                <p><span id="result">Result will be here</span></p>
+            </form>
+                
+            <footer>
+                <p>&copy; Everyone Can Get Rich</p>
+            </footer>
+        
         </div>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
