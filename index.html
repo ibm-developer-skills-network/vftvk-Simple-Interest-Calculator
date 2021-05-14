@@ -6,63 +6,47 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="maindiv">
 
             <header>
                 <h1>Simple Interest Calculator</h1>
             </header>
 
             <main>
-                <table>
-                    <tr>
-                        <td>Amount</td>
-                        <td><input type="number" min="1" id="principal" required></td>
-                    </tr>
-                    <tr>
-                        <td>Interest Rate</td>
-                        <td><input type="range" min="1" max="20" value="10" step="0.50" id="rate"><span id="ratenumber"></span>%</td>
-                    </tr>
-                    <tr>
-                        <td>No. of Years</td>
-                        <td>
-                            <input type="number" list="year" name="years" id="years" required>
-                            <datalist id="year">
-                                <option value="1">
-                                <option value="2">
-                                <option value="3">
-                                <option value="4">
-                                <option value="5">
-                                <option value="6">
-                                <option value="7">
-                                <option value="8">
-                                <option value="9">
-                                <option value="10">
-                            </datalist>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button id="compute">Compute Interest</button>
-                        </td>
-                        <td></td>
-                    </tr>
-                </table>
+                <div>Amount <input type="number" min="1" id="principal" required></div>
+                <br>
+                <div>Interest Rate <input type="range" min="1" max="20" value="10.25" step="0.25" id="rate"><span id="rate_val">10.25</span>%</div>
+                <br>
+                <div>No. of Years <select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </div>
+                <br>
+                <div><button id="compute">Compute Interest</button></div>
+                <br>
             </main>
 
-            <section id="textresults">
-                <table>
-                    <tr>
-                        <td>If you deposit <span class="results" id="deposit"></span>,<br>
+            <section id="result">
+                <div>
+                    If you deposit <span class="results" id="deposit"></span>,<br>
                             at an interest rate of <span class="results" id="interestrate"></span>.<br>
                             You will receive an amount of <span class="results" id="receiveamount"></span>,<br>
-                            in the year <span class="results" id="receiveyear"></span>.</td>
-                    </tr>
-                </table>
+                            in the year <span class="results" id="receiveyear"></span>.
+                </div>
             </section>
 
                 
             <footer>
-                <p>&copy; Everyone Can Get Rich</p>
+                <p>&#169; This Calculator belongs to Juan Pedro Serna</p>
             </footer>
         
         </div>

@@ -1,21 +1,24 @@
 /* Global */
 
-body {background-color: black;}
+body {
+  background-color: black;
+  font-family: Arial;
+  color: white;
+}
 
 h1 {
   color:grey;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   font-weight: bolder;
   text-align: left;
 }
 
-.container {
+.maindiv {
   border-radius: 25px;
   background-color: white;
-  width: 500px;
-  border: 5px solid black;
-  padding: 30px;
-  margin: 30px;
+  color: black;
+  width: 300px;
+  padding: 20px;
 }
 
 /* Slidebar */
@@ -24,22 +27,20 @@ h1 {
   width: 25%;
 }
 
-input[list]{
-  width: 6ch;
-}
-
 /* Main */
-table {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  margin-left: 50px;
+#principal {
+  margin-left: 40px;
 }
 
-td {
-  padding: 5px;
+#years {
+  margin-left: 8px;
 }
 
-#textresults {
+#rate {
+  margin-left: 5px;
+}
+
+#result {
   visibility: hidden;
 }
 
@@ -50,6 +51,6 @@ td {
 /* Footer */
 
 footer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   font-size: larger;
 }

@@ -1,9 +1,7 @@
-
-
 // Getting Inputs & Validation
 
 var slider = window.document.getElementById("rate");
-var output = window.document.getElementById("ratenumber");
+var output = window.document.getElementById("rate_val");
 output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
@@ -13,11 +11,8 @@ document.getElementById("compute").addEventListener("click", function() {
   var x = document.getElementById("principal").value;
   var y = document.getElementById("years").value;
   if (isNaN(x) || x < 1) {        //Principal validation
-    alert('You must enter a positive number as PRINCIPAL!');
+    alert('You must enter a positive number.');
     document.getElementById("principal").focus();
-  } else if (isNaN(y) || y < 1) { //Years validation
-    alert('You must enter a positive number as No of YEARS!');
-    document.getElementById("years").focus();
   } else {
     compute();
   }
@@ -49,10 +44,9 @@ function printResult(prin,rat, yea, tot)
   if (isInt(tot) == false) {
     tot = tot.toFixed(2);  // If not integer, rounded to 2 decimals
   }
-  document.getElementById("textresults").style.visibility = "visible";
+  document.getElementById("result").style.visibility = "visible";
   document.getElementById("deposit").innerHTML = prin;
   document.getElementById("interestrate").innerHTML = rat +"%";
   document.getElementById("receiveamount").innerHTML = tot;
   document.getElementById("receiveyear").innerHTML = receiveYear;
 }
-
