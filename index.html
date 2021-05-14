@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Web App - Simple Interest Calculator</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -16,16 +17,16 @@
                 <table>
                     <tr>
                         <td>Amount</td>
-                        <td><input type="number" id="principal"></td>
+                        <td><input type="number" min="1" id="principal" required></td>
                     </tr>
                     <tr>
                         <td>Interest Rate</td>
-                        <td><input type="range" min="1" max="100" value="50" step="0.50" id="rate"><span id="ratenumber"> 0</span>%</td>
+                        <td><input type="range" min="1" max="20" value="10" step="0.50" id="rate"><span id="ratenumber"> 0</span>%</td>
                     </tr>
                     <tr>
                         <td>No. of Years</td>
                         <td>
-                            <input type="dropdown" list="year" name="years" id="years">
+                            <input type="number" list="year" name="years" id="years" required>
                             <datalist id="year">
                                 <option value="1">
                                 <option value="2">
@@ -41,7 +42,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><button onclick="compute()">Compute Interest</button></td>
+                        <td>
+                            <button id="compute">Compute Interest</button>
+                        </td>
                         <td></td>
                     </tr>
                 </table>
@@ -52,7 +55,7 @@
                     <tr>
                         <td>If you deposit <span class="results" id="deposit">0</span>,<br>
                             at an interest rate of <span class="results" id="interestrate">0%</span>.<br>
-                            You Will receive an amount of <span class="results" id="receiveamount">0</span>,<br>
+                            You will receive an amount of <span class="results" id="receiveamount">0</span>,<br>
                             in the year <span class="results" id="receiveyear">0</span>.</td>
                     </tr>
                 </table>
