@@ -35,9 +35,20 @@ function printResult(prin,rat, yea, tot)
 {
   var currentYear = new Date().getFullYear();
   var receiveYear = parseInt(currentYear) + parseInt(yea);
+  if (isInt(tot) == false) {
+    tot = tot.toFixed(2);
+  }
   document.getElementById("textresults").style.visibility = "visible";
   document.getElementById("deposit").innerHTML = prin;
   document.getElementById("interestrate").innerHTML = rat +"%";
   document.getElementById("receiveamount").innerHTML = tot;
   document.getElementById("receiveyear").innerHTML = receiveYear;
+}
+
+function isInt(value) {
+  if (isNaN(value)) {
+    return false;
+  }
+  var x = parseFloat(value);
+  return (x | 0) === x;
 }
