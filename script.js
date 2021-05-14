@@ -11,7 +11,7 @@ document.getElementById("compute").addEventListener("click", function() {
     alert('You must enter a positive number as PRINCIPAL!');
     document.getElementById("principal").focus();
   } else if (isNaN(y) || y < 1) { //Years validation
-    alert('You must enter a positive number as YEARS!');
+    alert('You must enter a positive number as No of YEARS!');
     document.getElementById("years").focus();
   } else {
     compute();
