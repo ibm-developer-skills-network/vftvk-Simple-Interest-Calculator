@@ -1,8 +1,13 @@
 
 
+// Getting Inputs & Validation
+
 var slider = window.document.getElementById("rate");
 var output = window.document.getElementById("ratenumber");
 output.innerHTML = slider.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 
 document.getElementById("compute").addEventListener("click", function() {
   var x = document.getElementById("principal").value;
@@ -18,9 +23,7 @@ document.getElementById("compute").addEventListener("click", function() {
   }
 });
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+// Calculations & Printing result
 
 function compute()
 {
@@ -29,6 +32,14 @@ function compute()
     var y = document.getElementById("years").value;
     var total = ((p*r)/100)*y; 
     printResult(p, r, y, total);
+}
+
+function isInt(value) {   // Check if a number is an integer
+  if (isNaN(value)) {
+    return false;
+  }
+  var x = parseFloat(value);
+  return (x | 0) === x;
 }
 
 function printResult(prin,rat, yea, tot)
@@ -45,11 +56,3 @@ function printResult(prin,rat, yea, tot)
   document.getElementById("receiveyear").innerHTML = receiveYear;
 }
 
-// Check if a number is an integer
-function isInt(value) {
-  if (isNaN(value)) {
-    return false;
-  }
-  var x = parseFloat(value);
-  return (x | 0) === x;
-}

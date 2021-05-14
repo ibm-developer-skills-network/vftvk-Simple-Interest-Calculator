@@ -1,3 +1,5 @@
+/* Global */
+
 body {background-color: black;}
 
 h1 {
@@ -16,6 +18,17 @@ h1 {
   margin: 30px;
 }
 
+/* Slidebar */
+
+.slidecontainer {
+  width: 25%;
+}
+
+input[list]{
+  width: 6ch;
+}
+
+/* Main */
 table {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
@@ -33,15 +46,8 @@ td {
 .results {
   background-color: yellow;
 }
-/* Slidebar */
 
-.slidecontainer {
-  width: 25%;
-}
-
-input[list]{
-  width: 6ch;
-}
+/* Footer */
 
 footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
