@@ -10,7 +10,7 @@ document.getElementById("compute").addEventListener("click", function() {
   if (isNaN(x) || x < 1) {        //Principal validation
     alert('You must enter a positive number as PRINCIPAL!');
     document.getElementById("principal").focus();
-  } else if (isNaN(y) || y < 1) {
+  } else if (isNaN(y) || y < 1) { //Years validation
     alert('You must enter a positive number as YEARS!');
     document.getElementById("years").focus();
   } else {
@@ -36,7 +36,7 @@ function printResult(prin,rat, yea, tot)
   var currentYear = new Date().getFullYear();
   var receiveYear = parseInt(currentYear) + parseInt(yea);
   if (isInt(tot) == false) {
-    tot = tot.toFixed(2);
+    tot = tot.toFixed(2);  // If not integer, rounded to 2 decimals
   }
   document.getElementById("textresults").style.visibility = "visible";
   document.getElementById("deposit").innerHTML = prin;
@@ -45,6 +45,7 @@ function printResult(prin,rat, yea, tot)
   document.getElementById("receiveyear").innerHTML = receiveYear;
 }
 
+// Check if a number is an integer
 function isInt(value) {
   if (isNaN(value)) {
     return false;
