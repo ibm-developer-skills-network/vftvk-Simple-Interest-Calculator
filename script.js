@@ -11,7 +11,6 @@ function compute()
     result += "%.\n You will receive an amount of " + interest;
     result += "\nin the year " + year;
     document.getElementById("result").innerText = result;
-    console.log(result);
 }
 
 function updateRate()
