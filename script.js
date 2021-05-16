@@ -13,6 +13,7 @@ function compute()
     document.getElementById("result").innerHTML="If you deposit <span color:blue>"+principal+"</span>,\<br\>at an interest rate of <span color:blue>"+rate+"</span>%\,<br\>You will receive an amount of <span color:blue>"+interest+"</span>,\<br\>in the year <span color:blue>"+year+"</span>.\<br\>"
     }
 }
+
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
