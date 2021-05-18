@@ -9,7 +9,7 @@ function updateRate()
     // document.getElementById("rate_val").innerText=rateval;
     // // var rateval = document.getElementById("rate_val").value;
 
-    document.getElementById("rate_val").innerText="amount";
+    document.getElementById("rate_val").innerHTML="amount";
 
  
 }
