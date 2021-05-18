@@ -5,12 +5,12 @@
 
 function updateRate() 
 {   console.log("called");
-    // var rateval = document.getElementById("rate").value;
-    // document.getElementById("rate_val").innerText=rateval;
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerText=rateval;
     var rateval = document.getElementById("rate_val").value;
  
 }
-
+ı
 function compute()
 {
     var principal = document.getElementById("principal").value;
