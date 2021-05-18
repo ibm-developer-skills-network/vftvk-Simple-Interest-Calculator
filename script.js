@@ -5,7 +5,8 @@
 
 function updateRate() 
 {   console.log("called");
-    var rateval = document.getElementById("rate").value;
+    // var rateval = document.getElementById("rate").value;
+    var rateval = "10";
     // document.getElementById("rate_val").innerText=rateval;
     // // var rateval = document.getElementById("rate_val").value;
 
@@ -16,6 +17,7 @@ function updateRate()
 ı
 function compute()
 {
+    console.log("called");
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rateval").value;
     var years = document.getElementById("years").value;
