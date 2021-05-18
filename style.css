@@ -2,7 +2,7 @@ body {background-color:black;font-family:arial;color:white}
 h1{color:grey;font-family:verdana}
 .maindiv {
     background-color: white;
-    widows: 300px;
+    width: 300px;
     padding: 20px;
     border-radius:25px;
     align:center;
