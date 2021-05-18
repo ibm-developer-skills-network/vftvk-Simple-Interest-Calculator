@@ -5,11 +5,11 @@
 
 function updateRate() 
 {   console.log("called");
-    // var rateval = document.getElementById("rate").value;
+    var rateval = document.getElementById("rate").value;
     // document.getElementById("rate_val").innerText=rateval;
     // // var rateval = document.getElementById("rate_val").value;
 
-    document.getElementById("rate_val").innerHTML="amount";
+    document.getElementById("rate_val").innerHTML=rateval;
 
  
 }
