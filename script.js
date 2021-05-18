@@ -14,7 +14,7 @@ function updateRate()
 function compute()
 {
     var principal = document.getElementById("principal").value;
-    var rate = document.getElementById("rate_val").value;
+    var rate = document.getElementById("rateval").value;
     var years = document.getElementById("years").value;
     var year = new Date().getFullYear()+parseInt(years);
 
