@@ -1,14 +1,30 @@
-body {background-color:black;font-family:arial;color:white}
+body {background-color:black;font-family:arial;color:white;}
 h1{color:grey;font-family:verdana}
 .maindiv {
     background-color: white;
     color:black;
-    width: 300px;
+    width: 500px;
     padding: 20px;
     border-radius:25px;
-    text-align:center;
+    /* align:center; */
+    margin:auto;
 }
+
+.content{
+    padding:25px 25px;
+}
+
+
 .result{
     color:black;
 }
+input,select,button{
+    margin:10px;
+}
+
+footer{
+    text-align: left;
+    /* margin:10px; */
+}
+
 
