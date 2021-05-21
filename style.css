@@ -6,25 +6,40 @@ h1{color:grey;font-family:verdana}
     width: 500px;
     padding: 20px;
     border-radius:25px;
-    /* align:center; */
+    text-align:center;
     margin:auto;
 }
-
 .content{
     padding:25px 25px;
+    text-align: left;
 }
-
-
 .result{
     color:black;
 }
-input,select,button{
-    margin:10px;
+button{
+    padding:5px;
+    font-size:15px;
 }
-
+input, select,button{
+    margin-bottom:20px;
+    
+}
 footer{
     text-align: left;
-    /* margin:10px; */
+}
+.highlight{
+    background-color:yellow;
 }
 
+#rate{
+margin-left:30px;
+}
+
+#principal{
+    margin-left:70px;
+}
+
+select{
+    margin-left:35px;
+}
 

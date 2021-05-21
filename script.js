@@ -11,7 +11,12 @@ function compute(){
 
     var year = new Date().getFullYear()+parseInt(years);
 
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"
+    if(principal==""){
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+    }else{
+        document.getElementById("result").innerHTML="If you deposit <span class='highlight'>" +principal+"</span>,\<br\>at an interest rate of <span class='highlight'>"+rate+"</span>%\<br\>You will receive an amount of <span class='highlight'>"+amount+"</span>,\<br\>in the year<span class='highlight'> "+year+"</span>\<br\>"
+    }    
 }
 
 function validateInput(){
@@ -21,8 +26,6 @@ function validateInput(){
   if(x<1||x==0){
       alert("Enter a positive number");
       document.getElementById("principal").focus();
-
-    
     }
 }
 
@@ -30,4 +33,9 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
+}
+
+function reset(){
+    document.getElementById('principal').value = '';
+    document.getElementById("result").innerHTML='';
 }
