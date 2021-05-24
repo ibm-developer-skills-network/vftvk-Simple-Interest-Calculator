@@ -18,7 +18,7 @@ function compute()
 
     // Sets inner html property to the required context 
     document.getElementById("result").innerHTML= `<p>If you deposit <mark>${principal}</mark>, <br/>
-                                                 at an interest rate of <mark>${rate}</mark>. <br/>
+                                                 at an interest rate of <mark>${rate}%</mark>. <br/>
                                                  You will receive an amount of <mark>${total}</mark>, <br/>
                                                 in the year <mark>${year}</mark>
                                                  </p>`;
