@@ -1,16 +1,39 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Calculating My Money</title>
     </head>
     <body>
+        <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        Amount <input type="number"  id="principal">  <br>
+        Rate <input type="range"  id="rate" onchange="updateRate()" min=1 max=20 value=10.25 step="0.25" >   <br>
+        <span id="rate_val">10.25%</span> <br>
+        <label for="years">Choose how many years:</label>
+        <input list="lata" name="years" id="years">  <br>
+        
+        <datalist id="lata">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+        </datalist><br>
+       
+        <button onclick="compute()">Compute Interest</button><br>
+         Interest : <br><span id="result">
+        </span><br>
+        </div>
+        <footer>
+            &#169; This Calculator belongs to Miroslaw Zastocki
+        </footer>
     </body>
 </html>
