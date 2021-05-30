@@ -10,14 +10,47 @@ h1{
 .maindiv {
     background-color:white;
     color:black;
-    width:300px;
+    width:500px;
     padding:20px;
     border-radius:25px;
+    text-align: center;
    
     /* code to align the div to the center of the page. */
     margin: auto;
 }
 .highlightedNumbers{
     background-color:yellow;
+    font-weight: 600;
+}
+
+.result{
+    text-align: left;
+    margin: 20px 18%;
+}
+
+footer{
+    text-align: left;
+}
+
+/* Create two columns in line */
+.row{
+    padding: 0 18%;
+}
+.row > div:not(.col-btn){
+    float: left;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.col-text {
+    width: 40%;
+}
+.col-input{
+    width: 60%;
+}
+.col-btn{
+    width: 40%;
+}
+.col-btn > button{
+    width: 100%;
     font-weight: 600;
 }
