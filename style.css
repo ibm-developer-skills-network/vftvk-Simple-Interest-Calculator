@@ -6,7 +6,5 @@ h1{color:grey; font-family:verdana}
     max-width: 300px; 
     padding: 20px; 
     border-radius: 25px; 
-    text-align:center;
+    align:center;
 }
-
-
