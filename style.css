@@ -17,3 +17,7 @@ h1{
     /* code to align the div to the center of the page. */
     margin: auto;
 }
+.highlightedNumbers{
+    background-color:yellow;
+    font-weight: 600;
+}
