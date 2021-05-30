@@ -5,11 +5,10 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var year = new Date().getFullYear()+parseInt(years);
+    var amount = principal * years * rate /100;
 
     //set validate variable
     var validate = true;
-    
-    // comment old (var interest = principal * years * rate /100;)
 
     // Call validateDate
     validateDate(year);
@@ -17,7 +16,7 @@ function compute()
     //validation for "Principal"
     validationPrincipal(principal);
 
-    //IF principalValidate is true, continue
+    //IF validate is true, continue
     if(validate){
         // Get the reference to the element named 'result' and upadte when "Compute Interest" is clicked
         document.getElementById("result").innerHTML="If you deposit "
