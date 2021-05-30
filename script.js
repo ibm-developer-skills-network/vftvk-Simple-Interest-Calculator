@@ -1,11 +1,13 @@
 function compute()
 {
     // set variables
-    var principalValidate = false;
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var year = new Date().getFullYear()+parseInt(years);
+
+    //set validate variable
+    var validate = true;
     
     // comment old (var interest = principal * years * rate /100;)
 
@@ -16,15 +18,13 @@ function compute()
     validationPrincipal(principal);
 
     //IF principalValidate is true, continue
-    if(principalValidate){
+    if(validate){
         // Get the reference to the element named 'result' and upadte when "Compute Interest" is clicked
         document.getElementById("result").innerHTML="If you deposit "
             +"<span class='highlightedNumbers'>"+principal+ "</span>,\<br\>at an interest rate of "
             +"<span class='highlightedNumbers'>"+rate+"%</span> \<br\>You will receive an amount of "
             +"<span class='highlightedNumbers'>"+amount+"</span>,\<br\>in the year "
             +"<span class='highlightedNumbers'>"+year+"</span> \<br\>";
-    } else {
-        principal.focus();
     }
 }
         
@@ -37,15 +37,22 @@ function updateRate()
 
 function validateDate(year) {
     // function to validate year
-    console.log(year);   
+    if (isNaN(year)) {
+        alert('the year Not a Number!');
+        document.getElementById("years").focus();
+        validate = false;
+    } else {
+        validate = true;
+    }
 }
 
 function validationPrincipal(principal){
     // validation for "Principal"
     if (principal <= 0) {
         alert('Enter a positive number');
-        principalValidate = false;
+        document.getElementById("principal").focus();
+        validate = false;
     } else {
-        principalValidate = true;
+        validate = true;
     }
 }
