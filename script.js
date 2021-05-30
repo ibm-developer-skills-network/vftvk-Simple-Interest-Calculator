@@ -1,11 +1,17 @@
 function compute()
 {
-    var principal = document.getElementById("principal").value;
+    var principal = document.getElementById("principal"); //var principal for if
+    if (principal.value <= 0) {
+        alert("Please enter a positive number");
+        principal.focus(); 
+        return false;
+    } else
+    var principal = document.getElementById("principal").value; //var principal for result
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate /100;
-    var year = new Date().getFullYear()+parseInt(years);
-    document.getElementById("result").innerText="If you deposit "+principal+", at an interest rate of "+rate+"% You will receive an amount of "+interest+", in the year "+year+".";
+    var year = new Date().getFullYear()+parseInt(years); //local time.only year plus years chosen
+    document.getElementById("result").innerHTML="If you deposit <b>"+principal+"</b>, at an interest rate of <b>"+rate+"%</b> You will receive an amount of <b>"+interest+"</b>, in the year <b>"+year+"</b>.";
     
 }
 function updateRate() {
@@ -14,8 +20,7 @@ function updateRate() {
 }
 /*
 function movetoinput() {
-    var toinput = document.getElementById("years").value;
-    document.getElementById("lata").innerText=toinput;
+    var toinput = document.getElementById("selection").value;
+    document.getElementById("years").innerHTML =toinput;
 }
 */
-        
