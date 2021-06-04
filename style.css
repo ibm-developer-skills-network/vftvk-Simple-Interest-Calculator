@@ -1,4 +1,23 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;font-family:arial;color:white}
+h1{color:gray;font-family:verdana;font-size:140%;}
+.maindiv{
+   margin:auto;
+   background-color:white;
+   color:black;
+   width:500px;
+   padding:20px;
+   border-radius:25px;
+
+}
+.subdiv label {
+  margin-left: 50px;
+  width: 140px;
+  display: inline-block;
+}
+.subdiv button {
+  margin-left: 50px;
+  font-size: 105%;
+}
+
 
 
