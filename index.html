@@ -5,12 +5,14 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
+        <div class="maindiv">
+        <table align="center">
+        
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"><span id="rate_val" >10.25%</span>  <br/>
-        No. of Years <select id="years">
+<tr>
+<td>Amount</td><td><input type="number"  id="principal"></td> </tr>
+<tr><td>Rate</td><td><input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()"><span id="rate_val" >10.25%</span></td></tr>
+<tr><td>No. of Years</td><td><select id="years">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -21,10 +23,10 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-        </select>  <br/>
-
-        <button onclick="compute()">Compute</button>
-         <span id="result"></span>
+            </select></td></tr>
+            <tr><td>
+            <button onclick="return compute()">Compute Interest</button></td></tr>
+            <tr><td colspan="3"><div id="result"></div></td></tr></table>
             <footer>
             &#169; This Calculator belongs to Gokul guru dharshan J
         </footer>
