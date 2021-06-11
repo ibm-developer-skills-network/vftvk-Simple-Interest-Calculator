@@ -1,17 +1,46 @@
 <!doctype html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Simple Interest Calculator by Kutyn</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator </h1>
-        <P> test </P>
+        <Div class="maindiv"> 
+            <h1>Simple Interest Calculator </h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+            Amount <input type="number"  id="principal">  <br/>
+            
+            <!-- set the attributes min to 1, max to 20 and step to 0.25 and the default value to 10.25. -->
+            Rate <input type="range"  id="rate" min="minval" max="maxval" step="step_val" value="default_val"> 
+            <span id="rate_val" 10.25%></span><br/>
+            
+            No. of Years <input type=<select id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                >  <br/>
+            
+            Interest : <span id="result"></span><br>
+
+            <button onclick="compute()">Compute Interest</button>
+           
+            <!-- Script will generate results and display below... -->
+            <span id="result">
+
+            </span>
+         </Div>
+        
+        <footer>
+             &#169; This Calculator belongs to --G Kutyn--
+        </footer>
     </body>
 </html>
