@@ -1,1 +1,1 @@
-# coding-project-template
+# coding-project-Greg Kutyn Edition
