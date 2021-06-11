@@ -10,16 +10,13 @@ h1{color:grey;font-family:verdana}
   padding-bottom: 20px;
   padding-left: 20px;
   border-radius: 25px;
-  }
   
+  position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+  }
 
-
-
-Align the div to the center of the page.
-
-Click to see how the new class should look like
-Visualize your html file in the browser and make sure that you have not missed anything.
-}
 
 
 
