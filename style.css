@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}/*Main body*/
+
+#principal {
+    margin-bottom: 10px;
+}/*Amount field*/
+
+#years {
+    margin-bottom: 10px;
+}/*No. of years field*/
+
+h1{
+    color:grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}/*Heading (Simple Interest Calculator)*/
+
+#myBtn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}/*Compute interest button*/
+
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin:auto;
+}/*the calculator thing only*/
+
+.colors {
+    color: orangered;
+}/*The answers that come up after computing interest*/
