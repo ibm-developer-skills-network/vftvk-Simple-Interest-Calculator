@@ -11,10 +11,6 @@ h1{color:grey;font-family:verdana}
   padding-left: 20px;
   border-radius: 25px;
   
-  position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
   }
 
 
