@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Anyone can get rich NGO</title>
+    <!--linking the javascript and css file in html file-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <!--principle amount-->
+        Amount <input type="number"  id="principal">  <br/>
+        <!--rate input by sliderbar -->
+        Rate <input type="range"  id="rate_val"  min="1" max="20" step="0.25" value="" onchange="updateRate()"<span id="rate_val">10.25%</span> 
+        <br/>
+        <!--no of years-->
+        No of years<select id="years">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        </select>
+        <br/>
+        Interest : <span id="result"></span><br>
+        <!--linking the compute interest button with compute()function-->
+        <button onclick="compute()">Compute Interest</button>
+        <span id="result"></span>
+        </div>
+        <!--copyright license-->
+        <footer>&#169; This Calculator belongs to NGO:anyone can get rich
+                func: alert if principle amount is negatv;
+                linked the js and css file to the html file
+                computes the interest;
+                drop down box for years
+                range slider for rate with 10.25 as defaults
+
+        </footer>
+    </body>
+</html>
