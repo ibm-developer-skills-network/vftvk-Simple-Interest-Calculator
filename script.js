@@ -19,9 +19,8 @@ function compute()
 
   //the reference to the element named 'result'
   //When "Compute Interest" is clicked, set its inner html property to the below text.
-  document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>,<br/>at an interest rate of <mark>" + rate +
-    "%</mark><br/>You will receive an amount of <mark>" + amount + ",</mark><br/>in the year <mark>" + year + "</mark><br\>";
-
+  document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>,<br/>at an interest rate of <mark>" + rate +"%</mark>,<br/>Your Simple intrest will be<mark> "+interest+
+    "</mark><br/>You will receive an amount of <mark>" + amount + ",</mark><br/>in the year <mark>" + year + "</mark><br\>";
 
 
 //If the user enters zero or negative values, show an alert "Enter a positive number"
