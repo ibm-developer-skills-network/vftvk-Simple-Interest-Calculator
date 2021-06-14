@@ -1,9 +1,8 @@
-<script>
 <!--document.getElementById("rate").max = "90" -->
-var minval="1";
-var maxval="10";
-var step_val="0.25";
-var default_val="10.25";
+var minval = 1;
+var maxval = 10;
+var step_val = 0.25;
+var default_val = 10.25;
 
 function compute()
 {
@@ -20,9 +19,7 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval + "%";
-
-
 }
 
-</script>
+
         
