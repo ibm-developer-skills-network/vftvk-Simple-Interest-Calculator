@@ -2,11 +2,16 @@
     <head>
         <title>Simple Interest Calculator by Kutyn</title>
         
+        <!-- Define Meta data for search engines -->
         <meta name="keywords" content="Interest Calculator, Kutyn" </meta>
         <meta name="author" content="Greg Kutyn" </meta>
         
+        <!-- Display with standard style sheet -->
         <link rel="stylesheet" href="style.css">
+        
+        <!-- Include calculator scripts -->
         <script src="script.js"></script>
+        <noscript>JavaScript is off. Please enable to use the calculator.</noscript>
     </head>
    
     <body>
@@ -17,7 +22,7 @@
             
             <!-- set the attributes min to 1, max to 20 and step to 0.25 and the default value to 10.25. -->
             Rate <input type="range"  id="rate" min="minval" max="maxval" step="step_val" value="default_val" onchange="updateRate()"> 
-            <span id="rate_val"> </span><br/>
+            <span id="rate_val"> 10.25%</span><br/>
             
             No. of Years <select id="years">
                     <option value="1">1</option>
@@ -32,7 +37,7 @@
                     <option value="10">10</option>
                 </select> <br/>
             
-            Interest : <span id="result"></span><br>
+            Interest : <span id="interest"></span><br>
 
             <button onclick="compute()">Compute Interest</button>
            
