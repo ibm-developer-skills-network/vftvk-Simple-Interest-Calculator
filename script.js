@@ -1,6 +1,6 @@
-<!--document.getElementById("rate").max = "90" -->
-var minval = 1;
-var maxval = 10;
+// document.getElementById("rate").max = "90" 
+var minval = 1.0;
+var maxval = 10.0;
 var default_val = 10.25;
 
 function compute()
@@ -14,6 +14,8 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
 }
 
+/* UI enhancement to improve usability
+of the calculator */
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
