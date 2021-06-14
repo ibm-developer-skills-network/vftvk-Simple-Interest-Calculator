@@ -1,4 +1,5 @@
-document.getElementById("myRange").max = "90"
+<script>
+<!--document.getElementById("rate").max = "90" -->
 var minval="1";
 var maxval="10";
 var step_val="0.25";
@@ -22,4 +23,6 @@ function updateRate()
 
 
 }
+
+</script>
         
