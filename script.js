@@ -1,7 +1,7 @@
-var minval=1
-var maxval=10
-var step_val=0.25
-var default_val=10.25
+var minval=1;
+var maxval=10;
+var step_val=0.25;
+var default_val=10.25;
 
 function compute()
 {
