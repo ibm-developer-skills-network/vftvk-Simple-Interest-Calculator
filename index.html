@@ -16,7 +16,7 @@
             Amount <input type="number"  id="principal">  <br/>
             
             <!-- set the attributes min to 1, max to 20 and step to 0.25 and the default value to 10.25. -->
-            Rate <input type="range"  id="rate" min="minval" max="maxval" step="step_val" value="default_val" onchange=> 
+            Rate <input type="range"  id="rate" min="minval" max="maxval" step="step_val" value="default_val" onchange="updateRate()"> 
             <span id="rate_val"> 10.25%</span><br/>
             
             No. of Years <select id="years">
@@ -41,16 +41,8 @@
             </span>
             <br><br>
             
-            <footer>
-             &#169; This Calculator belongs to --G Kutyn-- 
-            </footer>
-         </Div>
-        
-        
-    </body>
-</html>
-
-Link this function with an "onchange" event on the range input.
+            <div> Remove later...
+                Link this function with an "onchange" event on the range input.
 
 Change the slider, and test if the display in the span is being updated dynamically.
 
@@ -77,3 +69,15 @@ Once the user clicks on the alert "OK" button, take the user back to the "Princi
 You are done with the coding. Let us proceed to next exercise where we test the code.
 
 Write comments in your code. They not only help you score more marks in the project, but also help you to debug and maintain the code in the long term.
+            </div>
+            
+            <footer>
+             &#169; This Calculator belongs to --G Kutyn-- 
+            </footer>
+         </Div>
+        
+        
+    </body>
+</html>
+
+
