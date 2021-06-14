@@ -19,7 +19,7 @@ function compute()
 
   //the reference to the element named 'result'
   //When "Compute Interest" is clicked, set its inner html property to the below text.
-  document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>,<br/>at an interest rate of <mark>" + rate +"%</mark>,<br/>Your Simple Intrest will be<mark> "+interest+
+  document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>,<br/>at an interest rate of <mark>" + rate +"%</mark>,<br/>Your Simple Interest will be<mark> "+interest+
     "</mark><br/>You will receive an amount of <mark>" + amount + ",</mark><br/>in the year <mark>" + year + "</mark><br\>";
 
 
