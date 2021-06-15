@@ -1,22 +1,31 @@
 <!doctype html>
+  <html lang="en">
     <head>
         <title>Simple Interest Calculator by Kutyn</title>
         
-        <meta name="keywords" content="Interest Calculator, Kutyn" </meta>
-        <meta name="author" content="Greg Kutyn" </meta>
+        <!-- Define Meta data for search engines -->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Interest Calculator, Kutyn">
+        <meta name="author" content="Greg Kutyn">
         
+        <!-- Display with standard style sheet -->
         <link rel="stylesheet" href="style.css">
+        
+        <!-- Include calculator scripts -->
         <script src="script.js"></script>
     </head>
    
     <body>
-        <Div class="maindiv"> 
+          <Div class="maindiv"> 
+            <noscript>Enable Javascript to use this calculator</noscript>
             <h1>Simple Interest Calculator </h1>
 
             Amount <input type="number"  id="principal">  <br/>
             
-            <!-- set the attributes min to 1, max to 20 and step to 0.25 and the default value to 10.25. -->
-            Rate <input type="range"  id="rate" min="minval" max="maxval" step="step_val" value="default_val" onchange="updateRate()"> 
+             <!-- Set Interest Rate  -->
+            <label for="rate">Rate</label>
+            <input  id="rate" type="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+
             <span id="rate_val"> 10.25%</span><br/>
             
             No. of Years <select id="years">
@@ -32,19 +41,16 @@
                     <option value="10">10</option>
                 </select> <br/>
             
-            Interest : <span id="result"></span><br>
+            Interest : <span id="interest"></span><br>
 
             <button onclick="compute()">Compute Interest</button>
            
             <!-- Script will generate results and display below... -->
-            <span id="result">
-            </span>
+            <span id="result">  </span>
             <br><br>
             
             <div> Remove later...
-                Link this function with an "onchange" event on the range input.
-
-Change the slider, and test if the display in the span is being updated dynamically.
+                
 
 Get the reference to the element named 'result'
 

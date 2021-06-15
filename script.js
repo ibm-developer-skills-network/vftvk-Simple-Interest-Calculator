@@ -1,9 +1,4 @@
-<script>
-<!--document.getElementById("rate").max = "90" -->
-var minval="1";
-var maxval="10";
-var step_val="0.25";
-var default_val="10.25";
+// Simple Interest Calculator Javascript
 
 function compute()
 {
@@ -12,17 +7,25 @@ function compute()
     var years = document.getElementById("years").value;
 
     var interest = principal * years * rate /100;
+    var ppint = principal + interest;
 
     var year = new Date().getFullYear()+parseInt(years);
+    
+    document.getElementById("result").innerText = 
+        "<br>If you deposit " + principal + ",<br>" + 
+        "at an interest rate of " + rate + "%.<br>" +
+        "You will receive an amount of " +  ppint + ",<br>" +
+        "in the year " + year +".<br><br>";
+        
 }
 
+/* UI enhancement to improve usability
+of the calculator */
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval + "%";
-
-
 }
 
-</script>
+
         
