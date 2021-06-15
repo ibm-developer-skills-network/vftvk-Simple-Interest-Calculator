@@ -1,7 +1,4 @@
-// document.getElementById("rate").max = "90" 
-var minval = 1.0;
-var maxval = 10.0;
-var default_val = 10.25;
+// Simple Interest Calculator Javascript
 
 function compute()
 {
