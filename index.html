@@ -21,9 +21,9 @@
 
             Amount <input type="number"  id="principal">  <br/>
             
-            <!-- set the attributes min to 1, max to 20 and step to 0.25 and the default value to 10.25. -->
+             <!-- Set Interest Rate  -->
             <label for="rate">Rate</label>
-            <input type="range"  id="rate" min="minval" max="maxval" value="default_val" onchange="updateRate()"> 
+            <input  id="rate" type="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
             <span id="rate_val"> 10.25%</span><br/>
             
             No. of Years <select id="years">
@@ -49,9 +49,7 @@
             <br><br>
             
             <div> Remove later...
-                Link this function with an "onchange" event on the range input.
-
-Change the slider, and test if the display in the span is being updated dynamically.
+                
 
 Get the reference to the element named 'result'
 
