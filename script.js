@@ -11,10 +11,10 @@ function compute()
 
     var year = new Date().getFullYear() + parseInt(years);
     
-    var resultstr =  "<p>If you deposit " + principal + ",<br>";
-        resultstr += "at an interest rate of " + rate + "%.<br>";
-        resultstr += "You will receive an amount of " + ppint + ",<br>"; 
-        resultstr += "in the year " + year +".<br><br><\/p>";
+    var resultstr =  "<p>If you deposit " + "<span class='highlight'>" + principal + <\/span> + ",<br>";
+        resultstr += "at an interest rate of " + "<span class='highlight'>" + rate + <\/span> + "%.<br>";
+        resultstr += "You will receive an amount of " + "<span class='highlight'>" + ppint + <\/span> + ",<br>"; 
+        resultstr += "in the year " + "<span class='highlight'>" + year + <\/span> +".<br><br><\/p>";
         
     document.getElementById("result").innerHTML = resultstr;      
 }
