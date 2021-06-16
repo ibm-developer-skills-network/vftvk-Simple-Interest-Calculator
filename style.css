@@ -1,4 +1,48 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color:black;
+  font-family: sans-serif;
+  color:white
+}
+
+h1 {
+  color:grey;
+  font-weight: bold ;
+  font-family:verdana;
+}
 
 
+.mainbod {
+  padding-top: 14%;
+}
+
+
+.maindiv {
+  background-color:white;
+  color:black;
+  width: 475px;;
+  padding: 20px;
+  border-radius:25px;
+  margin:auto;
+}
+
+
+
+.inputs {
+  padding: 0px 75px 15px;
+  display: grid;
+  grid-template-columns: 120px 130px 70px;
+  grid-template-rows: auto;
+  row-gap: 0.7em;
+}
+
+label, button{
+  grid-column: 1;
+}
+
+select {
+  max-width: 40px;
+}
+
+#result {
+  grid-column: 1 / 5;
+}
