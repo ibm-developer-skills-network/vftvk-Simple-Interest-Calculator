@@ -11,7 +11,7 @@ function compute()
 
     var year = new Date().getFullYear()+parseInt(years);
     
-    var resultstr =  "<p>If you deposit " + principal + ",\/n<<br>";
+    var resultstr =  "<p>If you deposit " + principal + ",<br>";
         resultstr += "at an interest rate of " + rate + "%.<br>";
         resultstr += "You will receive an amount of " + ppint + ",<br>"; 
         resultstr += "in the year " + year +".<br><br><\/p>";
