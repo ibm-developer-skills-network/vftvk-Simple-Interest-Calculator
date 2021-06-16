@@ -2,14 +2,14 @@
 
 function compute()
 {
-    var principal = document.getElementById("principal").value;
-    var rate = document.getElementById("rate").value;
-    var years = document.getElementById("years").value;
+    var principal = parseInt(document.getElementById("principal").value);
+    var rate = parseInt(document.getElementById("rate").value);
+    var years = parseInt(document.getElementById("years").value);
 
     var interest = principal * years * rate /100;
-    var ppint = principal + interest;
+    var ppint = principal + interest; // Principal plus interest
 
-    var year = new Date().getFullYear()+parseInt(years);
+    var year = new Date().getFullYear() + parseInt(years);
     
     var resultstr =  "<p>If you deposit " + principal + ",<br>";
         resultstr += "at an interest rate of " + rate + "%.<br>";
