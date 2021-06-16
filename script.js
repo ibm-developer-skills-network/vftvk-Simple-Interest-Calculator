@@ -18,6 +18,8 @@ function compute()
         
     document.getElementById("result").innerText = resultstr;      
         
+    // TEST STRING
+    document.write("Remove from JS code: resultstr=" + resultstr);
 }
 
 /* UI enhancement to improve usability
