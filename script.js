@@ -16,10 +16,7 @@ function compute()
         resultstr += "You will receive an amount of " + ppint + ",<br>"; 
         resultstr += "in the year " + year +".<br><br><\/p>";
         
-    document.getElementById("result").innerText = resultstr;      
-        
-    // TEST STRING
-    document.write("Remove from JS code: resultstr=" + resultstr);
+    document.getElementById("result").innerHTML = resultstr;      
 }
 
 /* UI enhancement to improve usability
