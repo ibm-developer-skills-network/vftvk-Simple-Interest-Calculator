@@ -20,13 +20,14 @@
             <noscript>Enable Javascript to use this calculator</noscript>
             <h1>Simple Interest Calculator </h1>
 
-            Amount <input type="number"  id="principal">  <br/>
+            <label for=principal>Amount</label>
+            <input type="number"  id="principal">  <br>
             
              <!-- Set Interest Rate  -->
             <label for="rate">Rate</label>
             <input  id="rate" type="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
 
-            <span id="rate_val"> 10.25%</span><br/>
+            <span id="rate_val"> 10.25%</span><br>
             
             No. of Years <select id="years">
                     <option value="1">1</option>
@@ -50,20 +51,7 @@
             <br><br>
             
             <div> Remove later...
-                
-
-Get the reference to the element named 'result'
-
-When "Compute Interest" is clicked, set its inner html property to the below text.
-
-If you deposit 1000000,
-at an interest rate of 3.5%.
-You will receive an amount of 175000,
-in the year 2025
-
-The number above are for indication only. Make sure the output contains the relevant values by using the correct variables
-
-Click here for a sample
+     
 Make sure that the input you have taken as "No of Years" is converted into an actual year.
 
 Make sure the numbers in the result are highlighted.
