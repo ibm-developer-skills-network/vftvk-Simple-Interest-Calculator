@@ -16,8 +16,14 @@ h1{color:grey;font-family:verdana; text-align:center}
   }
 
 /* attempting to space columns */
-input:nth-child(1n+0) {
- padding-left: 20px;
+label:nth-child(1n+0) {
+ display: inline; /* the default for span */
+   padding: 5px;
+  /* width: 400px;
+  /* height: 100px;
+  padding: 30px;
+  /*margin-right: 15px;
+ /* padding-left: 20px; */
 }
 
 /* Used to highlight result vaules */
