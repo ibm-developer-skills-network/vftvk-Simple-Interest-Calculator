@@ -10,25 +10,29 @@ function compute()
     var rate = parseFloat(document.getElementById("rate").value);
     var years = parseInt(document.getElementById("years").value);
 
-    /* Validate principal amount */
-    if (rate <= 0) {
-        document.getElementById("result").innerHTML = 'alert("Enter a positive number")';
-        return();
-    }
-   
-    /* Calculate Interest */
-    var interest = principal * years * rate /100;
-    var ppint = principal + interest; // Principal plus interest
 
-    /* Calculate period end year */
-    var year = new Date().getFullYear() + parseInt(years);
-    
-    /* Create result string and display it */
-    var resultstr =  "<p>If you deposit " + "<span class='highlight'>" + principal + "<\/span>,<br>";
-        resultstr += "at an interest rate of " + "<span class='highlight'>" + rate + "<\/span>%.<br>";
-        resultstr += "You will receive an amount of " + "<span class='highlight'>" + ppint + "<\/span>,<br>"; 
-        resultstr += "in the year " + "<span class='highlight'>" + year + "<\/span>.<br><br><\/p>";
-   document.getElementById("result").innerHTML = resultstr;      
+    /* Validate principal amount */
+    if (principal > 0)  {
+         /* Calculate Interest */
+        var interest = principal * years * rate /100;
+        var ppint = principal + interest; // Principal plus interest
+
+        /* Calculate period end year */
+        var year = new Date().getFullYear() + parseInt(years);
+        
+        /* Create result string and display it */
+        var resultstr =  "<p>If you deposit " + "<span class='highlight'>" + principal + "<\/span>,<br>";
+            resultstr += "at an interest rate of " + "<span class='highlight'>" + rate + "<\/span>%.<br>";
+            resultstr += "You will receive an amount of " + "<span class='highlight'>" + ppint.toFixed(2) + "<\/span>,<br>"; 
+            resultstr += "in the year " + "<span class='highlight'>" + year + "<\/span>.<br><br><\/p>";
+         document.getElementById("result").innerHTML = resultstr; 
+    }
+    else {
+        alert("Enter a positive number");
+        document.getElementById("result").innerHTML = "";
+        document.getElementById("principal").value = "";
+        document.getElementById("principal").focus();
+    }
 }
 
 /* UI enhancement to improve usability
