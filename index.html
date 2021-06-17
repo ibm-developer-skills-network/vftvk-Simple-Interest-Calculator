@@ -22,11 +22,11 @@
 
             <!-- Set principal amount -->
             <label for=principal>Amount</label>
-            <input type="number"  id="principal">  <br>
+            <input type="number"  id="principal" Placeholder="greater than 0" >  <br>
             
              <!-- Set Interest Rate  -->
             <label for="rate">Rate</label>
-            <input  id="rate" type="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+            <input  id="rate" type="range" min="1.0" max="20.0" value="10.25" step="0.25" onchange="updateRate()"> 
             <span id="rate_val"> 10.25%</span><br>
             
             <!-- Set term (Range 1-10 years) -->
@@ -50,8 +50,6 @@
             
             <div> Remove later...
      
-Make sure the numbers in the result are highlighted.
-
 Add validation for "Principal" input box. If the user enters zero or negative values, show an alert "Enter a positive number"
 
 Once the user clicks on the alert "OK" button, take the user back to the "Principal" input box, by setting the focus on this box. You can refer to the Javascript Form Validation lab.
@@ -66,5 +64,3 @@ Once the user clicks on the alert "OK" button, take the user back to the "Princi
         
     </body>
 </html>
-
-
