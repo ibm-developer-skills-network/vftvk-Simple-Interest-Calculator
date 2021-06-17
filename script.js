@@ -1,4 +1,4 @@
-/ Simple Interest Calculator Javascript
+// Simple Interest Calculator Javascript
 
 function compute()
 {
