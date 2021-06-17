@@ -2,24 +2,24 @@
 
 function compute()
 {
-    var principal = document.getElementById("principal").value;
-    var rate = document.getElementById("rate").value;
-    var years = document.getElementById("years").value;
+    /* Get input values */
+    var principal = parseInt(document.getElementById("principal").value);
+    var rate = parseInt(document.getElementById("rate").value);
+    var years = parseInt(document.getElementById("years").value);
 
+    /* Calculate Interest */
     var interest = principal * years * rate /100;
-    var ppint = principal + interest;
+    var ppint = principal + interest; // Principal plus interest
 
-    var year = new Date().getFullYear()+parseInt(years);
+    /* Calculate period end year */
+    var year = new Date().getFullYear() + parseInt(years);
     
-    var resultstr =  "<p>If you deposit " + principal + ",\/n<<br>";
-        resultstr += "at an interest rate of " + rate + "%.<br>";
-        resultstr += "You will receive an amount of " + ppint + ",<br>"; 
-        resultstr += "in the year " + year +".<br><br><\/p>";
-        
-    document.getElementById("result").innerText = resultstr;      
-        
-    // TEST STRING
-    document.write("Remove from JS code: resultstr=" + resultstr);
+    /* Create result string and display it */
+    var resultstr =  "<p>If you deposit " + "<span class='highlight'>" + principal + "<\/span>,<br>";
+        resultstr += "at an interest rate of " + "<span class='highlight'>" + rate + "<\/span> %.<br>";
+        resultstr += "You will receive an amount of " + "<span class='highlight'>" + ppint + "<\/span>,<br>"; 
+        resultstr += "in the year " + "<span class='highlight'>" + year + "<\/span>.<br><br><\/p>";
+   document.getElementById("result").innerHTML = resultstr;      
 }
 
 /* UI enhancement to improve usability

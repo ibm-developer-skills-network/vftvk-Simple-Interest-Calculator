@@ -20,15 +20,18 @@
             <noscript>Enable Javascript to use this calculator</noscript>
             <h1>Simple Interest Calculator </h1>
 
-            Amount <input type="number"  id="principal">  <br/>
+            <!-- Set principal amount -->
+            <label for=principal>Amount</label>
+            <input type="number"  id="principal">  <br>
             
              <!-- Set Interest Rate  -->
             <label for="rate">Rate</label>
             <input  id="rate" type="range" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
-
-            <span id="rate_val"> 10.25%</span><br/>
+            <span id="rate_val"> 10.25%</span><br>
             
-            No. of Years <select id="years">
+            <!-- Set term (Range 1-10 years) -->
+            <label for="years">No. of Years</label>
+            <select id="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -39,42 +42,20 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </select> <br/>
+                </select> <br><br>
             
-            Interest : <span id="interest"></span><br>
-
-            <button onclick="compute()">Compute Interest</button>
-           
-            <!-- Script will generate results and display below... -->
-            <span id="result">  </span>
-            <br><br>
+            <!-- Script will calculate and display results ... -->
+            <button onclick="compute()">Compute Interest</button>    
+            <span id="result"> </span><br><br>
             
             <div> Remove later...
-                
-
-Get the reference to the element named 'result'
-
-When "Compute Interest" is clicked, set its inner html property to the below text.
-
-If you deposit 1000000,
-at an interest rate of 3.5%.
-You will receive an amount of 175000,
-in the year 2025
-
-The number above are for indication only. Make sure the output contains the relevant values by using the correct variables
-
-Click here for a sample
-Make sure that the input you have taken as "No of Years" is converted into an actual year.
-
+     
 Make sure the numbers in the result are highlighted.
 
 Add validation for "Principal" input box. If the user enters zero or negative values, show an alert "Enter a positive number"
 
 Once the user clicks on the alert "OK" button, take the user back to the "Principal" input box, by setting the focus on this box. You can refer to the Javascript Form Validation lab.
 
-You are done with the coding. Let us proceed to next exercise where we test the code.
-
-Write comments in your code. They not only help you score more marks in the project, but also help you to debug and maintain the code in the long term.
             </div>
             
             <footer>
