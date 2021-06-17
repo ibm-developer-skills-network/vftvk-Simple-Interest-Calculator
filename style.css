@@ -1,4 +1,44 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;}
+*{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.panel{
+    background-color: white;
+    width: 80vw;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    vertical-align: middle;
+    padding: 20px;
+}
+.container {    
+    white-space: nowrap;
+    width: 80%;
+    max-width: 380px;
+    margin: auto;
+}
+.container > div:not(#result){    
+    line-height: 200%;
+}
+label {
+    white-space: nowrap;
+    text-align: left;
+    display: inline-block;
+    width:15vw;
+    max-width: 200px;
+    min-width: 120px;
+    height: 24px;
+}
+h1{
+    color:grey; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight:900;
+    width: 100%;
+    text-align: center;
+}
+#ratenum{
+    display: inline;
+}
+
 
 
