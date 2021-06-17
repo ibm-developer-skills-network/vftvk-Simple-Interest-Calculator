@@ -1,6 +1,7 @@
 body {background-color:black;font-family:arial;color:white}
 h1{color:grey;font-family:verdana; text-align:center}
 
+/* Primary calculator styling */
 .maindiv {
   background-color:white; 
   color:black;
@@ -14,9 +15,12 @@ h1{color:grey;font-family:verdana; text-align:center}
   text-align:left;
   }
 
+/* attempting to space columns */
+input:nth-child(1n+0) {
+ padding-left: 20px;
+}
+
+/* Used to highlight result vaules */
 .highlight {
   background-color: yellow;
 }
-
-
-
