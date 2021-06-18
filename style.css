@@ -5,7 +5,7 @@ h1{color:grey;font-family:verdana; text-align:center}
 .maindiv {
   background-color:white; 
   color:black;
-  width: 300px;
+  width: 500px;
   margin: auto;
   border-radius: 25px;
   padding-top: 20px;
@@ -15,3 +15,10 @@ h1{color:grey;font-family:verdana; text-align:center}
   text-align:left;
   }
 
+.formtable {
+    padding-left: 50px;
+}
+
+.resultdiv {
+    padding-left: 50px;
+}

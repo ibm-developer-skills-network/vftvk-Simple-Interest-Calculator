@@ -20,7 +20,7 @@
             <noscript>Enable Javascript to use this calculator</noscript>
             <h1>Simple Interest Calculator </h1>
 
-            <table> <!-- Use a table to support visual alignment.-->
+            <table class="formtable"> <!-- Use a table to support visual alignment.-->
                 <tr> <!-- Get principal amount -->
                     <td><label for=principal>Amount</label> </td>
                     <td><input type="number"  id="principal" Placeholder="greater than 0" autofocus> </td> 
@@ -47,11 +47,14 @@
                         <option value="10">10</option>
                     </select> </td>
                 </tr> 
-            </table><br>
 
-            <!-- Script will calculate and display results ... -->
-            <button onclick="compute()">Compute Interest</button>    
-            <span id="result"> </span><br><br>
+                <tr> <!-- Script will calculate results ... -->
+                    <td><button onclick="compute()">Compute Interest</button> </td>
+                </tr>
+            </table>
+
+             <!-- Display Results -->  
+             <div id="result" class="resultdiv"> </div><br> 
                                   
             <footer>
              &#169; This Calculator belongs to --G Kutyn-- 
