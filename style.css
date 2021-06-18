@@ -15,7 +15,10 @@ h1{color:grey;font-family:verdana; text-align:center}
   text-align:left;
   }
 
-table {
-    padding-left: 50px;    
+.formtable {
+    padding-left: 50px;
 }
 
+.resultdiv {
+    padding-left: 50px;
+}
