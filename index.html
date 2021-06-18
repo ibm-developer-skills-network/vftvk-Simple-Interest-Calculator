@@ -1,10 +1,10 @@
 <!doctype html>
-  <html lang="en">
+  <html lang="en"> 
     <head>
         <title>Simple Interest Calculator by Kutyn</title>
         
         <!-- Define Meta data for search engines -->
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"> 
         <meta name="keywords" content="Interest Calculator, Kutyn">
         <meta name="author" content="Greg Kutyn">
         
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css">
         
         <!-- Include calculator scripts -->
-        <script src="script.js"></script>
+        <script src="script.js"></script> 
     </head>
    
     <body>
@@ -20,30 +20,38 @@
             <noscript>Enable Javascript to use this calculator</noscript>
             <h1>Simple Interest Calculator </h1>
 
-            <!-- Set principal amount -->
-            <label for=principal>Amount</label>
-            <input type="number"  id="principal" Placeholder="greater than 0" autofocus>  <br>
-            
-             <!-- Set Interest Rate  -->
-            <label for="rate">Rate</label>
-            <input  id="rate" type="range" min="1.0" max="20.0" value="10.25" step="0.25" onchange="updateRate()"> 
-            <span id="rate_val"> 10.25%</span><br>
-            
-            <!-- Set term (Range 1-10 years) -->
-            <label for="years">No. of Years</label>
-            <select id="years">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select> <br><br>
-            
+            <table> 
+                <!-- Set principal amount -->
+                <tr> 
+                    <td><label for=principal>Amount</label> </td>
+                    <td><input type="number"  id="principal" Placeholder="greater than 0" autofocus> </td> 
+                </tr>
+
+                <!-- Set Interest Rate  -->
+                <tr>
+                    <td><label for="rate">Rate</label></td>
+                    <td><input  id="rate" type="range" min="1.0" max="20.0" value="10.25" step="0.25" onchange="updateRate()"> 
+                    <span id="rate_val"> 10.25%</span><br></td>
+                </tr>
+
+                <!-- Set term (Range 1-10 years) -->
+                <tr>
+                    <td> <label for="years">No. of Years</label> </td>
+                    <td> <select id="years">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select> </td>
+                </tr> 
+            </table><br>
+
             <!-- Script will calculate and display results ... -->
             <button onclick="compute()">Compute Interest</button>    
             <span id="result"> </span><br><br>
