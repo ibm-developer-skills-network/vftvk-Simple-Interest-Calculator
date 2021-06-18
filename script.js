@@ -23,7 +23,7 @@ function compute()
         var year = new Date().getFullYear() + parseInt(years);
         
         /* Create result string and display it */
-        var resultstr =  "<br><br>If you deposit <mark>" + principal.toLocaleString("en-CA", sFin) + "<\/mark>,<br>";
+        var resultstr =  "<br>If you deposit <mark>" + principal.toLocaleString("en-CA", sFin) + "<\/mark>,<br>";
             resultstr += "at an interest rate of <mark>" + rate + "<\/mark>%.<br>";
             resultstr += "You will receive an amount of <mark>" + ppint.toLocaleString("en-CA", sFin) + "<\/mark>,<br>"; 
             resultstr += "in the year <mark>" + year + "<\/mark>.";
@@ -44,4 +44,3 @@ function updateRate()
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval + "%";
 }
-
