@@ -1,10 +1,10 @@
 // Simple Interest Calculator Javascript
-
 function compute()
 {
     // Set default values
     var rate = 0.0;
-
+    
+    // Support finanical formatting in Canadian currency
     var sFin = {style: "currency", currency: "CAD"}
 
     /* Get input values */
@@ -13,23 +13,24 @@ function compute()
     var years = parseInt(document.getElementById("years").value);
 
 
-    /* Validate principal amount */
+    /* Validate principal amount */ 
     if (principal > 0)  {
          /* Calculate Interest */
         var interest = principal * years * rate /100;
         var ppint = principal + interest; // Principal plus interest
 
-        /* Calculate period end year */
+        /* Determine calculation end year */
         var year = new Date().getFullYear() + parseInt(years);
         
         /* Create result string and display it */
-        var resultstr =  "<p>If you deposit " + "<span class='highlight'>" + principal.toLocaleString("en-CA", sFin) + "<\/span>,<br>";
-            resultstr += "at an interest rate of " + "<span class='highlight'>" + rate + "<\/span>%.<br>";
-            resultstr += "You will receive an amount of " + "<span class='highlight'>" + ppint.toLocaleString("en-CA", sFin) + "<\/span>,<br>"; 
-            resultstr += "in the year " + "<span class='highlight'>" + year + "<\/span>.<br><br><\/p>";
+        var resultstr =  "<br><br>If you deposit <mark>" + principal.toLocaleString("en-CA", sFin) + "<\/mark>,<br>";
+            resultstr += "at an interest rate of <mark>" + rate + "<\/mark>%.<br>";
+            resultstr += "You will receive an amount of <mark>" + ppint.toLocaleString("en-CA", sFin) + "<\/mark>,<br>"; 
+            resultstr += "in the year <mark>" + year + "<\/mark>.";
          document.getElementById("result").innerHTML = resultstr; 
     }
     else {
+        /* Display error message and reset form for new data entry */
         alert("Enter a positive number");
         document.getElementById("result").innerHTML = "";
         document.getElementById("principal").value = "";
@@ -37,10 +38,10 @@ function compute()
     }
 }
 
-/* UI enhancement to improve usability
-of the calculator */
+/* UI enhancement to improve usability of the range control by displaying range values */
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval + "%";
 }
+
