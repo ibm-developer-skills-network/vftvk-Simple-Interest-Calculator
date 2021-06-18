@@ -1,11 +1,10 @@
 // Simple Interest Calculator Javascript
-
 function compute()
 {
     // Set default values
     var rate = 0.0;
     
-    // Support finanical formatting
+    // Support finanical formatting in Canadian currency
     var sFin = {style: "currency", currency: "CAD"}
 
     /* Get input values */
@@ -31,7 +30,7 @@ function compute()
          document.getElementById("result").innerHTML = resultstr; 
     }
     else {
-        /* Display error message and reset for new data entry */
+        /* Display error message and reset form for new data entry */
         alert("Enter a positive number");
         document.getElementById("result").innerHTML = "";
         document.getElementById("principal").value = "";
@@ -39,8 +38,7 @@ function compute()
     }
 }
 
-/* UI enhancement to improve usability
-of the calculator */
+/* UI enhancement to improve usability of the range control by displaying range values */
 function updateRate() 
 {
     var rateval = document.getElementById("rate").value;
