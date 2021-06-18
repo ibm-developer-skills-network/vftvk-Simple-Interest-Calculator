@@ -8,7 +8,7 @@
         <meta name="keywords" content="Interest Calculator, Kutyn">
         <meta name="author" content="Greg Kutyn">
         
-        <!-- Display with standard style sheet -->
+        <!-- Display calculator with standard style sheet -->
         <link rel="stylesheet" href="style.css">
         
         <!-- Include calculator scripts -->
@@ -20,22 +20,19 @@
             <noscript>Enable Javascript to use this calculator</noscript>
             <h1>Simple Interest Calculator </h1>
 
-            <table> 
-                <!-- Set principal amount -->
-                <tr> 
+            <table> // Use a table to support visual alignment.
+                <tr> <!-- Get principal amount -->
                     <td><label for=principal>Amount</label> </td>
                     <td><input type="number"  id="principal" Placeholder="greater than 0" autofocus> </td> 
                 </tr>
-
-                <!-- Set Interest Rate  -->
-                <tr>
+                
+                <tr> <!-- Get Interest Rate between 1-20% in steps of .25% -->
                     <td><label for="rate">Rate</label></td>
                     <td><input  id="rate" type="range" min="1.0" max="20.0" value="10.25" step="0.25" onchange="updateRate()"> 
                     <span id="rate_val"> 10.25%</span><br></td>
                 </tr>
-
-                <!-- Set term (Range 1-10 years) -->
-                <tr>
+                
+                <tr>  <!-- Get term (Range 1-10 years) -->
                     <td> <label for="years">No. of Years</label> </td>
                     <td> <select id="years">
                         <option value="1">1</option>
@@ -55,12 +52,10 @@
             <!-- Script will calculate and display results ... -->
             <button onclick="compute()">Compute Interest</button>    
             <span id="result"> </span><br><br>
-            
-                      
+                                  
             <footer>
              &#169; This Calculator belongs to --G Kutyn-- 
             </footer>
          </Div>
-    
     </body>
 </html>
