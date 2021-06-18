@@ -4,7 +4,8 @@ function compute()
 {
     // Set default values
     var rate = 0.0;
-
+    
+    // Support finanical formatting
     var sFin = {style: "currency", currency: "CAD"}
 
     /* Get input values */
@@ -19,7 +20,7 @@ function compute()
         var interest = principal * years * rate /100;
         var ppint = principal + interest; // Principal plus interest
 
-        /* Calculate period end year */
+        /* Determine calculation end year */
         var year = new Date().getFullYear() + parseInt(years);
         
         /* Create result string and display it */
@@ -30,6 +31,7 @@ function compute()
          document.getElementById("result").innerHTML = resultstr; 
     }
     else {
+        /* Display error message and reset for new data entry */
         alert("Enter a positive number");
         document.getElementById("result").innerHTML = "";
         document.getElementById("principal").value = "";
