@@ -7,8 +7,8 @@ body {
 }
 section {
   background-color: #fff;
-  border-radius: 2rem;
-  padding: 1rem;
+  border-radius: 3rem;
+  padding: 2rem 1.5rem;
   width: 80%;
   margin: auto;
 }
@@ -16,7 +16,7 @@ p {
   font-size: 2rem;
 }
 h1 {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   color: grey;
   font-family: verdana;
 }
@@ -29,7 +29,7 @@ p.label {
   width: 12.5rem;
 }
 div.info {
-  padding-left: 4rem;
+  padding-left: 8rem;
   margin-bottom: 2.6rem;
 }
 label {
@@ -41,10 +41,16 @@ span.wrapper {
 }
 button {
   margin: 1.6rem 0;
+  font-size: 1.7rem;
 }
 p#ir_output {
   display: inline;
 }
 #slider_val {
   width: 17.5rem;
+}
+#principal,
+#years,
+button {
+  padding: 5px;
 }
