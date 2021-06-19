@@ -41,7 +41,6 @@ span.wrapper {
 }
 button {
   margin: 1.6rem 0;
-  font-size: 1.7rem;
 }
 p#ir_output {
   display: inline;
@@ -53,4 +52,5 @@ p#ir_output {
 #years,
 button {
   padding: 5px;
+  font-size: 1.7rem;
 }
