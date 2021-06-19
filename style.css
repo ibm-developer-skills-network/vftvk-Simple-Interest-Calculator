@@ -1,4 +1,50 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+  color: grey;
+  font-family: verdana;
+}
+.slidecontainer {
+  width: 100%;
+  display: inline;
+}
+p.label {
+  display: inline-block;
+  width: 12.5rem;
+}
+div.info {
+  padding-left: 4rem;
+  margin-bottom: 2.6rem;
+}
+label {
+  width: 12.5rem;
+}
+span.wrapper {
+  margin: -1.5rem 0;
+  display: block;
+}
+button {
+  margin: 1.6rem 0;
+}
+p#ir_output {
+  display: inline;
+}
+#slider_val {
+  width: 17.5rem;
+}
