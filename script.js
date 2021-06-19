@@ -16,8 +16,8 @@ function compute() {
     var estimatedYear = years + new Date().getFullYear();
     var estimatedAmount = amount*percentage*years / 100;
     var result = document.querySelector('#result');
-    result.innerHTML = 'If you deposit ' + amount + ',' + '<br>'
-    + 'at an interest rate of '+ percentage + '%.' + '<br>'
-    + 'You will receive an amount of '+ estimatedAmount +',' + '<br>'
-    + 'in the year ' + estimatedYear;
+    result.innerHTML = 'If you deposit <mark>' + amount + '</mark>,' + '<br>'
+    + 'at an interest rate of <mark>'+ percentage + '</mark>%.' + '<br>'
+    + 'You will receive an amount of <mark>'+ estimatedAmount +'</mark>,' + '<br>'
+    + 'in the year <mark>' + estimatedYear+'</mark>';
 }     
