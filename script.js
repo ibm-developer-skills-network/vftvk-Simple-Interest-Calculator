@@ -1,5 +1,5 @@
 function get_interest_rate() {
-    var el = document.querySelector('#slider_val')
+    var el = document.querySelector('#slider_val');
     var ir_val = (parseFloat(el.value)/0.5).toFixed(2);
     return ir_val;
 }
@@ -9,8 +9,27 @@ function set_interest_rate() {
     ir.innerHTML = get_interest_rate() +'%';
 }
 
+var principal = document.querySelector('#principal');
+var warning = document.querySelector('#warning');
+
+principal.addEventListener('keyup', function(e){
+    if(e.target.value<1) {
+        warning.classList.add('visible');
+        e.target.style.color = 'red';
+    }
+    else {
+        e.target.style.color = 'black';
+        warning.classList.remove('visible');
+    }
+})
+
 function compute() {
-    var amount = document.querySelector('#principal').value;
+    var amount = principal.value;
+    if(amount<1){
+        alert('Please enter a positive number');
+        principal.focus();
+        return;
+    }
     var percentage = get_interest_rate();
     var years = Number(document.querySelector('#years').value);
     var estimatedYear = years + new Date().getFullYear();
