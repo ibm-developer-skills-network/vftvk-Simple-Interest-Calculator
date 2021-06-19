@@ -6,7 +6,14 @@ function get_interest_rate() {
 
 function set_interest_rate() {
     var ir = document.querySelector('#ir_output');
-    ir.innerHTML = get_interest_rate() +'%';
+    var val = get_interest_rate();
+    ir.innerHTML = val +'%';
+    if(! +val){
+        ir.style.color='red';
+    }
+    else {
+        ir.style.color='black';
+    }
 }
 
 var principal = document.querySelector('#principal');
