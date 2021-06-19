@@ -1,16 +1,62 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <section>
+
         <h1>Simple Interest Calculator</h1>
+        
+        <div class="info">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <span class="wrapper">
+        <p class="label"><label for="principal">Amount</label></p>
+        <input type="number"  id="principal">
+        </span>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <span class="wrapper">
+        <p class="label">Interest Rate</p>
+        <div class="slidecontainer"><input type="range" min="0" max="10" step="0.125" value="0" id="slider_val" oninput="set_interest_rate()"><p id="ir_output"></p></div>
+        </span>
+
+        <span class="wrapper">
+        <p class="label"><label for="years">No. of Years</label></p>
+        <select name="years" id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="1">11</option>
+            <option value="2">12</option>
+            <option value="3">13</option>
+            <option value="4">14</option>
+            <option value="5">15</option>
+            <option value="6">16</option>
+            <option value="7">17</option>
+            <option value="8">18</option>
+            <option value="9">19</option>
+            <option value="10">20</option>
+        </select>
+    </span>
+        
+        <span class="wrapper"><button onclick="compute()">Compute Interest</button></span>
+
+        <span class="wrapper"><p id="result"></p></span>
+        </div>
+
+    <p class="copyright">© Everyone Can Get Rich</p>
+    </section>
+</body>
 </html>
