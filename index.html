@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Simple Interest Calculator</title>
+    <title>Web App – Simple Interest Calculator</title>
 </head>
 <body>
     <section>
@@ -17,7 +16,8 @@
 
         <span class="wrapper">
         <p class="label"><label for="principal">Amount</label></p>
-        <input type="number"  id="principal">
+        <input type="number"  id="principal" autofocus>
+        <span id="warning">Enter a positive number!</span>
         </span>
 
         <span class="wrapper">
@@ -58,5 +58,6 @@
 
     <p class="copyright">© Everyone Can Get Rich</p>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
