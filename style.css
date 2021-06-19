@@ -55,6 +55,7 @@ button {
   font-size: 1.7rem;
 }
 #warning {
+  font-size: 1.7rem;
   visibility: hidden;
   color: red;
 }
