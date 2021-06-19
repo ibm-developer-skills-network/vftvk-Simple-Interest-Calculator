@@ -1,4 +1,32 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family:arial;
+}
 
+h1{
+    color:gray;
+    font-family: verdana;
+}
 
+.maindiv{
+    background-color: white; /* white background of the text, not whole page*/
+    text-align: center; /*centers the text*/
+    margin-left:auto; /* margin-left and right center maindiv */
+    margin-right:auto;
+    width: 300px; /*width of the box which text is in*/
+    padding: 20px;
+    border-radius: 20px;
+    }
+
+    .alignright{
+        float: right;
+    }
+
+    .alignleft{
+        float: left;
+
+    }
+
+    .white{
+        color: white;
+    }

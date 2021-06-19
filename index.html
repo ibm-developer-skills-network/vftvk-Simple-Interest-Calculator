@@ -4,13 +4,26 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class= "maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="alignleft">Amount<span class="white">.............</span></div> <input type="number" class="alignleft" id="principal">   <br> <br> 
+        
+        <div class="alignleft">Interest Rate:<span class = "white">...</span></div> <input class = "alignleft" type="range" id ="rate" value="10.25" min="0" max="20" step = "0.25" oninput="this.nextElementSibling.value = this.value"> <!-- no idea why this works but stackoverflow said it does-->
+        <output>10.25</output><span>%</span><br> <br>
 
-        <button onclick="compute()">Compute</button>
+        <div class="alignleft">No. of Years<span class="white">.....</span></div> 
+        <select id="years" class= "alignleft">
+            <option value="1">1</option>
+            <!-- fill in the rest of the values-->
+        </select> 
+        <br> <br>
+       
+        <div class="alignleft">Interest :</div> <span id="result"></span><br>
+
+        <button onclick="compute()">Compute Interest</button>
+
+
+        </div class = "maindiv">
     </body>
 </html>
