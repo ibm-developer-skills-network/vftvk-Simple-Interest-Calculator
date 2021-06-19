@@ -26,7 +26,7 @@ h1 {
 }
 p.label {
   display: inline-block;
-  width: 12.5rem;
+  width: 14.5rem;
 }
 div.info {
   padding-left: 8rem;
@@ -53,4 +53,11 @@ p#ir_output {
 button {
   padding: 5px;
   font-size: 1.7rem;
+}
+#warning {
+  visibility: hidden;
+  color: red;
+}
+#warning.visible {
+  visibility: visible;
 }
