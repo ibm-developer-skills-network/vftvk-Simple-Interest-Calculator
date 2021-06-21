@@ -43,4 +43,11 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval + "%";
+    ClearResultMsg();
+}
+
+/* UI enhancement to improve usability by clearing result field when "Input" parameters change */
+function ClearResultMsg() 
+{
+    document.getElementById("result").innerHTML = "";
 }
