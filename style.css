@@ -1,4 +1,26 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+	background-color:black;
+	font-family: sans-serif;
+	font-style: normal;
+	color: black;
+}
 
+h1 {
+	color:gray;
+}
 
+#outertable {
+	background-color: white;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+#innertable {
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+td {
+	padding: 5px;
+}

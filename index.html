@@ -4,13 +4,52 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <table id="outertable">
+            <tr>
+                <td>
+                <h1>Simple Interest Calculator</h1>
+                
+                <table id="innertable"> 
+                    <tr>
+                        <td>Amount </td>
+                        <td><input type="number"  id="principal"> </td>
+                    </tr>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+                    <tr>
+                        <td> Interest Rate </td>
+                        <td>
+                        <div class="slidecontainer">
+                        <input type="range" min="0" max="30" value="5" class="slider" id="myRange">
+                        </div> 
+                        </td>
+                    </tr>
 
-        <button onclick="compute()">Compute</button>
+                    <tr> 
+                        <td> No. of Years </td> 
+                        <td>
+                        <select name="years" id="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> 
+                        </td>
+                    </tr>
+        
+                    <tr> 
+                        <td>
+                        <span id="result"></span><br>
+
+                        <button onclick="compute()">Compute Interest</button>
+                        </td>
+                    <tr>
+                </table>
+        <br>
+        <p> © Everyone Can Get Rich
+                </td>
+            </tr>
+        </table>
+        
     </body>
 </html>
