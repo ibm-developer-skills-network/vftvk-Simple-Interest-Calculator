@@ -23,7 +23,7 @@
             <table class="formtable"> <!-- Use a table to support visual alignment.-->
                 <tr> <!-- Get principal amount -->
                     <td><label for=principal>Amount</label> </td>
-                    <td><input type="number"  id="principal" Placeholder="greater than 0" autofocus> </td> 
+                    <td><input type="number"  id="principal" Placeholder="greater than 0" autofocus onchange=clearResultMsg()> </td> 
                 </tr>
                 
                 <tr> <!-- Get Interest Rate between 1-20% in steps of .25% -->
