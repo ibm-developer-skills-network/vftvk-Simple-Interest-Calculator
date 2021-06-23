@@ -1,16 +1,49 @@
-<html>
+<!DOCTYPE html>
     <head>
+        <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div id="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <div class="inputval">
+                <label class="label">Amount</label>  
+                <input  type="number" id="principal" class="ival">  
+            </div><br/><br>
+            <div class="inputval">
+                <label>Rate  </label>
+                <input type="range" id="rate" min="1" max="20" value="10.25" onchange="updateRate()" class="ival">
+                <span id="rate_val" class="ival">
+                    <b>10.50%</b>
+                </span>
+            </div><br><br>
+            <div class="inputval">
+                <label>No. of Years </label>
+                <select id="years" class="ival">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div><br><br>
+            <div class="inputval">
+                <button onclick="compute()">Compute Interest</button><br><br>
+            </div><br>
+            <div>
+                <span id="result">
+                </span>
+            </div><br>
+            <footer>
+               <p id="footerparagraph"><strong>&#169 This Calculator belongs to Ghanshyam</strong></p>
+            </footer>
+        </div>
+        
     </body>
 </html>

@@ -1,4 +1,36 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black; color:white; font-family:arial;}
+h1{color:grey; font-family:verdana;}
+#maindiv{
+    background-color:white;
+    text-align: center;
+    color:black;
+    font-size: 10px;
+    border-radius: 25px;
+    text-align: :auto;
+    margin: auto;
+  	width: 300px;
+  	height: auto;
+  	padding: 10px;
+}
+.inputval{
+    float:left;
+    margin-left:15px;
+}
+#principal{
+	margin-left: 10px;
+}
 
+#rate{
+	margin-left: 26px;
+}
+#years{
+	margin-left: 3px;
+}
+#resultparagraph{
+	text-align: left;
+	margin-left: 48px;
+}
+#footerparagraph{
+	text-align: left;	
 
+}
