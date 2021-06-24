@@ -1,4 +1,77 @@
-body {background-color:tan;}
-h1{color:green;}
+ body {
+  background-color:black  
+}
 
+h1 {
+  color: grey;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 75px;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
 
+h3,form {
+  font-family: Verdana;
+  font-weight: normal;
+  padding-left: 250px;
+  margin-top: 20px;
+  font-size: 40px;
+
+}
+.maindiv {
+  width: 1240px;
+  height: auto;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  }
+.number {
+  width: 240px;
+  height: 40px;
+  font-size: 40px;
+  padding-left: 0px;
+  margin-left: 105px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.range {
+  cursor: pointer;
+}
+
+.years {
+  width: 80px;
+  height: 45px;
+  margin-top: 10px;
+  font-size: 40px;
+  padding-left: 0px;
+  cursor: pointer;
+  background-color: white;
+  margin: 15px 0 0 25px;
+}
+
+.button {
+  width: 220px;
+  height: 40px;
+  padding-left: 0px;
+  margin-left: 250px;
+  font-size: 24px;
+  block-size: 40px 200px;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.result {
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  padding-left: 0px;
+}
+
+.footer {
+  font-family: Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  padding: 0 0 60px 50px;
+  margin-top: 30px;
+}
