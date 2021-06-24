@@ -1,16 +1,47 @@
-<html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+<!DOCTYPE html> <!--The beginning of my HTML document -->
+<html lang="en"> 
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">          <!--This links to css-->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="script.js"></script>                                 <!--This links to JavaScript-->
+  <title>Simple Interest Calculator</title> <!--This is the title-->
+</head>
+  <body>
+    <div class="maindiv"> <!--set class attribute of the div to maindiv.-->
+      <h1>Simple Interest Calculator</h1> <!--The name of the application-->
+        <h3>
+          <p><label for ="Amount">Amount</label> 
+            <input  class="number" type="number" id="principal" name="number" onchange="validateAmount()"> <!--The number of money invested-->
+          </p>
+        </h3>
+      <form>
+        <label for="Interest Rate">Interest Rate</label>
+        <input type="range" class="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="getSliderValue()"> <!--input text box for interest rate-->
+        <span id="rate_val"> 10.25 </span>%   <!--default value for interest rate-->
+      </form>
+          <h3>
+            <p> No. of Years
+              <select class="years" name ="years" id="years"> 
+                <option value="1">1</option> <!--option values-->
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>    
+                <option value="9">9</option>
+                <option value="10">10</option>  <!--option values-->
+              </select>
+            </p>
+          </h3>            
+            <p>
+              <input  type="button" onclick="compute()"  class="button" value="Compute Interest"> <!-- compute interest button-->
+            </p>
+          <h3>
+            <p class="result" id="result"></p> <!-- results calculated-->
+          </h3>
+      <div class="footer">&#169 This Calculator belongs to Thabelo C Silima </div> <!--That is my name-->
+    </div>
+  </body> 
 </html>
