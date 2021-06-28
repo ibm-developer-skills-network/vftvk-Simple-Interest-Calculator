@@ -1,16 +1,31 @@
 <html>
     <head>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="calcbody">
+            <div class="bpadding">
+        <h1 class="heading">Simple Interest Calculator</h1>
+        <div class="row">
+        <label id="amount">Amount</label> <input type="number"  id="principal">  <br/>
+        </div>
+        <div class="row">
+        <label id="intrate">Interest Rate</label>
+        <span><input type="range"  id="rate" min="1" max="20" oninput="this.nextElementSibling.value = this.value">
+        <input type="text" id="textInput">%</span>
+        <br/>
+        </div>
+        <div class="row">
+        <label id="year">No. of Years</label> <input type="number" min="1" max="100" id="years">  <br/>
+        </div>
+        <div class="row">
+        <button onclick="compute()">Compute Interest</button>
+        </div>
+        <span id="result"></span><br>
+        </div>
+        <footer>@ Everyone Can Get Rich</footer>
+        </div>
     </body>
 </html>

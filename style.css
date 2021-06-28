@@ -1,4 +1,49 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    text-align: center;
+}
+h1{
+    color:green;
+    font-size: 4rem;
+    margin-top: 0px;
+}
+.heading{
+    color:grey;
+}
+.calcbody{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.bpadding{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 170px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+#amount{
+    margin-right: 53px;
+}
+#year{
+    padding-right: 29px;
+}
+#intrate{
+    padding-right: 25px;
+}
+.row{
+    margin: 15 auto;
+}
+#rate{
+    width: 175px;
+}
+#textInput{
+    width: 30px;
+}
+footer{
+    color: white;
+    margin-top: 50px;
+    font-weight: bold;
+}
