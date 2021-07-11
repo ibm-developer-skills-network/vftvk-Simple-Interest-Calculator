@@ -1,4 +1,39 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: Helvetica, sans-serif;
 
+}
 
+.calculator--card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 540px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.calculator--card header h1 {
+    font-weight: 800;
+    color: grey;
+    font-size: 32px;
+}
+
+.calculator--card .calculator--container {
+    margin: auto;
+    width: 320px;
+}
+
+.calculator--card .calculator--container tr {
+    height: 30px;
+}
+
+.calculator--card .calculator--container tr td:first-child {
+    width: 125px;
+}
+
+#principal {
+    width: 150px;
+    box-sizing: border-box;
+}
