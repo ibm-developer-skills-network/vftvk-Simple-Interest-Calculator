@@ -1,4 +1,20 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color:black;
+    font-family: arial;
+    color: white;
+}
+/* Changed the parametres according to the tutorial*/
+h1{
+    color: grey;
+    font-family: verdana;
+}
+/* Changed the parametres according to the tutorial*/
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+	margin: auto;
+}
+/* Changed the parametres according to the tutorial*/
