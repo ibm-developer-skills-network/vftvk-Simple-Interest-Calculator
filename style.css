@@ -1,11 +1,32 @@
-body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family:verdana}
-.maindiv {
-    background-color:white;
-    color:black;
-    width:300px;
-    padding:20px;
-    border-radius:25px;
-    align:center
-    }
+body {
+    background-color: #000;
+    font-family: arial, sans-serif;
+    color: #FFF;
+}
 
+h1{
+    color: #888;
+    font-family: verdana, sans-serif;
+}
+
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+#information_form {
+    margin-left: 85px;
+}
+
+.result_number {
+    background-color: #FF0;
+}
+
+#rate_val {
+    border: none;
+    width: 50px;
+}
