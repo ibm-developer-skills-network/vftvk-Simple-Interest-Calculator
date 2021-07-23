@@ -13,6 +13,11 @@ function compute(){
         document.getElementById("amount").focus();
         return false;
     }
+    if(parseInt(amount) < 1){
+        alert("Enter a positive number");
+        document.getElementById("amount").focus();
+        return false;
+    }
     //Check if rate field is empty
     if(rate == ""){
         alert("Please enter the rate");
