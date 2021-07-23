@@ -26,7 +26,6 @@ function compute(){
         document.getElementById("years").focus();
         return false;
     }
-    years = new Date().getFullYear()+parseInt(years);
 
     var receive = amount * (rate/100) * years;
 
@@ -39,6 +38,7 @@ function compute(){
     var message_rate = document.getElementById('message_rate');
     message_rate.innerHTML = rate + '%';
 
+    years = new Date().getFullYear()+parseInt(years);
     var message_interest_rate = document.getElementById('message_interest_rate');
     message_interest_rate.innerHTML = years;
 
