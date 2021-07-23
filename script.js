@@ -1,11 +1,7 @@
 function compute(){
     amount = document.getElementById("amount").value;
     rate = document.getElementById("rate").value;
-    year = document.getElementById("year").value;
-
-    console.log('amount: ' + amount);
-    console.log('rate: ' + rate);
-    console.log('year: ' + year);
+    years = document.getElementById("years").value;
 
     //Check if amount field is empty
     if(amount == ""){
@@ -24,14 +20,14 @@ function compute(){
         document.getElementById("rate").focus();
         return false;
     }
-    //Check if year field is empty
-    if(year == ""){
-        alert("Please enter the year");
-        document.getElementById("year").focus();
+    //Check if years field is empty
+    if(years == ""){
+        alert("Please enter the years");
+        document.getElementById("years").focus();
         return false;
     }
 
-    var receive = amount * (rate/100) * year;
+    var receive = amount * (rate/100) * years;
 
     var message_result = document.getElementById('message_result');
     message_result.innerHTML = receive.toFixed(2);
@@ -43,7 +39,7 @@ function compute(){
     message_rate.innerHTML = rate + '%';
 
     var message_interest_rate = document.getElementById('message_interest_rate');
-    message_interest_rate.innerHTML = year;
+    message_interest_rate.innerHTML = years;
 
     var boxDisplay = document.getElementById("boxDisplay");
     boxDisplay.classList.remove("display_none");
@@ -51,8 +47,7 @@ function compute(){
 }
 
 function showVal(value_range){
-    var message_percent = document.getElementById('message_percent');
+    var rate_val = document.getElementById('rate_val');
 
-    message_percent.innerHTML = value_range + '%';
-    console.log('value_range: ' + value_range);
+    rate_val.innerHTML = value_range + '%';
 }
