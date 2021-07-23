@@ -29,7 +29,7 @@ function compute(){
     var receive = amount * (rate/100) * year;
 
     var message_result = document.getElementById('message_result');
-    message_result.innerHTML = receive.toFixed(2);
+    message_result.innerHTML = receive;
 
     var message_amount = document.getElementById('message_amount');
     message_amount.innerHTML = amount;
