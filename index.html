@@ -1,16 +1,71 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title>Simple Interest Calculator</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Simple Interest Calculator">
+        <meta name="keywords" content="Interest, Calculator, Rate">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div id="content">   
+            <header>
+                <h1>Simple Interest Calculator</h1>
+            </header>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <main>
+                <section>
+                    <article>
+                        <ul>
+                            <li class="first-column"><label>Amount</label></li>
+                            <li class="second-column"><input type="number"  id="amount"></li>
+                        </ul>
+                        <br clear="all" />
+                        <ul>
+                            <li class="first-column"><label>Interest Rate</label></li>
+                            <li class="second-column">
+                                <input type="range" value="3.5" min="0" max="100" step="0.1" id="rate" oninput="showVal(this.value)" onchange="showVal(this.value)">&nbsp;&nbsp;<span id="message_percent">3.5 %</span>
+                            </li>
+                        </ul>
+                        <br clear="all" />
+                        <ul>
+                            <li class="first-column"><label>No. of Years</label></li>
+                            <li class="second-column">
+                                <select name="year" id="year">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <br clear="all" />
+                        <ul>
+                            <li><button onclick="compute()">Compute Interest</button></li>
+                        </ul>
+                        <br clear="all" />           
+                    </article>
 
-        <button onclick="compute()">Compute</button>
+                    <article id="boxDisplay" class="display_none">
+                        <label></label>If you deposit <span id="message_amount"></span>, <br />
+                        <label></label>at an interest rate of <span id="message_rate"></span>.<br/>
+                        <label></label>You will receive an amount of <span id="message_result"></span>,<br/>
+                        <label></label>in the year <span id="message_interest_rate"></span><br/>
+                    </article> 
+                </section>
+            </main>
+
+            
+            <footer>
+                <p>&copy; Everyone Can Get Rich</p>
+            </footer>
+        </div>
     </body>
 </html>

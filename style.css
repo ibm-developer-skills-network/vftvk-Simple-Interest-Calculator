@@ -1,4 +1,22 @@
-body {background-color:tan;}
-h1{color:green;}
+* { margin: 0; padding: 0; outline: 0; }
+body { background-color:#000000; margin: 0 auto; width: 100%; min-width: 360px; overflow-x: hidden; }
+a, a:hover, a:focus { text-decoration: none; }
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, h4, p { font-weight: normal; margin: 0; padding: 0; }
+input, select, textarea { font-weight: 400; color: #666; }
+.clear { clear: both; }
+body #content { background-color:#FFFFFF; border-radius: 30px; padding:32px 28px 22px 28px; margin: 30px auto; width: 500px; }
+body #content h1 { color:#808080; margin: 0 0 16px 0; font-size: 44px; font-weight: bold; }
+body #content label { font-weight: bold; }
+body #content section {  margin: 0 70px 0 70px; }
+body #content section article ul,
+body #content section article li { list-style: none; }
+body #content section article ul li { float:left;  margin: 0 0 10px 0; }
+body #content section article ul li.first-column { width: 30%; }
+body #content section article ul li.second-column { width: 70%; }
+body #content section article ul li button { padding: 2px 6px; font-size: 12px; }
+body .display_none { display: none; }
+body .display_block { display: block; }
+body #content footer { margin-top: 10px; font-weight: bold; }
 
 
