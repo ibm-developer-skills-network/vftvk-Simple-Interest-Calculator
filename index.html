@@ -6,28 +6,27 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-
-    <div class="maindiv">
-        <h1>Simple Interest Calculator</h1>
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value=10.25 onchange="return updateRate()"> <span id="rate_val">10.25%</span> <br/>
-        No. of Years <select id="years">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="return compute()">Compute Interest</button>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            Amount <input type="number"  id="principal"> <br/>
+            Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value=10.25 onchange="return updateRate()"> <span id="rate_val">10.25%</span> <br/>
+            No. of Years <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            <span id="result">Interest: </span>
+            <button onclick="return compute()">Compute Interest</button>
+            <footer>&#169; This Calculator belongs to Abhishek K</footer>
+        </div>
     </body>
-
-    <footer>&#169; This Calculator belongs to Abhishek K</footer>
 
 </html>
