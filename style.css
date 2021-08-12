@@ -1,4 +1,34 @@
-body {background-color:tan;}
-h1{color:green;}
+body
+{
+    background-color: black;
+    font-family: arial;
+}
 
+h1
+{
+    color:grey;
+    font-family: verdana;
+}
 
+.maindiv
+{
+    background-color: white;
+    width: auto;
+    max-width: 500px;
+    padding: 15px 30px 30px 60px;
+    border-radius: 25px;
+    align-self: center;
+    margin: 150px auto auto auto;
+}
+
+#table
+{
+    align-self: center;
+    border-spacing: 0em 1em;
+    padding-left: 60px;
+}
+
+p
+{
+    padding-left: 60px;
+}
