@@ -7,8 +7,8 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        Rate <input type="range"  id="rate" step="0.1" value="100" min="0" max="100" oninput="this.nextElementSibling.value = this.value"> <output>100</output>   <br/>
+        No. of Years <input type="number"  id="years" list="defaultNumbers">  <datalist id="defaultNumbers"> <option value="1"></option> <option value="2"></option> <option value="3"></option> <option value="4"></option> <option value="5"></option> <option value="6"></option> <option value="7"></option> <option value="8"></option> <option value="9"></option> </datalist></datalist><br/>
         Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute</button>
