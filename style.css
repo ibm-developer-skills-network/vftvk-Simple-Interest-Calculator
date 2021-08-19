@@ -1,4 +1,33 @@
-body {background-color:tan;}
+body 
+{background-color:tan;
+    margin: 0;
+    padding: 0;
+}
 h1{color:green;}
 
+.container{
+    position: absolute;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    
+    background-color: white;
+}
+button{
+    margin: 10px;
+    padding: 2px;
+}
 
+input{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#yearT{
+    margin-right: 30px;
+    margin-left: -93px;;
+}
+select{
+    margin-left: -10px;
+}
