@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+  <head>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title> Simple Interest Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Simple Interest Calculator</h1>
+      <div id="calculator-form">
+        <label id="amount" for="amount">Amount<input type="number" id="principal" autofocus /></label>
+        <label id="rate" for="rate">Interest Rate<input type="range" min="1" max="20" value="0" step="0.1" class="slider" id="myRange" />
+          <p>1%</p>
+        </label>
+        <label id="years" for="years">No. of Years
+          <select name="time" id="time">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+        <button>Compute Interest</button>
+        <p id="result"></p>
+      </div>
+      <footer>&#169 Everyone Can Get Rich This Calculator belongs to Ankit Kumar Singh</footer>
+    </div>
+  </body>
+
+</html>
+
