@@ -3,14 +3,34 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
+<div class=”container”>
+<div class=”main”>
     <body>
         <h1>Simple Interest Calculator</h1>
+     
+        Amount <input type="number"  id="principal" min=”1” max=”9999999” value=”1”/>  <br/>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Rate <input type="range" min=”0” max=”100” value=”50” id="rate of interest">  <br/>
 
-        <button onclick="compute()">Compute</button>
+        <label>Time</label>
+                 <select name=”time”>
+                      <option value=”1”>One</option>
+                      <option value=”2”>Two</option>
+                      <option value=”3”>Three</option>
+                      <option value=”4”>Four</option>
+                      <option value=”5”>Five</option>
+                      <option value=”6”>Six</option>
+                      <option value=”7”>Seven</option>
+                      <option value=”8”>Eight</option>
+                      <option value=”9”>Nine</option>
+                      <option value=”10”>Ten</option>
+                    <br/>
+             <button onclick="compute()">Compute</button>
+        Interest : <span id="result">Amount and interest after given time period</span><br>
+
+     
+
     </body>
+    </div>
+</div>
 </html>
