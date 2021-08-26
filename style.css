@@ -1,4 +1,32 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
+}
 
+div {
+    padding: 10px;
+}
 
+#inner2 {
+    padding: 0px 80px;
+}
+
+label { display: inline-block; width: 120px; }
+
+h1 {
+    color:gray; 
+    font-size: 42px; 
+}
+
+#inner {
+    width: 650px;
+    margin: 0 auto;
+    vertical-align: middle;
+    border-radius: 25px;
+    background: white;
+    padding: 30px;
+}
+
+.highlight {
+    background-color: yellow;
+}
