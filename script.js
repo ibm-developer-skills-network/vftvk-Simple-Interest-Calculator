@@ -1,13 +1,14 @@
-r=document.querySelector("#rate");
+var r=document.querySelector("#rate");
 r.onchange=function(){
-r.nextElementSibling.innerHTML=this.value+"%";
+        var j=this.value;
+this.nextElementSibling.innerHTML=j+"%";
 }
-p=document.querySelector("#principal");
-t=document.querySelector("#years");
-var i=p.value*t.value*r.value/100;
-result=document.querySelector("#result_display");
-compute=document.querySelector("#compute");
-clear=document.querySelector("#clear");
+var p=document.querySelector("#principal");
+var t=document.querySelector("#years");
+var i=0;
+var result=document.querySelector("#result_display");
+var compute=document.querySelector("#compute");
+var clear=document.querySelector("#clear");
 compute.onclick=function(){
 var y=2020+Number(t.value);
 result.innerHTML="";
