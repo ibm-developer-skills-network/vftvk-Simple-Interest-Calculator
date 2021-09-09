@@ -1,7 +1,7 @@
 var r=document.querySelector("#rate");
+r.value=0;
 r.onchange=function(){
-        var j=this.value;
-this.nextElementSibling.innerHTML=j+"%";
+this.nextElementSibling.innerHTML=this.value+"%";
 }
 var p=document.querySelector("#principal");
 var t=document.querySelector("#years");
