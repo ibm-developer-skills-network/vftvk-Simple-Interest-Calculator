@@ -3,28 +3,33 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+   <body>
        <div id="wrapper">
             <h1>Simple Interest Calculator</h1>
              <table>
                 <tr>
                         <td>Amount</td> 
-                        <td><input type="number"  id="principal"></td>
+                        <td><input type="number" min=0 id="principal" value=0></td>
                  </tr>
                  <tr>
                         <td>Rate</td>
-                        <td><input type="number"  id="rate"></td>
+                        <td><input type="range" step="0.01" id="rate" value=0 min=0 max=20 > <span>0</span></td>
                   </tr>
                   <tr>
                         <td>No. of Years </td>
-                        <td> <input type="number"  id="years"></td>
+                        <td> <input type="number" selectBoxOptions="1" value="1" min=1 id="years"></td>
                   </tr>
                    <tr>
-                        <td><button onclick="compute()">Compute Interest</button></td>
+                        <td><button id="compute">Compute Interest</button></td>
+                        <td><button id="clear">Clear</button></td>
+                    </tr>
+                   <tr>
+                        <td>result:</td>
                         <td></td>
                     </tr>
                  </table>
-                 <div id="result_display">result:</div>
+                 <div id="result_display"></div>
+		<h3 id="copyright">&#169;Everyone Can Get Rich</h3>
            </div>
     </body>
 </html>
