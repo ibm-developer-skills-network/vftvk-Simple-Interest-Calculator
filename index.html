@@ -4,13 +4,27 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+       <div id="wrapper>
+            <h1>Simple Interest Calculator</h1>
+                <table>
+                <tr>
+                        <td>Amount</td> 
+                        <td><input type="number"  id="principal"></td>
+                 </tr>
+                 <tr>
+                        <td>Rate</td>
+                        <td><input type="number"  id="rate"></td>
+                  </tr>
+                 <tr>
+                        <td>No. of Years </td>
+                        <td> <input type="number"  id="years"></td>
+                  </tr>
+                   <tr>
+                        <td><button onclick="compute()">Compute Interest</button>
+                        </td><td><td>
+                        </tr>
+                  </table>
+            <div id="result_display">result:</div>
+        </div>
     </body>
 </html>
