@@ -1,23 +1,41 @@
 <html>
     <head>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+	<title>Simple Interest Calculator</title>
+    	<script src="script.js" defer></script>
+    	<link rel="stylesheet" href="style.css">
     </head>
-   <body>
+    <body>
        <div id="wrapper">
             <h1>Simple Interest Calculator</h1>
              <table>
                 <tr>
                         <td>Amount</td> 
-                        <td><input type="number" min=0 id="principal" value=0></td>
+                        <td><input type="number"  id="principal"></td>
                  </tr>
                  <tr>
                         <td>Rate</td>
-                        <td><input type="range" step="0.01" id="rate" value=0 min=0 max=20 > <span>0</span></td>
+                        <td><input type="range" step="0.01" id="rate" value=0 min=1 max=20 > <span>0</span></td>
                   </tr>
                   <tr>
                         <td>No. of Years </td>
-                        <td> <input type="number" selectBoxOptions="1" value="1" min=1 id="years"></td>
+                        <td>
+			<select id="years">
+  				<option value=1>1</option>
+  				<option value=2>2</option>
+  				<option value=3>3</option>
+  				<option value=4>4</option>
+  				<option value=5>5</option>
+  				<option value=6>6</option>
+				<option value=7>7</option>
+				<option value=8>8</option>
+				<option value=9>9</option>
+				<option value=10>10</option>
+				<option value=11>11</option>
+				<option value=12>12</option>
+				<option value=13>13</option>
+				<option value=14>14</option>
+				<option value=15>15</option>
+				</select></td>
                   </tr>
                    <tr>
                         <td><button id="compute">Compute Interest</button></td>
