@@ -1,8 +1,27 @@
-#wrapper{width:450px; margin:100px auto;border-radius:10px;background:#ffe;height:400px;}
 body{background:black;}
-h1{width:400px;text-align:center;margin:0px;padding:0px;padding:20px 0 10px 0;}
-td,#result_display{padding-left:40px;font-size:1.5rem;}
-#copyright{margin-left:10px;margin-top:50px;}
+#wrapper{
+  width:450px; 
+  margin:100px auto;
+  border-radius:10px;
+  background:#ffe;
+  height:400px;
+  }
+h1{width:400px;
+  text-align:center;
+  margin:0px auto;
+  padding:0px;
+  padding:20px 0 10px 0;
+  color:grey;
+  font-family:helvetica;
+  }
+td,#result_display{
+  padding-left:40px;
+  font-size:1.5rem;
+  }
+#copyright{
+  margin-left:10px;
+  margin-top:50px;
+  }
 #years{width:45px;}
 button{cursor:pointer;}
 .yellow{background:yellow;}
