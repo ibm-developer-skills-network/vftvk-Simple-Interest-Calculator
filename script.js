@@ -1,5 +1,4 @@
 var r=document.querySelector("#rate");
-r.value=0;
 r.onchange=function(){
 this.nextElementSibling.innerHTML=this.value+"%";
 }
