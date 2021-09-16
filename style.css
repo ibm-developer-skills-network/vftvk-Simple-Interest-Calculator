@@ -1,6 +1,7 @@
 body {background-color:black; font-family: Arial; color: white;}
 h1{color:grey; font-family: verdana;}
 .maindiv{
+    text-align: center;
     margin:auto;
     background-color: white;
     color: black;
