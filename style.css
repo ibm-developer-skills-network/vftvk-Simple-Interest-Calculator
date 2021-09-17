@@ -1,4 +1,41 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+    margin:5px 0;
+}
+body {
+    padding:50px;
+    background-color:black;
+    font-family:arial;
+    color:white;
+    }
+h1{
+    color:grey;
+    font-family:verdana;
+    }
+.maindiv {
+    max-width: 500px;
+    height:auto;
+    background-color:white;
+    color:black;
+    border-radius:25px;
+    text-align:center;
+    padding:20px;
+    margin:0 auto;
+}
+#result {
+    display: inline-block;
+    text-align:left;
+    font-family:garamond;
+    font-weight:bold;
+    margin:10px;
+}
+footer {
+    font-size:10px;
+    display: flex;
+    margin-bottom:-15px;
+    text-align:left;
+    color:black;
+}
 
-
+.highlight {
+    background-color:yellow;
+}
