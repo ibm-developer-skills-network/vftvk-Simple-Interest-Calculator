@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(13, 13, 153);
+    color: rgb(13, 13, 153);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 70px;
+    background-color: white;
+    border :rgb(13, 13, 153) 2px solid;
+    border-radius: 20px;
+    height: 40%;
+}
+
+.amountDiv , .rateDiv , .yearsDiv {
+    padding: 5px;
+}
+
+.amountC , .yearsC {
+    width: 40%;
+}
+
+.amountC , .yearsC {
+    border :rgb(13, 13, 153) 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.submit {
+    border: 2px solid rgb(13, 13, 153);
+    border-radius: 10px;
+    background-color: rgb(13, 13, 153);
+    color: white;
+    padding: 10px;
+    margin: 10;
+}
+
+.results {
+    display: none;
+    background-color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 70px;
+    white-space: pre-line;
+    
+}
+
+.backbtn {
+    background-color: white;
+    color: rgb(13, 13, 153);
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.resetbtn {
+    background-color: white;
+    color: rgb(13, 13, 153);
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+}
