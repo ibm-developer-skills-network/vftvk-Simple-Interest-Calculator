@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Simple Interest Calculator
+</title>
+
+<style type="text/javascript">
+fieldset
+{
+font-family:Times Roman;
+font-weight:bold;
+}
+
+mark
+{
+background-color: yellow;
+color: black;
+}
+
+</style>
+<script>
+
+function show(s)
+{
+document.getElementById("slidervalue").innerHTML = s;
+}
+
+function calculate()
+{
+var p = document.getElementById("amount").value;
+if (p <= 0)
+{
+alert("Enter Positive Number");
+amount.focus(); 
+return false;
+}
+else
+{
+var n = document.getElementById("rate").value;
+var r = parseInt(document.getElementById("Years").value); // Converting the string to integer
+var m = ((p * n * r)/100);
+m = m.toFixed(2); // Rounding upto 2 decimals
+var yr = new Date().getFullYear(); // Getting Current Year
+yr = yr + r ; 
+
+result = document.getElementById("result");
+result.innerHTML = "If you deposit <mark> " + p + " </mark>, at an interest rate of <mark>" + n + " </mark> %.<br>You will receive an amount of <mark>" + m + " </mark>, in the year <mark>" + yr + ". </mark>"; // Writing into HTML Element, innerHTML
+}
+}
+
+</script>
+</head>
+
+<body>
+<fieldset title="form" id="form">
+<legend title="Calculator">Simple Interest Calculator</legend>
+
+<p>
+<label for ="amount">Amount:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" id="amount" name ="amount" autofocus>
+</p>
+
+<p>
+<label for ="rate">Interest Rate:&nbsp;&nbsp;</label>
+<input type="range" id="rate" name ="rate"  min="1" max="20" step="0.1" value="0" onChange="show(this.value)" /> <!--Range slider -->
+<span id="slidervalue">1.0</span>
+<span id="perc">%</span>
+</p>
+
+<p>
+<label for ="Years:">No. Of Years:</label>&nbsp;&nbsp;&nbsp;
+<select name="Years" id="Years" onChange="drop(this.value)"> <!-- Dropdown list-->
+<option value="0"><--Select No.--></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+</p>
+
+<p>
+<input type="button" id="button" style="font-family:Times Roman; font-weight:bold; font-size:15px" value="Compute Interest"  onclick="calculate()"  
+align="center" />
+
+
+</p>
+&copy;&nbsp;Everyone Can get rich.
+</fieldset>
+
+<p id="result"></p>
+</body>
+</html>
