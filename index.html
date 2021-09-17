@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="loading()">
+        <button class="resetbtn" id="resetid" onclick="reset()">Reset</button>
+        <button class="backbtn" id="idbtn" onclick="back()">Back</button>
+        <div class="box" id="boxId">
+            <h1 class="title">Simple Interest Calculator</h1>
+            <div class="amountDiv">
+                <label class="amountL" for="amount">Amount</label>
+                <input class="amountC" id="amount" type="number" min="1" required><br/> 
+            </div>
+            <div class="rateDiv">
+                <label class="rateL" for="rate">Interest Rate</label>
+                <input class="rateC" id="rate" 
+                type="range" 
+                value="0" min="1" max="20" 
+                step="0.5"  
+                oninput="update()" required><br/>
+                <output class="rateVC" id="rateV" for="rate">0</output>
+            </div>
+            <div class="yearsDiv">
+                <label class="yearsL" for="years">years</label>
+                <select class="yearsC" id="years" onclick="test()"></select>
+            </div>
+            
+            <button class="submit" type="submit" onclick="sum()">Calc</button>
+        </div>
+        <span class="results" id="result">
+
+        </span>
+
+        
+    </body>
+</html>
