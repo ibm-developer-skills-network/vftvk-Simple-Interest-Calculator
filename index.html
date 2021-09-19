@@ -1,16 +1,35 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Mayukh's Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="maindiv">
+            <h1 style="text-align: center;">Simple Interest Calculator</h1>
+            Amount <input type="number"  id="principal">  
+            <br/>
+            Rate : <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="UpdateRate()"> 
+            <span id="rate_val"> 10.25% </span>  
+            <br/>
+            No. of Years :
+            <select id="years" >
+            </select>
+            <br/>
+            Interest : <span id="result"></span><br>
+            <button onclick="Compute()">Compute Interest</button>
+            <span id="result">
+            </span>
+            <br><br>
+            <hr>
+            <br>
+            <footer>
+                &#169; This Calculator belongs to Mayukh    
+            </footer>    
+        </div>          
     </body>
 </html>
