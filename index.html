@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
-        <title>Mayukh's Simple Interest Calculator</title>
+        <title>Web App - Simple Interest Calculator</title>
     </head>
     <body>
         <div class="maindiv">
             <h1 style="text-align: center;">Simple Interest Calculator</h1>
-            Amount <input type="number"  id="principal">  
+            Principal <input type="number" onmousemove="CheckNegative()" id="principal">  
             <br/>
-            Rate : <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="UpdateRate()"> 
+            Rate of Interest : <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="UpdateRate()"> 
             <span id="rate_val"> 10.25% </span>  
             <br/>
             No. of Years :
@@ -28,8 +28,8 @@
             <hr>
             <br>
             <footer>
-                &#169; This Calculator belongs to Mayukh    
+                &#169; Everyone Can Get Rich
             </footer>    
-        </div>          
+        </div>  
     </body>
 </html>
