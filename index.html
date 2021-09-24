@@ -1,87 +1,42 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-<!--heading section put all external links and title here-->
-
 <head>
-
-    <!--title-->
-
-    <title>Simple Interest Calculator</title>
-
-    <!--external js link-->
-
-    <script src="script.js"></script>
-
-    <!--external css link-->
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Incuding external CSS file style.css which MUST be in the same folder/location as this HTML file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<!--body-->
-
 <body>
+  
+  <!-- Form -->
+  <form>
+    <!-- label text -->
+    <label for="principal">Amount</label>
+    <!-- input type number field -->
+    <input type="number" id="principal"><br>
+    <label for="rate">Rate</label>
+    <input type="number" id="rate"><br>
+    <label for="years">No. of Years</label>
+    <input type="number" id="years"><br>
+    <!-- Output/result will be shown here -->
+    <label for="result">Interset:</label>
+     <div id="result"></div><br>
+    <!-- button which has onclick attribute set to compute() function-->
+    <!-- So, compute() function in javascript code will run everytime this button is clicked -->
+    <input type="button" value="Compute" onclick="compute()">
+  </form>
 
-    <!--main div with class maindiv-->
+  <!-- Range slider -->
+  <div class="rangeslider">
+    <input type="range" min="1" max="100" value="50" class="slider" id="slider"><span id="rangeOutput"></span>
+  </div>
 
-    <div class="maindiv">
-
-        <!--h1 tag-->
-
-        <h1>Simple Interest Calculator</h1>
-
-        <!--textbox to accept number-->
-
-        Amount <input type="number" id="principal"><br>
-
-        <!--rate input type range-->
-
-        Rate <input type="range" name="rate" id="rate" min="1" max="20">
-
-        <span id="showRate">10.25%</span><br> No. Of Years
-
-        <!--dropdown list to show number of years 1 to 10-->
-
-        <select name="years" id="">
-
-            <option value="1">1</option>
-
-            <option value="2">2</option>
-
-            <option value="3">3</option>
-
-            <option value="4">4</option>
-
-            <option value="5">5</option>
-
-            <option value="6">6</option>
-
-            <option value="7">7</option>
-
-            <option value="8">8</option>
-
-            <option value="9">9</option>
-
-            <option value="10">10</option>
-
-        </select><br>
-
-        <!--Compute Interest button-->
-
-        <button onclick="compute()">Compute Interest</button><br> Interest :<span id="result"></span><br>
-
-        <!--footer tag with copy right text-->
-
-        <footer>
-
-            &copy 2021, All right reserved.
-
-        </footer>
-
-    </div>
-
+  <!-- Including  External JavaScript file script.js which  MUST be in the same location/folder as this  HTML file -->
+  <script src="script.js"></script>
 </body>
 
 </html>
