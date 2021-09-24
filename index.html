@@ -1,16 +1,87 @@
-<html>
-    <head>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--heading section put all external links and title here-->
+
+<head>
+
+    <!--title-->
+
+    <title>Simple Interest Calculator</title>
+
+    <!--external js link-->
+
     <script src="script.js"></script>
+
+    <!--external css link-->
+
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+
+</head>
+
+<!--body-->
+
+<body>
+
+    <!--main div with class maindiv-->
+
+    <div class="maindiv">
+
+        <!--h1 tag-->
+
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <!--textbox to accept number-->
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        Amount <input type="number" id="principal"><br>
+
+        <!--rate input type range-->
+
+        Rate <input type="range" name="rate" id="rate" min="1" max="20">
+
+        <span id="showRate">10.25%</span><br> No. Of Years
+
+        <!--dropdown list to show number of years 1 to 10-->
+
+        <select name="years" id="">
+
+            <option value="1">1</option>
+
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+
+            <option value="4">4</option>
+
+            <option value="5">5</option>
+
+            <option value="6">6</option>
+
+            <option value="7">7</option>
+
+            <option value="8">8</option>
+
+            <option value="9">9</option>
+
+            <option value="10">10</option>
+
+        </select><br>
+
+        <!--Compute Interest button-->
+
+        <button onclick="compute()">Compute Interest</button><br> Interest :<span id="result"></span><br>
+
+        <!--footer tag with copy right text-->
+
+        <footer>
+
+            &copy 2021, All right reserved.
+
+        </footer>
+
+    </div>
+
+</body>
+
 </html>
