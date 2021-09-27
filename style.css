@@ -1,13 +1,22 @@
-body {background-color:black;font-family:arial;color:white}
+body{
+background-color: black;
+font-family: Arial;
+color:white;
+}
+h1{
+color:grey;
+font-family: Verdana;
+}
 
-h1{color:grey;font-family:verdana
-
-.center{
 .maindiv {
 background-color: white;
 color:black;
-margin: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -25px 0 0 -25px
+  
 width: 300px;
 border: 25px ;
 padding: 20px;
-}}
+}
