@@ -1,3 +1,20 @@
-   
-body {background-color:tan;}
-h1{color:green;}
+body{
+background-color: black;
+font-family: Arial;
+color:white;
+}
+h1{
+color:grey;
+font-family: Verdana;
+}
+
+.maindiv {
+background-color: white;
+color:black;
+position: center;
+margin: auto;
+
+width: 300px;
+border: 25px ;
+padding: 20px;
+}
