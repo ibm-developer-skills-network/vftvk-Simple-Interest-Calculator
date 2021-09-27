@@ -1,50 +1,19 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-<!--heading section put all external links and title here-->
-
-<head>
-
-    <!--title-->
-
+<html>
+    <head>
     <title>Simple Interest Calculator</title>
-
-    <!--external js link-->
-
     <script src="script.js"></script>
-
-    <!--external css link-->
-
     <link rel="stylesheet" href="style.css">
-
-</head>
-
-<!--body-->
-
-<body>
-
-    <!--main div with class maindiv-->
-
-    <div class="maindiv">
-
-        <!--h1 tag-->
-
+    
+    </head>
+    <body>
+     <div class="maindiv"></div>
         <h1>Simple Interest Calculator</h1>
 
-        <!--textbox to accept number-->
-
-        Amount <input type="number" id="principal"><br>
-
-        <!--rate input type range-->
-
-        Rate <input type="range" name="rate" id="rate" min="1" max="20">
-
-        <span id="showRate">10.25%</span><br> No. Of Years
-
-        <!--dropdown list to show number of years 1 to 10-->
-
-        <select name="years" id="">
+        Amount <input type="number"  id="principal">  <br/>
+        Rate <input type="range"  id="rate" min="1" max="20" value="10.25"> <br/>
+        <span id="rate_val">10.25%</span>
+        No. of Years <select id="years">
 
             <option value="1">1</option>
 
@@ -65,23 +34,14 @@
             <option value="9">9</option>
 
             <option value="10">10</option>
+        </select>  <br/>
 
-        </select><br>
-
-        <!--Compute Interest button-->
-
-        <button onclick="compute()">Compute Interest</button><br> Interest :<span id="result"></span><br>
-
-        <!--footer tag with copy right text-->
-
+        Interest : <span id="result"></span><br>
+        <button onclick="compute()">Compute Interest</button>: :<span id="result"></span>
+        <br>
         <footer>
-
-            &copy 2021, All right reserved.
-
+         &#169; This Calculator belongs to Nikki
         </footer>
-
-    </div>
-
-</body>
-
+     </div>
+    </body>
 </html>
