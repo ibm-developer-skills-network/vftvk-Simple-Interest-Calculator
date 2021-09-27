@@ -9,15 +9,10 @@ function compute() {
   var years = document.getElementById("years").value;
 
   // variable called "interest" and assigning it the value of principal * years * rate / 100
-  var interest = principal * years * rate / 100
+  var interest = principal * years * rate / 100;
 
   // Convert number of year into actual year in future (ie, from now on) by using Date() constructor
   var year = new Date().getFullYear()+parseInt(years);
-
-  futureYearFromNow.setFullYear(futureYearFromNow.getFullYear() + Number(years));
-
-  // Get the reference to the element named "result" and show output of interest
-  document.getElementById("result").innerHTML = `<b>${interest}</b> to be paid by year ${futureYearFromNow.getFullYear()}`;
 
 }
 
@@ -26,12 +21,5 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("slider").onchange = rateval;
 };
-
-  // Display the above read value into <span id="rangeOutput">  element
-  document.getElementById("rangeOutput").innerHTML = `${rangeSliderValue}`;
-}
-
-// linking the function rangeSliderVal() with an "onchange" event on range
-// So, function rangeSliderVal() will run every time the value of slider is changed (ie, onchange event happens on range element)
-document.getElementById("slider").onchange = rangeSliderVal;
