@@ -1,4 +1,35 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family:arial;
+    color:white;
+}
 
+h1 {
+    color:grey;
+    font-family:verdana;
+}
+
+.tab1 {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.tab2 {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.tab3 {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.maindiv {
+    background-color:white;
+    color:black;
+    width:500px;
+    padding:20px;
+    border-radius:25px;
+    margin: 0 auto;
+}
 
