@@ -1,16 +1,30 @@
 <html>
     <head>
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="style.css">
     </head>
+ 
     <body>
-        <h1>Simple Interest Calculator</h1>
+<div  class="mncontainer">
+    <h1> &nbsp;&nbsp;&nbsp; Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <b>Amount</b>&emsp;&emsp;&nbsp; <input type="number"  id="principal">  <br/><br/>
+       
+    <div class="slidecontainer">
+       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Interest Rate</b>&nbsp; <input type="range" min="1.00" max="20.00" value="1.00"  step = "0.01" class="slider" id="myRange">
+        <span id="demo"></span><br/><br/>
+      </div>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <b>No. of Years</b>&nbsp; <input type="number"  id="years"  min="1" max="25">  <br/><br/>
+                
+         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <button onclick="compute()"><b>Compute Interest</b></button><br/><br/>
+        
+      <div  id="naration">  </div> 
+      <p>&nbsp;&nbsp;<b> &copy; Everyone Can Get Rich</b></p>
+  </div>
 
-        <button onclick="compute()">Compute</button>
     </body>
+ <script src="script.js"></script>
 </html>
