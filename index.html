@@ -6,11 +6,32 @@
     <body>
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Amount <input type="number"  id="ammount">
+        <br><br/>
 
-        <button onclick="compute()">Compute</button>
+        <div class="rangeslider">
+            Interest Rate:<input type="range" min="1" max="100" value="10"
+                            class="myslider" id="sliderRange">
+                            <span id="sliderValue"></span>
+        </div>
+        <script>
+            sliderRangeUpdate()
+        </script>
+        <br><br/>
+
+        <label for="nof_years">No. of Years:</label>
+        <select name="years" id="years">
+        </select>
+        <script> populateYearsDropdownList() </script>
+        <br><br/>
+
+        <button onclick="compute()">Compute Interest</button>
+        <br><br/>
+        <div id="computeOut1"></div>
+        <div id="computeOut2"></div>
+        <div id="computeOut3"></div>
+        <div id="computeOut4"></div>
+
+
     </body>
 </html>

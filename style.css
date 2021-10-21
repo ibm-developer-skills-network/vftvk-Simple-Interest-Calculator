@@ -1,4 +1,9 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {background-color:rgb(255, 255, 255);}
+h1{color:rgb(114, 114, 114);}
+html {
+    text-align: center;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
