@@ -1,8 +1,12 @@
-body {background-color:black;
-font-family: Arial, Helvetica, sans-serif;}
+body {
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-header h1{color:grey;
-font-family: Verdana, Tahoma, sans-serif;}
+header h1{
+    color:grey;
+    font-family: Verdana, Tahoma, sans-serif;
+}
 
 .main-div{
     background-color: white;
@@ -12,12 +16,10 @@ font-family: Verdana, Tahoma, sans-serif;}
     border-radius: 25px;
     margin-left: 25px;
     margin-right: 25px;
-   
-   }
+}
 
 .contents{
     margin-left:  80px;
-    
 }
 
 
@@ -26,9 +28,7 @@ table td{
 }
 
 #compute{  
-    color: black;
-    
-}
+    color: black;}
 
 #principal{
     height: 20px;
@@ -39,7 +39,6 @@ table td{
     height: 20px;
     width: 40px;
 }
-
 
 footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
