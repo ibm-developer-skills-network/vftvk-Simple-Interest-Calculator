@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Decalred a Doc type-->
 <html>
     <head>
-    <script src="script.js"></script> <!--linking JS-->
+    <script src="script.js"></script> <!--sourcing JS-->
     <link rel="stylesheet" href="style.css"> <!--Linking css-->
     <title>Web App - Simple Interest Calculator</title> <!--Added a title-->
     </head>
@@ -9,19 +9,19 @@
     <div class="main-div"> <!--added a division for the entire page-->
         <header><h1>Simple Interest Calculator</h1></header>
         <div class="contents"> <!--division class -->
-            <table id="table">
+            <table id="table"><!--ID for table-->
                 <tbody>
                     <tr>
-                        <td class="labels">Amount</td>
+                     <td class="labels">Amount</td>
                         <td>
-                            <input type="numbers" id="principal">
+                         <input type="numbers" id="principal">
                         </td>
                     </tr>
                     <tr>
                         <td class="labels">Interest Rate </td>
                         <td>
-                            <input type="range" min="1" max="20" step="0.25"  id="rate"  onchange="SliderValue()"> 
-                            <span id="rate_display"></span>
+           <input type="range" min="1" max="20" step="0.25"  id="rate"  onchange="SliderValue()"> 
+                         <span id="rate_display"></span>
                         </td>
                     </tr>
                     <tr>
@@ -43,9 +43,10 @@
                     </tr>
                 </tbody>
             </table>
-        <button id="compute" onclick="compute()">Compute Interest</button><br><br>
+        <button id="compute" onclick="compute()">Compute Interest</button>
+        <br><br>
         <span id="result"></span>
-        </div>
+        </div><!--end of contents division-->
         <br>
     <footer>
             &copy; Everyone Can Be Rich
