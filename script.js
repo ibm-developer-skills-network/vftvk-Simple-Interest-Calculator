@@ -7,6 +7,6 @@ function compute()
     i = parseFloat(p)*parseFloat(r)*parseFloat(y)
     re.innerHTML = i
     
-    
+    re.classList.add("format")
 }
         
