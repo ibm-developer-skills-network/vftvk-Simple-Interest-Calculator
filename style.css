@@ -1,10 +1,11 @@
 body {background-color:tan;}
 h1{color:green;}
 
-container {
+.container {
     max-width: 400px;
     margin: 200px auto;
     max-height: 300px;
+    background-color: white;
 }
 
 .format {
