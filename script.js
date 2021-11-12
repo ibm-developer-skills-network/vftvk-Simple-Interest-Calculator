@@ -1,6 +1,10 @@
 function compute()
 {
     p = document.getElementById("principal").value;
+    if (p<=0){
+    	alert("Please enter a positive number")
+	return
+    }
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
     re = document.getElementById("result");
