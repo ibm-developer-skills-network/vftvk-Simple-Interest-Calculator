@@ -19,5 +19,6 @@ function compute()
 
 function updateTextInput(val){
 	document.getElementById('per').innerHTML=(val+"%");
-	compute();
+	if ((!isNaN(document.getElementById("principal").value)) and !(document.querySelector(".result").classList.contains('hide')))
+		compute();
 }
