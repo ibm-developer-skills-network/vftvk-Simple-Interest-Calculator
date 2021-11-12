@@ -4,7 +4,7 @@ function compute()
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
     r = document.getElementById("result");
-    i = p*r*y
+    i = parseFloat(p)*parseFloat(r)*parseFloat(y)
     r.innerHTML = i
     
     
