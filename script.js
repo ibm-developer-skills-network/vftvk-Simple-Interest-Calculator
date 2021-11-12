@@ -19,4 +19,5 @@ function compute()
 
 function updateTextInput(val){
 	document.getElementById('per').innerHTML=(val+"%");
+	compute();
 }
