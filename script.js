@@ -1,10 +1,10 @@
 function compute()
 {
-    var p = document.getElementById("principal").value;
-    var r = document.getElementById("rate").value;
-    var y = document.getElementById("years").value;
-    var r = document.getElementById("result");
-    var i = p*r*y
+    p = document.getElementById("principal").value;
+    r = document.getElementById("rate").value;
+    y = document.getElementById("years").value;
+    r = document.getElementById("result");
+    i = p*r*y
     r.innerHTML = i
     
     
