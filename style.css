@@ -1,11 +1,14 @@
-body {background-color:tan;}
+body {background-color:black;}
 h1{color:green;}
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 200px auto;
-    max-height: 300px;
+    max-height: 500px;
     background-color: white;
+    border-radius: 50px;
+    padding: 30;
+    margin-bottom: 100px;
 }
 
 .format {
@@ -16,3 +19,60 @@ h1{color:green;}
     border: 1px solid black;
 }
 
+input#principal {
+    margin-left: -22px;
+}
+
+select#years {
+    margin-left: 85px;
+}
+
+button {
+    max-width: 130;
+    margin-left: 9px;
+}
+
+h1 {
+    color: darkgray;
+}
+
+.percen {
+    margin-left: -77;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10;
+    margin-bottom: 100px;
+}
+
+.hide{
+	display: none;
+}
+
+p {
+    font-size: 17;
+}
+
+.content {
+    margin: 10 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 17;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+div#select {
+    display: flex;
+    justify-content: flex-start;
+}
