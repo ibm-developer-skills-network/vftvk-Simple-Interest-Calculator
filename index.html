@@ -1,16 +1,57 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<head>
+  <meta charset="utf-8">
+  <title> Simple Interest Calculator </title>
+  <link rel="stylesheet" href="Ical.css">
+</head>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+<body>
+<table>
+
+<tr>
+  <th colspan="2">
+    <h1> Simple Interest Calculator </h1>
+  </th>
+</tr>
+
+<tr>
+  <td>Amount</td>
+  <td><input type="num" id="Amount"></td>
+</tr>
+
+<tr>
+  <td>Interest rate</td>
+  <td>
+  <input type="range" id="Irate" min="1" max="20" step="0.5"> <span id="demo"></span>
+  </td>
+</tr>
+
+<tr>
+  <td>No. of Years</td>
+  <td>
+  <input type="number" id="Years" min="1" max="10" step="1" value="1">
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <br>
+    <button type="button" onclick="Cal()">Compute Interest</button>
+  </td>
+</tr>
+
+  <script src="Ical.js"> //run calculator script </script>
+
+<tr><td colspan="2"><br></td></tr>
+<tr><td colspan="2" id="resultAmount"></td></tr>
+<tr><td colspan="2" id="resultIrate"></td></tr>
+<tr><td colspan="2" id="resultAnswer"></td></tr>
+<tr><td colspan="2" id="resultYears"></td></tr>
+<tr><td><p colspan="2"><b>&copy Everyone can get rich<b></p></td></tr>
+
+</table>
+</body>
 </html>
