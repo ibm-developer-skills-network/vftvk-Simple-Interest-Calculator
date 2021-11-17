@@ -30,8 +30,8 @@ table td {
 #compute
 {
     margin-bottom: 10px;
-    background-color: lightblue;
-    color: white;
+    background-color:blue;
+    font-size: larger;
     height: 40px;
     width: 325px;
 }
@@ -45,8 +45,10 @@ table td {
     width: 200px;
 }
 
-.footer {
-    margin-top: 10px;
+footer {
+    margin-top: 100px;
+    text-align: center;
+    
 }
 
 .labels {
