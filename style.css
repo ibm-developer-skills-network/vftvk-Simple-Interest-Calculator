@@ -1,41 +1,36 @@
-body 
-{
+body {
     background-color:black;
     color: white;
     font-family: Arial;
 }
 
-h1
-{
+h1 {
     color: grey;
     font-family: Verdana;
 }
 
-.maindiv
-{
+.maindiv {
     background-color: white;
     color: black;
-    width: 300px;
+    width: 550px;
     padding: 20px;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.contents
-{
+.contents {
     margin-left: 80px;
 }
 
-table td
-{
+table td {
     padding-bottom: 10px;
 }
 
 #compute
 {
     margin-bottom: 10px;
-    background-color: blue;
+    background-color: lightblue;
     color: white;
     height: 40px;
     width: 325px;
@@ -45,23 +40,20 @@ table td
     width: 190px;
 }
 
-#years{
+#years {
     height: 35px;
     width: 200px;
 }
 
-#footer
-{
+.footer {
     margin-top: 10px;
-    background-color: lightblue;
 }
 
-.labels
-{
+.labels {
     width: 120px;
 }
 
-.highlight
-{
+.highlight {
     background-color: lightblue;
+
 }
