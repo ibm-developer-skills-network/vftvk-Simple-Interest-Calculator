@@ -1,8 +1,18 @@
-body {background-color:black;font-family:arial;color:white}
+body 
+{
+    background-color:black;
+    color: white;
+    font-family: Arial;
+}
 
-h1{color: grey;font-family: Verdana}
+h1
+{
+    color: grey;
+    font-family: Verdana;
+}
 
-.maindiv {
+.maindiv
+{
     background-color: white;
     color: black;
     width: 300px;
@@ -12,3 +22,46 @@ h1{color: grey;font-family: Verdana}
     margin-right: auto;
 }
 
+.contents
+{
+    margin-left: 80px;
+}
+
+table td
+{
+    padding-bottom: 10px;
+}
+
+#compute
+{
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 325px;
+}
+#principal{
+    height: 25px;
+    width: 190px;
+}
+
+#years{
+    height: 35px;
+    width: 200px;
+}
+
+#footer
+{
+    margin-top: 10px;
+    background-color: lightblue;
+}
+
+.labels
+{
+    width: 120px;
+}
+
+.highlight
+{
+    background-color: lightblue;
+}
