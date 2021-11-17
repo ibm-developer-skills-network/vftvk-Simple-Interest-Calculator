@@ -1,20 +1,10 @@
-body 
-{
-    background-color: #000000;
-    color: #ffffff;
-    font-family: Arial;
-}
+body {background-color:black;font-family:arial;color:white}
 
-h1
-{
-    color: grey;
-    font-family: Verdana;
-}
+h1{color: grey;font-family: Verdana}
 
-.maindiv
-{
-    background-color: #ffffff;
-    color: #000000;
+.maindiv {
+    background-color: white;
+    color: black;
     width: 300px;
     padding: 20px;
     border-radius: 25px;
