@@ -1,4 +1,52 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+  background-color: black;
+  font-family: Arial;
+  color: white;
+}
+h1 {
+  color: gray;
+  font-family: verdana;
+}
+.maindiv {
+    background-color:white;
+    color:black;
+    width:500px;
+    height: 400px;
+    padding:20px;
+    border-radius:25px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+label{
+  margin:80px;
+}
+button{
+  margin-left:80px;
+}
+#result{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    margin-right: 10px;
+    position: fixed;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+}
+footer{
+    position: fixed;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    margin: auto;
+    padding-top: 80px;
+}
+ .yellow_bkg {
+    background-color:#FFFF00;
+ }
