@@ -24,6 +24,7 @@ function compute(){
     if(principal <= 0){
         alert("Enter a positive number");
         p.focus();
+        p.value="";
         var showResult = false;
     }
 
@@ -37,9 +38,7 @@ function compute(){
 }
     
 
-    function showRate(){
-        var rateval = document.getElementById("rate").value;
-        document.getElementById("rate_val").innerHTML = rateval;
-    }
-    
-    
+function showRate(){
+    var rateval = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerHTML = rateval;
+}

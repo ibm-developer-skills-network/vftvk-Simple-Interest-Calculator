@@ -15,15 +15,15 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
-            <div id="formdiv">
-                Amount <input type="number"  id="principal" autocomplete="on">
+            <div class="formdiv">
+                <span class="left">Amount</span> <input type="number"  id="principal" autocomplete="on">
                 <br><br>
 
-                Interest Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" oninput="showRate()">
+                <span class="left">Interest Rate</span> <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" oninput="showRate()">
                 <span id="rate_val">10.25 %</span>
                 <br><br>
 
-                No. of Years 
+                <span class="left">No. of Years</span>
                 <select name="years" id="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -35,7 +35,8 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </select>  
+                </select> 
+                
                 <br><br>
             
                 <button onclick="compute();">Compute Interest</button>
@@ -45,7 +46,7 @@
             </div>
 
             <footer id="footer">
-                &copy Everyone Can Get Rich
+                &copy Everyone Can Get Rich | 
             </footer>
         </div>
     </body>

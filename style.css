@@ -15,13 +15,24 @@ h1{
     background-color: white;
     color: black;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     /* text-align: center; */
     /* align-items: center;
     align-content: center; */
-    margin:auto
+    /* padding:50px; */
+    margin:auto;
+    
 }
 
 .formdiv{
     background-color: aqua;
-}
+    padding-left: 150px;
+
+    /* margin: auto; */
+    /* align-content: center; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+} 
+
