@@ -16,14 +16,14 @@
             <h1>Simple Interest Calculator</h1>
 
             <div class="formdiv">
-                <span class="left">Amount</span> <input type="number"  id="principal" autocomplete="on">
+                <span>Amount</span> <input type="number"  id="principal" autocomplete="on" required>
                 <br><br>
 
-                <span class="left">Interest Rate</span> <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" oninput="showRate()">
+                <span>Interest Rate</span> <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" oninput="showRate()">
                 <span id="rate_val">10.25 %</span>
                 <br><br>
 
-                <span class="left">No. of Years</span>
+                <span>No. of Years</span>
                 <select name="years" id="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -46,7 +46,7 @@
             </div>
 
             <footer id="footer">
-                &copy Everyone Can Get Rich | 
+                &copy Everyone Can Get Rich | Calculator designed by <a href="https://www.kabid.in" target="_blank">Kabid Zaman</a>
             </footer>
         </div>
     </body>

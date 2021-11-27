@@ -16,23 +16,23 @@ h1{
     color: black;
     padding: 20px;
     border-radius: 25px;
-    /* text-align: center; */
-    /* align-items: center;
-    align-content: center; */
-    /* padding:50px; */
     margin:auto;
     
 }
 
 .formdiv{
-    background-color: aqua;
+    background-color: white;
     padding-left: 150px;
-
-    /* margin: auto; */
-    /* align-content: center; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;*/
 } 
 
+#principal{
+    margin-left: 50px;
+}
+
+#rate{
+    margin-left: 10px;
+}
+
+#years{
+    margin-left: 20px;
+}
