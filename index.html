@@ -1,16 +1,54 @@
 <html>
-    <head>
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+	
+<body>
+    <div class="main">
+        <h1 align="center">Simple Interest Calculator</h1>
+        <div>
+            <table align="center">
+            <tr>
+            <td> Amount</td>
+            <td> <input id="amount" type="text"></td>
+            </tr>
+            <tr>
+		       <td>Interest rate</td>
+               <td><div class="slidecontainer">
+		           <input type="range" min="0.5" max="10.5" value="3.5" class="slider" id="myRange">
+                    <span id="demo"></span>%
+                   </div>
+			    <script>
+                     var slider = document.getElementById("myRange");
+                     var output = document.getElementById("demo");
+                     output.innerHTML = slider.value;
+                     slider.oninput = function() {
+                     output.innerHTML = this.value;
+                    }
+                   </script>
+				</td>
+            </tr>
+            <tr>
+            <td>No.of years</td>
+            <td> <select id="sel">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+             <option value="5">5</option>
+             </option>
+			 </select><br/></td>
+            </tr>
+			<tr><td>
+			<button type="submit"  onclick="compute()">Compute Interest</button></td></tr>
+        </table>
+		<div id="simple"></div>\
+	<p>@Everyone Can Get Rich</p>
+		
+        </div>	
+      <		
+    </div>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+</body>
 </html>
