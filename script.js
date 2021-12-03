@@ -1,14 +1,21 @@
-%generate dropdown list
-
-var select = '';
-for (i=1;i<=100;i++){
-    select += '<option val=' + i + '>' + i + '</option>';
+function display()
+{
+    document.getElementById("range").textContent=document.getElementById("rate").value;
+    console.log(document.getElementById("rate").value)
 }
-$('#years_select').html(select);
 
 function compute()
 {
-    p = document.getElementById("principal").value;
+    amount = parseInt(document.getElementById("amount").value);
+    rate = parseInt(document.getElementById("rate").value);
+    years = parseInt(document.getElementById("years").value);
+    currentyear = parseInt(new Date().getFullYear())
     
+    document.getElementById("startamount").innerHTML = amount
+    document.getElementById("intrate").innerHTML = rate
+    endresult = amount + amount * rate/100 * years
+    console.log(endresult)
+    document.getElementById("endresult").innerHTML = endresult;
+    document.getElementById("endyear").innerHTML = currentyear + years;
+    document.getElementById("resulttext").style.display = "inline"
 }
-        
