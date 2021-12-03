@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
     <head>
     <script src="script.js"></script>
@@ -5,12 +7,29 @@
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" min="1" max="20" value="50" class="slider" id="Rate">  <br/>
-        No. of Years <select id="years_select"></select><br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div>
+        Amount <input type="number"  id="amount" value=1000><br/>
+        Rate <input type="range" min=1.0 max=20.0 step="0.1" class="slider" id="rate" value=1 onchange="display()"><label class="range" id="range" for="range">1</label>%<br/>
+        No. of Years <select id="years">
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+        </select><br/>
+        <button onclick="compute()">Compute Interest</button>
+        </div>
+        <div class="getresult" id="resulttext">
+            If you deposit <label id="startamount"></label><br/> at an interest rate of <label id="intrate"></label>%<br/>
+            You will receive an amount of <label id="endresult"></label><br/> in the year <label id="endyear"></label><br/>
+        </div>
     </body>
+<footer>
+    <br/>
+    &#169; This Calculator belongs to KP
+</footer>
 </html>
