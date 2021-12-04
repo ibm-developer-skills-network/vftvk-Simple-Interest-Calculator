@@ -4,6 +4,7 @@ body {
     background-color: black;
     font-family: Arial;
     color: white;
+    text-align: center;
 }
 
 /* Page layout */
@@ -16,12 +17,35 @@ h1 {
 .maindiv {
     background-color: white;
     color: black;
-    width: 300px;
+    width: 600px;
+    height: 400px;
     padding: 20px;
     border-radius: 25px;
     margin: 0 auto;
 }
 
+.main {
+    margin: 0 auto;
+}
+
 #result span {
     color: yellow;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 4px rgb(61, 61, 61) solid;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(58, 58, 58);
+    border-color: rgb(36, 36, 36);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
 }
