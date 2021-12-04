@@ -7,7 +7,7 @@ let compute = () => {
     let interest = principal * years * rate / 100;
     let year = new Date().getFullYear() + parseInt(years);
 
-    // Validating principal element input
+    // Validating principal element
     if (principal <= 0) {
         document.getElementById("principal").focus();
         alert("Enter a positive number");

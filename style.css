@@ -21,3 +21,7 @@ h1 {
     border-radius: 25px;
     margin: 0 auto;
 }
+
+#result span {
+    color: yellow;
+}
