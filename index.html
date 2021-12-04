@@ -6,14 +6,15 @@
         <title>Simple Interest Calculator</title>
     </head>
     <body>
+        <!-- Web page's main content -->
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate" min="1" max="20" value="10.25">
+            Rate <input type="range"  id="rate" min="1" max="20" value="10.25" onchange="updateRate()">
             <span id="rate_val">10.25%</span>   <br/>
             No. of Years
-            <section id="years">
+            <select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -24,13 +25,17 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </section> <br/>
-            Interest : <span id="result"></span><br>
+            </select> <br/>
+            Interest : <br>
+            <span id="result"></span>
 
             <button onclick="compute()">Compute Interest</button>
             <span id="result"></span>
 
+            <!-- Credits given to me -->
             <footer>&#169; This Calculator belongs to Abraao Malaconi</footer>
         </div>
     </body>
 </html>
+
+<!-- Create with coffee by GMalaconi -->

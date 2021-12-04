@@ -1,8 +1,12 @@
+/* Background layout */
+
 body {
     background-color: black;
     font-family: Arial;
     color: white;
 }
+
+/* Page layout */
 
 h1 {
     color: grey;
@@ -15,5 +19,5 @@ h1 {
     width: 300px;
     padding: 20px;
     border-radius: 25px;
-    align: center;
+    margin: 0 auto;
 }
