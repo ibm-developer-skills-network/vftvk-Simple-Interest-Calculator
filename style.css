@@ -3,8 +3,21 @@ body{
 }
 .container{
     background-color: white;
-    padding: 20%;
-    
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.input{
+    padding-left: 20px;
+}
+.column-1{
+    padding-right: 20px;
+}
+tr{
+    height: 30px;
+}
+button{
+    margin-top: 10px;
 }
 h1{
     color:gray;
