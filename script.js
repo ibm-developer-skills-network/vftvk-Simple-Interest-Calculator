@@ -26,8 +26,8 @@ function compute()
         
         // Output
         document.getElementById("result").innerHTML = amount_str + amount + "<br/>"
-        + rate_str + rate + "<br/>"
-        + interest_str + interest + "%" +"<br/>"
+        + rate_str + rate + "%" + "<br/>"
+        + interest_str + interest + "<br/>"
         + year_str + date;
     } 
 }
