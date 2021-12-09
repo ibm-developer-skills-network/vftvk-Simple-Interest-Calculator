@@ -18,9 +18,51 @@ tr{
 }
 button{
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 h1{
     color:gray;
 }
+
+/* Screen sizes 700px and below */
+@media (max-width:700px) {
+    #principle{
+        width: 80%;
+    }
+    
+    #rate{
+        width: 65%;
+    }
+
+    .container{
+        padding: 10px;
+        margin: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    table{
+        padding-bottom: 30px;
+    }
+    
+    button{
+       display: grid;
+       margin: auto;
+    }
+
+    .copyright{
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 15px;
+    }
+}
+
 
 
