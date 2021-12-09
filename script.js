@@ -1,7 +1,7 @@
 function compute()
 {
     // Set Values
-    amount = document.getElementById("principal").value;
+    amount = document.getElementById("principle").value;
     rate = document.getElementById("rate").value;
     
     //parse to int
