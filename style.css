@@ -1,4 +1,30 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:#08080A;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+h1 {
+    color:#5B5D57;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+.maindiv {
+    background-color:#FCFCFC;
+    color:#08080A;
+    width: 500px;
+    padding: 20px;    
+    border-radius: 25px;  
+    text-align: left; 
+    margin: auto;
+}
+
+form {
+    text-align: justify;
+    padding: 5%;
+
+}
+
+
+
 
 
