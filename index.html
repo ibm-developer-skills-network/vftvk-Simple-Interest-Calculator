@@ -4,13 +4,31 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="header">
+            <h1>Simple Interest Calculator</h1>
+       
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Amount <input type="number"  id="principal" onchange="validateAmount()">  <br/>
+        Rate <input type="range"  id="rate" min="1" step="0.25" value="5.25" max="50" onchange="getSliderValue()"><span id="rateSpan">10.50%</span> <br/>
+        No. of Years
+        <select name="Years" id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br/>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interenst</button><br>
+        <span id="result"></span><br>
+        <span id="result"></span>
+    </div>
     </body>
 </html>
+
