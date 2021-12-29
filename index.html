@@ -1,16 +1,217 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--<script src="script.js"></script>-->
+        <!--<link rel="stylesheet" href="style.css">-->
+        <title>Simple Interest Calculator (IBM CAD101EN) </title>
+        <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        
     </head>
     <body>
         <h1>Simple Interest Calculator</h1>
+        <div id="form-bx">
+            <!-- <div class="bx--form-item">
+                <h4>Amount</h4>
+                    <input type="number"  id="principal">
+            </div> -->
+            <div class="bx--form-item">
+                <div data-numberinput class="
+                  bx--number
+                   bx--number--light 
+                ">
+                    <label for="number-input0" class="bx--label">
+                      Amount (USD $)
+                    </label>
+                    <div class="bx--number__input-wrapper">
+                        <input id="principal" type="number" min="0" max="100" step="0.01" value="1.00">
+                        <div class="bx--number__controls">
+                            <button aria-label="increase number input" class="bx--number__control-btn up-icon" type="button"
+                                aria-live="polite" aria-atomic="true">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" aria-hidden="true"><path d="M0 4L4 0 8 4z"></path></svg>
+                            </button>
+                            <button aria-label="decrease number input" class="bx--number__control-btn down-icon" type="button"
+                                aria-live="polite" aria-atomic="true">
+                                <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" width="8" height="4" viewBox="0 0 8 4" aria-hidden="true"><path d="M8 0L4 4 0 0z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <div class="bx--form-item" id="form-item-spc">
+                <label class="bx--label ">
+                    Interest Rate
+                </label>
+                <div class="bx--slider-container">
+                    <label id="slider-input-box_bottom-range-label" class="bx--slider__range-label">0%</label>
+                    <div class="bx--slider " data-slider data-slider-input-box="#slider-input-box">
+                        <div class="bx--slider__thumb" tabindex="0"></div>
+                        <div class="bx--slider__track"></div>
+                        <div class="bx--slider__filled-track"></div>
+                        <input aria-label="slider" id="rate" class="bx--slider__input" type="range" step="0.1" min="0" max="100" value="1.75">
+                    </div>
+                    <label id="slider-input-box_top-range-label" class="bx--slider__range-label">100%</label>
+                    <input id="slider-input-box" aria-labelledby="slider-input-box_bottom-range-label slider-input-box_top-range-label" type="number" class="bx--text-input bx--slider-text-input bx--slider-style" placeholder="0" value="1.75">
+                </div>
+            </div>
 
-        <button onclick="compute()">Compute</button>
+            <!-- <div class="bx--form-item">
+                <h4>No. of Years</h4>
+                    <input type="number"  id="years">
+            </div> -->
+            <div class="bx--form-item" id="form-item-spc">
+                <div class="bx--dropdown__wrapper ">
+                  <span id="example-ap3t91wclrj-label" class="bx--label">No. of years</span>
+                  <!-- <div class="bx--form__helper-text">Optional helper text.</div> -->
+                  <div data-dropdown data-value
+                    class="bx--dropdown   ">
+                    <button class="bx--dropdown-text" aria-haspopup="true" aria-expanded="false" aria-controls="example-ap3t91wclrj-menu" aria-labelledby="example-ap3t91wclrj-label example-ap3t91wclrj-value" type="button">
+                      <span class="bx--dropdown-text__inner" id="example-ap3t91wclrj-value"></span>
+                      <span class="bx--dropdown__arrow-container">
+                        <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path></svg>
+                      </span>
+                    </button>
+                    <ul class="bx--dropdown-list" id="example-ap3t91wclrj-menu" role="menu" tabindex="0" id="example-ap3t91wclrj-menu" aria-hidden="true" wh-menu-anchor="left" aria-labelledby="example-ap3t91wclrj-label">
+                      <li data-option data-value="1" class="bx--dropdown-item" title="1">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="true" id="example-ap3t91wclrj-item0">1</a>
+                      </li>
+                      <li data-option data-value="2" class="bx--dropdown-item" title="2">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item1">2</a>
+                      </li>
+                      <li data-option data-value="3" class="bx--dropdown-item" title="3">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item2">3</a>
+                      </li>
+                      <li data-option data-value="4" class="bx--dropdown-item" title="4">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item3">4</a>
+                      </li>
+                      <li data-option data-value="5" class="bx--dropdown-item" title="5">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item4">5</a>
+                      </li>
+                      <li data-option data-value="6" class="bx--dropdown-item" title="6">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item5">6</a>
+                      </li>
+                      <li data-option data-value="7" class="bx--dropdown-item" title="7">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item6">7</a>
+                      </li>
+                      <li data-option data-value="8" class="bx--dropdown-item" title="8">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item7">8</a>
+                      </li>
+                      <li data-option data-value="9" class="bx--dropdown-item" title="9">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item8">9</a>
+                      </li>
+                      <li data-option data-value="10" class="bx--dropdown-item" title="10">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item9">10</a>
+                      </li>
+                      <li data-option data-value="11" class="bx--dropdown-item" title="11">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="true" id="example-ap3t91wclrj-item10">11</a>
+                      </li>
+                      <li data-option data-value="12" class="bx--dropdown-item" title="12">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item11">12</a>
+                      </li>
+                      <li data-option data-value="13" class="bx--dropdown-item" title="13">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item12">13</a>
+                      </li>
+                      <li data-option data-value="14" class="bx--dropdown-item" title="14">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item13">14</a>
+                      </li>
+                      <li data-option data-value="15" class="bx--dropdown-item" title="15">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item14">15</a>
+                      </li>
+                      <li data-option data-value="16" class="bx--dropdown-item" title="16">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item15">16</a>
+                      </li>
+                      <li data-option data-value="17" class="bx--dropdown-item" title="17">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item16">17</a>
+                      </li>
+                      <li data-option data-value="18" class="bx--dropdown-item" title="18">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item17">18</a>
+                      </li>
+                      <li data-option data-value="19" class="bx--dropdown-item" title="19">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item18">19</a>
+                      </li>
+                      <li data-option data-value="20" class="bx--dropdown-item" title="20">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item19">20</a>
+                      </li>
+                      <li data-option data-value="21" class="bx--dropdown-item" title="21">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="true" id="example-ap3t91wclrj-item20">21</a>
+                      </li>
+                      <li data-option data-value="22" class="bx--dropdown-item" title="22">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item21">22</a>
+                      </li>
+                      <li data-option data-value="23" class="bx--dropdown-item" title="23">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item22">23</a>
+                      </li>
+                      <li data-option data-value="24" class="bx--dropdown-item" title="24">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item23">24</a>
+                      </li>
+                      <li data-option data-value="25" class="bx--dropdown-item" title="25">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item24">25</a>
+                      </li>
+                      <li data-option data-value="26" class="bx--dropdown-item" title="26">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item25">26</a>
+                      </li>
+                      <li data-option data-value="27" class="bx--dropdown-item" title="27">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item26">27</a>
+                      </li>
+                      <li data-option data-value="28" class="bx--dropdown-item" title="28">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item27">28</a>
+                      </li>
+                      <li data-option data-value="29" class="bx--dropdown-item" title="29">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item28">29</a>
+                      </li>
+                      <li data-option data-value="30" class="bx--dropdown-item" title="30">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item29">30</a>
+                      </li>
+                      <li data-option data-value="31" class="bx--dropdown-item" title="31">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="true" id="example-ap3t91wclrj-item30">31</a>
+                      </li>
+                      <li data-option data-value="32" class="bx--dropdown-item" title="32">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item31">32</a>
+                      </li>
+                      <li data-option data-value="33" class="bx--dropdown-item" title="33">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item32">33</a>
+                      </li>
+                      <li data-option data-value="34" class="bx--dropdown-item" title="34">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item33">34</a>
+                      </li>
+                      <li data-option data-value="35" class="bx--dropdown-item" title="35">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item34">35</a>
+                      </li>
+                      <li data-option data-value="36" class="bx--dropdown-item" title="36">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item35">36</a>
+                      </li>
+                      <li data-option data-value="37" class="bx--dropdown-item" title="37">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item36">37</a>
+                      </li>
+                      <li data-option data-value="38" class="bx--dropdown-item" title="38">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item37">38</a>
+                      </li>
+                      <li data-option data-value="39" class="bx--dropdown-item" title="39">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item38">39</a>
+                      </li>
+                      <li data-option data-value="40" class="bx--dropdown-item" title="40">
+                        <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1" role="menuitemradio" aria-checked="false" id="example-ap3t91wclrj-item39">40</a>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="btn-bx" id="form-item-spc">
+                <div>
+                    <button type="button" class="bx--btn bx--btn--primary" onclick="compute()">Compute Interest</button>
+                </div>
+                <div>
+                    <button class="bx--btn bx--btn--secondary" type="button">Clear</button>
+                </div>
+            </div>
+            <!---TO DO-->
+            <!-- <h4>Interest : <span id="result"></span> -->
+        </div>
+        
+        
+        <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
     </body>
 </html>

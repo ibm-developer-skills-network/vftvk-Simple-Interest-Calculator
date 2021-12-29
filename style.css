@@ -1,4 +1,29 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    margin: 2%;
+    background-color:white;
+}
+
+h1 {
+    color: #161616;
+}
+
+.bx--slider-style {
+    width: 7rem;
+}
+
+.btn-bx {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#form-bx {
+    margin: 2rem;
+    width: 30rem;
+}
+
+#form-item-spc {
+    margin-top: 2rem;
+}
 
 
