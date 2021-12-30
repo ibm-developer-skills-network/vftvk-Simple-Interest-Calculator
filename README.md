@@ -25,6 +25,10 @@ This final project for the [IBM CAD101EN badge](https://learning.edx.org/course/
 4. Click the dropdown menu labeled "No. of years" and select the desired number of years
 5. Click the blue button labeled "Compute Interest"
 
+## Usage
+
+![CAD101EN_BADGE_simple-interest-calc_usage](./readme_assets/CAD101EN_BADGE_simple-interest-calc_usage.gif)
+
 ## Highlights and Features
 
 * Implemented IBM's open source design elements [Carbon](https://www.carbondesignsystem.com/) ("vanilla" instance) including the following:
