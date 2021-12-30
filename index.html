@@ -18,8 +18,8 @@
                 <h4>Amount</h4>
                     <input type="number"  id="principal">
             </div> -->
-            <div class="bx--form-item">
-                <div data-numberinput class="
+            <div id="num-item" class="bx--form-item">
+                <div id="num-input" data-numberinput class="
                   bx--number
                    bx--number--light 
                 ">
@@ -40,7 +40,9 @@
                         </div>
                     </div>
                 </div>
+                <div id='error-principal'></div>
             </div>
+
 
             <div class="bx--form-item" id="form-item-spc">
                 <label class="bx--label ">
@@ -207,8 +209,7 @@
                     <button class="bx--btn bx--btn--secondary" type="button" onclick="reset()">Clear</button>
                 </div>
             </div>
-            <!---TO DO-->
-            <!-- <h4>Interest : <span id="result"></span> -->`
+            <div id="compute-results"></div>
         </div>
         
         
