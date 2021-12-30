@@ -27,7 +27,7 @@
                       Amount (USD $)
                     </label>
                     <div class="bx--number__input-wrapper">
-                        <input id="principal" type="number" min="0" max="100" step="0.01" value="1.00">
+                        <input id="principal" type="number" min="0" max="100" step="0.01" placeholder="1.72">
                         <div class="bx--number__controls">
                             <button aria-label="increase number input" class="bx--number__control-btn up-icon" type="button"
                                 aria-live="polite" aria-atomic="true">
@@ -49,13 +49,13 @@
                 <div class="bx--slider-container">
                     <label id="slider-input-box_bottom-range-label" class="bx--slider__range-label">0%</label>
                     <div class="bx--slider " data-slider data-slider-input-box="#slider-input-box">
-                        <div class="bx--slider__thumb" tabindex="0"></div>
+                        <div id="slide-thumb" class="bx--slider__thumb" tabindex="0"></div>
                         <div class="bx--slider__track"></div>
-                        <div class="bx--slider__filled-track"></div>
-                        <input aria-label="slider" id="rate" class="bx--slider__input" type="range" step="0.1" min="0" max="100" value="1.75">
+                        <div id="slide-filled" class="bx--slider__filled-track"></div>
+                        <input aria-label="slider" id="rate" class="bx--slider__input" type="range" step="0.1" min="0" max="60" value="0">
                     </div>
-                    <label id="slider-input-box_top-range-label" class="bx--slider__range-label">100%</label>
-                    <input id="slider-input-box" aria-labelledby="slider-input-box_bottom-range-label slider-input-box_top-range-label" type="number" class="bx--text-input bx--slider-text-input bx--slider-style" placeholder="0" value="1.75">
+                    <label id="slider-input-box_top-range-label" class="bx--slider__range-label">60%</label>
+                    <input id="slider-input-box" aria-labelledby="slider-input-box_bottom-range-label slider-input-box_top-range-label" type="number" class="bx--text-input bx--slider-text-input bx--slider-style" placeholder="0" value="0">
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                 <div class="bx--dropdown__wrapper ">
                   <span id="example-ap3t91wclrj-label" class="bx--label">No. of years</span>
                   <!-- <div class="bx--form__helper-text">Optional helper text.</div> -->
-                  <div data-dropdown data-value
+                  <div id="dropdown_val" data-dropdown data-value
                     class="bx--dropdown   ">
                     <button class="bx--dropdown-text" aria-haspopup="true" aria-expanded="false" aria-controls="example-ap3t91wclrj-menu" aria-labelledby="example-ap3t91wclrj-label example-ap3t91wclrj-value" type="button">
                       <span class="bx--dropdown-text__inner" id="example-ap3t91wclrj-value"></span>
@@ -204,14 +204,15 @@
                     <button type="button" class="bx--btn bx--btn--primary" onclick="compute()">Compute Interest</button>
                 </div>
                 <div>
-                    <button class="bx--btn bx--btn--secondary" type="button">Clear</button>
+                    <button class="bx--btn bx--btn--secondary" type="button" onclick="reset()">Clear</button>
                 </div>
             </div>
             <!---TO DO-->
-            <!-- <h4>Interest : <span id="result"></span> -->
+            <!-- <h4>Interest : <span id="result"></span> -->`
         </div>
         
         
         <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
