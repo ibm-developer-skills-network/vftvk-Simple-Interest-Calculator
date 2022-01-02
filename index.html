@@ -8,7 +8,9 @@
         <h1>Simple Interest Calculator</h1>
         <div id="DivContainer">
             <label for="capital">Amount</label><input type="number" id="capital">  <br />
-            <label for="Rate">Rate</label><input type="number" id="rate">  <br />
+            <label for="Rate">Rate</label>
+                <input type="range" id="rate" min="0.0" max="100.0" value="0.0" step="0.1" oninput="rate_p.value=rate.value"> <br />
+                <output name="rate_p" id="rate_p" for="rate">0</output>
             <label for="years">No. of Years</label><input type="number" id="years">  <br />
             <span id="result"></span><br>
         </div>

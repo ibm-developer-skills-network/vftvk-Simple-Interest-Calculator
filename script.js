@@ -7,11 +7,12 @@ function compute() {
     currentYear = parseInt(new Date().getFullYear());
     // converter string para int
     years = parseInt(years);
-
-    years = currentYear + years;
-    rate = parseInt(rate);
+    rate = parseFloat(rate);
     capital = parseInt(capital);
-    amount = (capital * (rate/100)) + capital;
+
+    amount = years * (rate / 100) * capital;
+    years = currentYear + years;
+    
 
     //criando uma nova div a partir da funcao
     var NewDiv = document.createElement("div");
@@ -26,4 +27,7 @@ function compute() {
     // document.body.appendChild(NewDiv);
     DivContainer.appendChild(NewDiv)
 }
-        
+
+function updateTextInput(val) {
+    document.getElementById('rate').value = val;
+}
