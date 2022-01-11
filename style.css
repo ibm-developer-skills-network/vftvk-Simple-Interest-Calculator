@@ -1,4 +1,43 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
 
+h1{
+    color:grey;
+    font-family:verdana;
+}
 
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: auto;
+    /* align: auto; */
+}
+
+#footer, #main {
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+li {
+    padding-top: 10px;
+    vertical-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 125px;
+}
+
+#footer {
+    text-transform: capitalize;
+}
