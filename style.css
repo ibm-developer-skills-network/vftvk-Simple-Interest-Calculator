@@ -1,4 +1,19 @@
-body {background-color:tan;}
-h1{color:green;}
+/* Changed by Liam Callahan 2021 */
+body {background-color:black;font-family:arial;color:white}
 
-
+h1{color:gray;font-family:verdana}
+.maindiv {
+    background-color:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:25px;
+    margin:auto;
+}
+#result_num {
+    background-color: rgb(240, 250, 10);
+}
+footer {
+    text-align: center;
+    border:10px;
+}
