@@ -1,16 +1,37 @@
 <html>
     <head>
+        <title>Web App - Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="forms">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <h1>SIMPLE INTEREST CALCULATOR</h1>
+        Amount    : <input type="number"  id="principal">  <br/>
+        <br>
+        Interest Rate: <input type="range" value = "1" min="1" max="20" step="0.25" id="rate" oninput="this.nextElementSibling.value = this.value">  <output>1</output><br/>
+        
 
-        <button onclick="compute()">Compute</button>
-    </body>
+            <br>
+        <!-- min to 1, max to 20 and step to 0.25 and the default value to 10.25. -->
+       No. of years : <input type="number" id="years">
+<br>
+
+        <br>        
+        <label class="interest">Interest :</label>
+         <span id="result"></span><br>
+         <br>
+
+        <button onclick="compute()">Compute Interest</button>
+
+        <p id="calculatedInterest"></p>
+    
+    </div>
+<footer style="color: white;"> &#169; 
+    This Calculator belongs to -- Sumith Singh --</footer>
+
+</body>
 </html>
