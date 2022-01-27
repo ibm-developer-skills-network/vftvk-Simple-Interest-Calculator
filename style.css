@@ -1,4 +1,25 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:tan;font-family:arial;color:white}
+h1{color:grey;font-family:verdana}
 
+.maindiv {
+    background-color:white;
+    color: black;
+    width: 300 px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
 
+div,span{
+    padding: 20px;
+    margin: 20px;
+}
+button{
+    margin-top: 20px;
+}
+input,select{
+    margin-left: 30px;
+}
+label{
+    text-align: start;
+}
