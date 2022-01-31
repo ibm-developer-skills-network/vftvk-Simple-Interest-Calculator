@@ -8,7 +8,7 @@
 
         Amount <input type="number"  id="principal">  <br/>
         Interest Rate <input type="range" min = "0.1" max = "20.0"  id="rate">  <br/>
-        No. of Years <select id="years">  </select><br/>
+        No. of Years <input type="number" id="years" min="1" max="25" /> <br/>
         Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute Interest</button>
