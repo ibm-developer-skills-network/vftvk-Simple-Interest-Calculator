@@ -2,16 +2,30 @@
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+        
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+  
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
     </head>
+    
     <body>
         <fieldset style="background-color:white" form="interest_inputs" name="interest_calc">
         <h1 style="font-family: Arial; font-weight: bold">Simple Interest Calculator</h1>
         <form style = "text-align: center; font-family: Arial">
         <label for="amount">Amount</label>
-        <input type="text" inputmode="numeric" id="principal" required>
+        <input type="number" id="principal" required>
         <br><br>
         <label for="rate">Interest Rate</label>
         <input type="range" min = "0.1" max = "20.0"  id="rate"> 
+        <label for="rateDisplay">Rate%</label>
         <br><br>
         <label for = "years">No. of Years</label>
         <input type="number" id="years" min="1" max="25" required>
