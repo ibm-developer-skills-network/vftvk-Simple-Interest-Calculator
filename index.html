@@ -6,14 +6,24 @@
     <body>
     <form>
         <fieldset style="background-color:white" form="interest_inputs" name="interest_calc">
-        <h1 style="font-family: Arial">Simple Interest Calculator</h1>
+        <h1 style="font-family: Arial; font-weight: bold">Simple Interest Calculator</h1>
     
-        Amount <input type="number"  id="principal">  <br/>
-        Interest Rate <input type="range" min = "0.1" max = "20.0"  id="rate">  <br/>
-        No. of Years <input type="number" id="years" min="1" max="25" /> <br/>
-        <button onclick="compute()">Compute Interest</button> <br/>
-        Interest : <span id="result"></span><br>
-        
+            <label for="amount">Amount</label>
+            <input type="number"  id="principal">
+            <br><br>
+            <label for="rate">Interest Rate</label>
+            <input type="range" min = "0.1" max = "20.0"  id="rate"> 
+            <br><br>
+            <label for = "years">No. of Years</label>
+            <input type="number" id="years" min="1" max="25">
+            <br><br>
+            
+            <button onclick="compute()">Compute Interest</button>
+            <br><br>
+            <label for ="interest">Interest :</label>
+            <span id="result"></span>
+            <br><br>
+           
         Ⓒ Everyone Can Get Rich
         </fieldset>
         </form>
