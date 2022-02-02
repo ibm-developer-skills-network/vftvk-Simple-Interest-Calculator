@@ -1,4 +1,18 @@
 body {background-color:black;}
 h1{color:gray;}
 
+.amount{
+  text-align: left;
+}
 
+.rate{
+  text-align: left;
+}
+
+.years{
+  text-align: left;
+}
+
+.interest{
+  text-align: left;
+}
