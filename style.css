@@ -1,4 +1,20 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+    background-color:black; 
+    font-family:arial;
+    color:white; /*As given by guide*/
+}
+    
+h1{
+    color:grey;
+    font-family:verdana/*As given by guide*/
+}
 
-
+.maindiv {
+    background-color:white;
+    color:black;
+    width:500px; /*I found 300px to be too small to fit image*/
+    padding:20px;
+    border-radius:25px;
+    margin-left:auto; /*Only way I found to make it centered on screen*/
+    margin-right:auto;
+}
