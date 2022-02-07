@@ -1,4 +1,21 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black; font-family: arial; color: white}
+h1{color:grey; font-family: verdana}
+
+.maindiv{background-color:white; color:black; width: 500px; padding:20px;
+    border-radius:25px; text-align: center;
+}
+
+input{
+    width: 100px;
+    display: inline-block;
+    margin: 10px; text-align: center; 
+}
+
+button{
+    width: 150px;
+    display: inline-block;
+    margin: 7px;
+    text-align: center;
+}
 
 
