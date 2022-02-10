@@ -1,16 +1,79 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <title>Any relevant title you want to give</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="outerBox">
 
-        <button onclick="compute()">Compute</button>
-    </body>
+            <h1 id="heading">Simple Interest Calculator</h1> <br>
+
+            
+            <div class="innerContent" onchange="validate()">
+                Amount<input type="number" id="principal">  <br><br>
+            </div>
+
+            <div class="innerContent">    
+                Interest Rate<input type="range" id="rate" min="0" max="20" value="10.25" step="0.25" onchange="updateRate()"> <span id="rate_val">10.25%</span>  <br><br>
+            </div>
+
+            <div class="innerContent">
+
+                No. of years<select id="years">
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    
+                </select> <br><br>
+            </div>
+
+            <div class="innerContent">
+
+
+
+                <button onclick="compute()">Compute Interest</button> <br><br>
+
+            </div>
+
+
+                <br>
+                <span id="result"> 
+
+                </span> <br>
+
+
+
+            <footer id="cRight">
+                
+                <br>
+                © This Calculator is property of FINENSE
+            </footer>
+        
+        </div>
+
+
+    
+
+</body>
 </html>
