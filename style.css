@@ -1,4 +1,45 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+
+	background-color:black;
+	font-family:arial;
+	color: white;
+
+
+
+
+}
+
+.outerBox {
+	background-color: white;
+	color: black;
+ 	width: 50%;
+  	padding: 20px;
+  	margin: auto;
+  	border-radius: 25px;
+
+
+}
+
+.innerContent{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+
+
+
+}
+
+#heading {
+
+	color:grey;
+	font-family:verdana;
+}
+
+
+#cRight{
+	text-align: center;
+}
 
 
