@@ -4,13 +4,37 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="main">
+            <h1>Simple Interest Calculator</h1>
+            <div class ="content">
+              
 
-        <button onclick="compute()">Compute</button>
+                <label>Amount</label> <input type="number"  id="principal">  <br/>
+                <label for="rate">Rate</label> <input id="rs_range" class="rs_range" type="range" value="10.5%" step="0.1" min="1.0" max="21.0" oninput="showVal(this.value)" onchange="showVal(this.value)">
+                <br/>
+                <output id="rs_value">10.5%</output><br/>
+                <label>No. of Years</label> <select name="years" id="nofy">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option> 
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option> 
+                <option value="11">11</option> 
+                <option value="12">12</option>  
+                </select> <br/>
+                
+                
+                <button id="bt" onclick="compute()">Compute Interest</button> <br/><br/><br/><br/>
+                <span id="result" class="label" ></span><br/>
+            </div>
+            <div id="bottom"><p class="cpr">&copy; Everyone Can Get Rich</p></div><br/><br/>
+        </div>
+        
     </body>
 </html>

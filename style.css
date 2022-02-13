@@ -1,4 +1,66 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:rgb(0, 0, 0);}
+.main {background-color: rgb(255, 255, 255);
+    height: 50%; 
+    width: 50%; 
+    border-radius: 20px;
+    padding: 50px;; 
+    margin:auto;
+    justify-content: center;}
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5px;
+    height: 70%; 
+    width: 80%;
+    display: inline-block; 
+    justify-content: center; 
+    font-family:Arial, Helvetica, sans-serif 
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    height: 30px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif
+}
 
 
+.years {
+    width: 150px;
+
+}
+input {
+    display: inline-block;
+    float: left;
+  }
+button{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif}
+
+h1{color:rgb(121, 121, 121); font-family: Arial, Helvetica, sans-serif;}
+
+.hidden{
+    visibility:hidden ;
+}
+.rs_value{
+    width: 20%;
+    display: flex;
+    float: right;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+#bottom {
+    height: 20%;
+    text-align: left;
+    position:relative;
+    float: left;
+
+  }
