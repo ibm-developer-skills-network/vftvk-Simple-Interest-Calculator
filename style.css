@@ -1,4 +1,32 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:rgba(0, 0, 0, 0.9);
+}
+.maindiv{
+    background-color:white; 
+    position: absolute;
+    width: 90%;
+    height:90%;
+    margin: 1% 5% 9% 5%;
+    border-radius: 3ex
+}
+.maindiv{
+    font-size: 4ex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    color:gray;
+}
+.inputc{
+    text-align: left;
+    padding-left: 6ex;
+
+}
+.btn{
+    padding: .5em 2em .5em 2em;
+    font-weight: bold;
+    border-radius: 1ex;
+}
 
 
