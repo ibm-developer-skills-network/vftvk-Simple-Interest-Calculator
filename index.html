@@ -1,16 +1,63 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
+	
+ <title>Simple Interest Calculator by Desmond Chan the Man</title>
+	
+	<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+   
     </head>
-    <body>
+    
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
+		
+		<!-- Enter number (Amount) in this field. If 0 or a negative number is entered, user will be prompted to enter a positive number. The number entered is validated by the checkAmount function. -->
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        Amount <input type="number"  id="principal" onchange="checkAmount()">  <br/>
+		
+		<!-- Rate is a number from 1 to 20, which can be selected from a slider. The default display value on the slider is 10.25 -->
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate(this.value)">
+		
+		<!-- This span displays the default value of 10.25% on the slider. -->
+                <span id="rate_val"> 10.25%</span> <br/>
+		
+		<!-- This creates a dropdown menu, with numbers from 1 to 10. -->
+
+        No. of Years <select name="No. of Years" id="years"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        
+         </select>
+
+        <br/>
+		
+		<!-- This creates the Compute Interest button. When clicked, this button runs the formula for computing the interest. -->
+
+        <button onclick="compute()">Compute Interest</button>
+		<span></span>
+		
+		<p id="result"></p>
+		
+		
+    </div>
+
+<footer>
+	
+	<!-- The getFullYear method returns the current year. -->
+
+	&#169; <script type="text/javascript">document.write(new Date().getFullYear());</script> This Calculator belongs to Desmond Chan
+
+
+</footer>
 </html>
