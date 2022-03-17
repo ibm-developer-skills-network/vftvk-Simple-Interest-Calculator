@@ -1,4 +1,86 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;}
+h1{color:grey;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+.maindiv{
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+   
+}
+label {
+      clear: left;
+      
+  }
+  body 
+{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial;
+}
 
+h1
+{
+    color: grey;
+    font-family: Verdana;
+}
 
+.maindiv
+{
+    background-color: #ffffff;
+    color: #000000;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#compute
+{
+    text-align: left;
+   margin-right: 183px
+}
+
+#rate{
+  text-align: center;
+  margin-left: 22px
+}
+
+#principal{
+    height: 20px;
+    width: 190px;
+    margin-left: 50px
+    
+
+    }
+
+#years{
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 150px
+    
+    
+}
+#footer{
+  text-align: left;
+}
+
+.labels
+{
+    width: 500px;
+    display: inline-block;
+    text-align: center ;
+    margin-left: 15px;
+  
+}
+
+.highlight
+{
+    background-color: #ffff00;
+}
