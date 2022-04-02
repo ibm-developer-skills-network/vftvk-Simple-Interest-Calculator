@@ -10,9 +10,10 @@
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal" onchange="validatePrincipal()">  <br/>
-        Rate <input type="range" id="rate" min="0" max="20" step=".25" value= 10.25 onchange="updateRate()" >
+        Rate <input type="range" id="rate" min="1" max="20" step=".25" value= 10.25 onchange="updateRate()" >
             <span id="rate_val"> 10.25
             </span>
+            <span>%</span>
         <br/>
 
         No. of Years <select id="years">
@@ -33,7 +34,7 @@
 
         <button onclick="compute()" >Compute Interest </button><br/>
 
-        <footer> <br/>A simple interest calculator by <br/>Shayne Paulus </footer>
+        <footer> <br/>&#169; Calculator by Shayne Paulus </footer>
     </div>
 
     </body>
