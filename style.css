@@ -1,8 +1,25 @@
-body {background-color:black; font-family:arial;color:white}
-h1{color:grey; font-family: verdana;}
-
-.maindiv {
-    background-color: white; font_color:black; width: 300pxs;
-    padding: 20pxs; border-radius: 25pxs; 
-    align-self: center;
+body {
+    background-color:black;
+    font-family: arial;
+    color: white;
 }
+h1{
+    color:grey;
+    font-family: verdana;
+}
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+
+}
+
+
+
+
+
+
+
