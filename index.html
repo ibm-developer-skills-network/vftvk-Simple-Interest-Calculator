@@ -1,16 +1,54 @@
+<!DOCTYPE html>
+
 <html>
+    <title> Interest Calculator </title>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+    
+    <div class="maindiv">
+
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            Amount <input type="number"  id="principal" onchange="checkAmount()">  
+            <br/>
 
-        <button onclick="compute()">Compute</button>
+            Rate <input type="range" id="rate" 
+                min="1" max="20" 
+                step = "o.25" value="10.25"
+                onchange="updateRate(this.value)">  
+
+                 <span id="rate_val">
+                     10.25%
+                 </span>
+                <br/>
+            
+            No. of Years <select name="No. of Years" id="years"> 
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>  
+                <option value="10">10</option>        
+            </select> <br/>
+        
+            <button onclick="compute()">Compute Interest</button>
+            <span></span>
+            <!--This is to show that the corresponding result should be viewed as a paragraph-->
+            <p id="result"></p>
+
+    </div>
+    
     </body>
+
+    <footer>
+        &#169; This Calculator belongs to Amy B 
+    </footer>
+
 </html>
