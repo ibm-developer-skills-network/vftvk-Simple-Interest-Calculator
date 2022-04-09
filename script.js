@@ -12,6 +12,7 @@ function compute() {
         return false;
     } else if (p == 0){
         alert("Please enter Principal amount greater than 0.");
+        return false;
     }
 
     var total;
