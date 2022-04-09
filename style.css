@@ -1,4 +1,59 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black
+}
 
+h1 {
+    color: gray;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+}
 
+#round-borders {
+    border-radius: 25px;
+    background: white;
+    padding: 10px 70px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+footer {
+    font-family: sans-serif;
+    font-style: normal;
+    /* font-weight: normal; */
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    padding: 0 0 0 70px;
+    font-weight: bolder;
+}
+
+.button {
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 70px;
+    padding: 10px 10px;
+    font-weight: lighter;
+}
+
+#principal {
+    margin-left: 70px;
+}
+
+#rateInput {
+    margin-left: 34px;
+}
+
+#years {
+    margin-left: 42px;
+}
+
+#demo {
+    margin-top: 20px;
+    margin-left: 70px;
+}

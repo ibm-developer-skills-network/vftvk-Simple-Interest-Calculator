@@ -1,16 +1,45 @@
 <html>
-    <head>
+
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+</head>
+
+<body>
+    <div id="round-borders">
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+        <div>
+            <label>Amount</label><input id="principal" type="text" placeholder="Enter Principal Amount" required>
+            <br />
+        </div>
+        <div>
+            <label>Interest Rate</label>
+            <input type="range" id="rateInput" name="rangeInput" step="0.5" min="0" max="100" value="5.5"
+                oninput="amount.value=rateInput.value">
+            <output id="amount" name="amountOutput" for="rateInput">5.5</output>%
+            <br />
+        </div>
+        <div>
+            <label>No. of Years</label>
+            <select name="numberOfYears" id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br />
+        </div>
+        <button class="button" onclick="compute()">Compute Interest</button> <br />
+        <p id="demo"></p>
+        <footer>
+            <p>Ⓒ Everyone Can Get Rich</p>
+        </footer>
+    </div>
+</body>
 </html>
