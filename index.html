@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,12 +10,12 @@
     <div id="round-borders">
         <h1>Simple Interest Calculator</h1>
         <div>
-            <label>Amount</label><input id="principal" type="text" placeholder="Enter Principal Amount" required>
+            <label>Amount</label><input id="principal" type="text" placeholder="Enter Principal Amount" autofocus required>
             <br />
         </div>
         <div>
             <label>Interest Rate</label>
-            <input type="range" id="rateInput" name="rangeInput" step="0.5" min="0" max="100" value="5.5"
+            <input type="range" id="rateInput" name="rangeInput" step="0.5" min="1" max="20" value="5.5"
                 oninput="amount.value=rateInput.value">
             <output id="amount" name="amountOutput" for="rateInput">5.5</output>%
             <br />
