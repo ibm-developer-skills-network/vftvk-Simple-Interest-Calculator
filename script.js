@@ -10,6 +10,8 @@ function compute() {
     if (p == null || p == "") {
         alert("Please fill 'Amount' to calculate Simple Iterest.");
         return false;
+    } else if (p == 0){
+        alert("Please enter Principal amount greater than 0.");
     }
 
     var total;
