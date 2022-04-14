@@ -1,4 +1,42 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color:black;
+  font-family:arial;
+  color:white
+}
+h1{
+  color:grey;
+  font-family:verdana;
+  font-size: 20px;
+  font-weight:600
+}
 
+.maindiv {
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  align-self: center;
+  border-radius: 25px;
+}
+.maindiv{
+  line-height: 2;
+  font-size: 12px;
+}
+.highlight {
+  background-color: yellow;
+}
+.maindiv button{
+  margin: 10px 0px;
+}
 
+.mf{
+  margin-top: 10px;
+}
+#result{
+  line-height: normal;
+}
+.center{
+  width: 256px;
+  margin: auto;
+}
