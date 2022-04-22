@@ -1,4 +1,41 @@
-body {background-color:tan;}
-h1{color:green;}
 
+/* Setup for the application */
+body {background-color:black;font-family:arial;color:white}
+h1{color:grey;font-family:verdana}
 
+/* The class is for the div box */
+.maindiv {
+    background-color:white;
+    color:black;
+    width:500px;
+    padding:20px;
+    border-radius:25px;
+    margin:auto;
+    text-align: justify;
+}
+
+/* The class is for the label position in the div box */
+.label{
+    position: relative;
+    left: 80px;
+
+}
+
+/* This classes are for the position of inputs in the div box */
+.intput1{
+    position: relative;
+    left: 180px;
+
+}
+
+.intput2{
+    position: relative;
+    left: 200px;
+
+}
+
+.intput3{
+    position: relative;
+    left: 150px;
+
+}

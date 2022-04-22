@@ -1,16 +1,67 @@
+<!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Interest Calculator</title>
+  </head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+  <body>
+    <div class="maindiv">
+      <h1>Simple Interest Calculator</h1>
+        
+        <!-- Fill the amount of money to invest-->
+        <label class = "label" >Amount</label> 
+        <input class = "intput1" type="number" id="principal" onchange="myAlert()"/> 
+        <br><br>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <!-- Define the rate with a maxi = 20 and mini = 1 -->
+        <label class = "label">Rate</label>
+        <input
+            class = "intput2"
+            type="range"
+            id="rate"
+            min="1"
+            max="20"
+            step = "0.25"
+            value="10.25"
+            onmousemove ="updateRate()";
+        />
+
+        <!-- show dynamicaly the rate on the right of the range  -->
+        <span class = "intput2" id="rate_val">10.25 % </span> 
+        <br><br>
+
+        <!-- Choice of 10 years to calulatre the interest  -->
+        <label class = "label">No. of Years</label> 
+        <select
+        class = "intput3"  
+        id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> 
+            <br><br>
+   
+        <!-- Button to calculate the final interst   -->
+        <button class = "label"
+        onclick="compute()" >Compute Interest
+            </button>
+        <br><br>
+      
+      
+      <!-- Show the final calulation with all the inputs  -->
+      <span class = "label" id="result"></span> 
+      <br><br>
+    
+      <footer>&#169; This Calculator belongs to --SMO--</footer>
+    </div>
+  </body>
 </html>
