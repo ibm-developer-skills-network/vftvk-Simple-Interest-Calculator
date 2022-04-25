@@ -1,1 +1,2 @@
-# coding-project-template by Parth Parikh
+# coding-project-template 
+#Author: Parth Parikh
