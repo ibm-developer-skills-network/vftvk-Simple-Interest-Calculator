@@ -1,28 +1,67 @@
-body {background-color:black}
-h1{
-  color:grey;
-  text-align:center;
-  }
+body{
+  background-color: black;
+  font-family: tahoma, verdana, sans-serif;
+}
 
-div{margin:5%;
-    padding:5%;
-    background-color: white;
-    }
-    
-    
-.grid-container{
-  display:grid;
-  grid-template-columns:auto auto;
+section {
+  
+  margin: 5%;
+  margin-top: 1%;
+  
+  padding: 3%;
+  padding-top: 1%;
+  
+  border-radius: 30px;
+  background-color: white;
+  width: 85%;
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+  font-size: 40px;
   
 }
-select{  
-    text-align: ;}
 
-div2{
-    margin-right:15%;
-    margin-left:15%;
-    text-align:left;}
+main {
+  display: grid;
+  justify-content: center;
+  
+  margin-right: 5%;
+  margin-left: 0%;
+}
 
-span{
-    margin-left:15%;}
+div {
+  
+}
 
+.amount  {
+  width: 80%;
+}
+.slider {
+  width: 70%;
+}
+
+.input {
+  width: 80%;
+}
+
+.compute {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  font-weight: bold;
+  gap: 8px;
+  align-self: center;
+  width: 120%;
+}
+
+footer{
+  margin-top: 20px;
+  font-weight: bold;
+}
