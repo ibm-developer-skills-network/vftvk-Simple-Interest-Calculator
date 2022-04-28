@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
+  <script src="./script.js"></script>
+   <link rel="stylesheet" href="./style.css">
   <title>Web App - Simple Interest Calculator</title>
-</head>
-<body>
+ </head>
+
+ <body onload = "valSlider()">
   <section>
     <h1>
       Simple Interest Calculator
     </h1>
     
-   <main >
-      <div class="grid-container">
-     
-     
+   <main>      
+     <div class="grid-container">
+          
        <label>Amount</label>
-       <span><input class="amount" type="number" id="amount" name="amount"></span>
-       
+       <span><input class="amount" type="number" id="amount" name="amount" ></span>
        
        <label>Interest Rate</label>
-       <span><input class ="slider" type="range" id="ir" name="ir" min="0" max="20">20.0%
-       </span>
+       <span ><input class ="slider" type="range" id="ir" name="ir" min="1" max="20" step="0.25"  oninput="valSlider()" value="9">
+       <span id="sliderVal"></span>%</span>
 
-       <label>No.of Years</label>
+       <label>No. of Years</label>
        <span>
          <select name="years" id="years">
-               <option value="1">1</option><option value="2">2</option><option value="3">3</option>
-               <option value="4">4</option><option value="5">5</option><option value="6">6</option>
-               <option value="7">7</option><option value="8">8</option><option value="9">9</option>
-               <option value="10">10</option>
+             <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+             <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+             <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+             <option value="10">10</option>
           </select>
-        </span>
-      </div>
+       </span>
+     </div>
       
-      <span class="compute"><button onclick="compute()">Compute Interest</button></span>
+     <span class="compute"><button onclick="compute()">Compute Interest</button></span>
       
-      <div>
-      
-      If you deposit <mark>ValueAmount/</mark>,<br>
-      at an interest rate of <mark>/Valueir/</mark><br>
-      You will receive an amount of <mark>valueCompute</mark>,<br>
-      in the year <mark>year</mark>
-      
-      </div>
+     <div id="resText">
+      If you deposit <mark><span id="dAmount"></span></mark>,<br>
+      at an interest rate of <mark><span id="dIr"></span>%</mark><br>
+      You will receive an amount of <mark><span id="dResult"></span></mark>,<br>
+      in the year <mark><span id="dYears"></span></mark>
+     </div>
    </main>
    
-   <footer>Everyone Can Get Rich</footer>
+   <footer>	
+     &copy; Everyone Can Get Rich
+   </footer>
   </section>
-
-</body>
-
+ </body>
 </html>

@@ -36,14 +36,14 @@ div {
 }
 
 .amount  {
-  width: 80%;
+  width: 75%;
 }
 .slider {
-  width: 70%;
+  width: 65%;
 }
 
 .input {
-  width: 80%;
+  width: 85%;
 }
 
 .compute {
@@ -52,7 +52,7 @@ div {
 }
 
 .grid-container{
-  display: grid;
+  display: inline-grid;
   grid-template-columns: auto auto;
   text-align: left;
   font-weight: bold;
@@ -61,7 +61,12 @@ div {
   width: 120%;
 }
 
+#resText {
+  display: none;
+}
+
 footer{
   margin-top: 20px;
+  margin-left: 3px;
   font-weight: bold;
 }
