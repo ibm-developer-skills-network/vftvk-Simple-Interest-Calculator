@@ -8,6 +8,7 @@ var thisYear = new Date().getFullYear();
 
 if(amount <= 0 || "" == document.getElementById("amount").value){
 	alert("Enter a positive Number")
+	document.getElementById("amount").focus();
 	}else{
   var result = amount/100 * ir * years ;
 
