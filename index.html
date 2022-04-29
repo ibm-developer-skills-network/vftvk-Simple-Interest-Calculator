@@ -1,16 +1,48 @@
-<html>
-    <head>
+<--- Html Document for calculating Simple Interest --->
+
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <meta name="author" content="Okafor Chinedu">
+    <meta name="description" content="Simple Interest Calculator">
+    <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<body>
+    <main>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <div class="subdiv">
+              <--- Getting of input values from the user with the help of input element--->
 
-        <button onclick="compute()">Compute</button>
-    </body>
+                <p><label>Amount</label> <span id="input-principal"><input type="number" id="principal" onchange="validateAmount()"></span></p>
+                <p><label>Rate</label> <span id="input-rate"><input type="range" id="rate" min="1" max="20" step="0.25" value="3.5" onchange="getSliderValue()"><span id="rateSpan">3.5%</span></span>
+                </p>
+                <p><label>No. of Years</label>
+                    <span id="input-year"> <select name="years" id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></span></p>
+                <--- I used the compute() as the the event listener for the compute button --->
+                <button onclick="compute()">Compute Interest</button><br/><br>
+                <span id="result"></span>
+            </div>
+            <footer><span class="footer">&copy;</span> Everyone Can Get Rich</footer>
+    </main>
+    </div>
+</body>
+
 </html>
