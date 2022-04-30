@@ -1,4 +1,28 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black; font-family: arial; color: white;}
+h1{color:grey; font-family: Verdana;}
+.maindiv {
+     background-color: white;
+     color: black;
+     width: 500px;
+     margin: 0 auto;
+     padding: 20px;
+     border-radius: 25px;
+}
 
-
+.internalBody {
+    width: 340px;
+    margin: 0 auto;
+}
+#principal {
+    width: 150px;
+    margin-left: 60px;
+}
+#years {
+    margin-left: 30px;
+}
+#rate {
+    margin-left: 25px;
+}
+#result {
+    display: none;
+}
