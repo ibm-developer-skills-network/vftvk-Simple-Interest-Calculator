@@ -1,11 +1,27 @@
-body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family: verdana}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;    
+}
 
-.maindiv  {
-    background-color: white
-    color=black;
-    width:300px;
-    padding:20px;
-    border-radius:25px;
-    align:center
+body {
+    background-color:aqua
+}
+
+.maindiv{
+    background-color: grey;
+    color: white;
+    width: 320px;
+    padding: 40px;
+    border-radius: 25px;
+    align: center;
+    transform: translate(100%,100%);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+input{
+    width: 60%;
 }
