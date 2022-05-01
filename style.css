@@ -1,4 +1,29 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 
+h1 {
+    color: grey;
+    font-family: verdana;
+}
 
+.maindiv {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+footer {
+    text-align: left;
+}
+
+.result span {
+    color: red;
+}
