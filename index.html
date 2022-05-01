@@ -1,16 +1,31 @@
+<!DOCTYPE html>
 <html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            Amount:
+            <input type="number"  id="principal">  <br/>
+            Rate:
+            <input type="number"  id="rate">  <br/>
+            No. of Years:
+            <select id="years">
+                <option value="1">1</option>
+                <!--fill in the rest of the values1-->
+            </select>            
+            Interest rate: <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25">
+                           <span id="rate_val">
+                               10.25%
+                           </span>
+            <button onclick="compute()">Compute Interest</button>
+            <span id="result"></span>
+        </div>
+        <footer>
+            This calculator belongs to Ockap
+        </footer>
     </body>
 </html>
