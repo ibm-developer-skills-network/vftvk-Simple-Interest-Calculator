@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Mi Calculadora</title>
-    </head>
-    <body>
-        <div class="maindiv">
-            <h1>Mi Calculadora</h1>
-            <br>
-            Amount:
-            <input type="number" placeholder="Enter the amount to invest" id="principal">  <br/>
-            <br>
-            Rate (%): <input type="number" placeholder="Enter the rate %" id="rate">  <br/>            
-            <br>
-            No. of Years:  <select id="years">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <!--fill in the rest of the values1-->
-            </select>
-            <br>                        
-            <br>
-            Interest rate: <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25">
-            <span id="rate_val">
-            10.25 %
-            </span>
-            <br>
-            <br>            
-            <button onclick="compute()">Compute Interest</button>
-            <span id="result"></span>
-            <br>
-            <br>
-            <p>This calculator belongs to symbiotik_007 ©</p>
-        </div>
-        <footer>
-            
-        </footer>
-    </body>
+  </head>
+  <body>
+    <div class="maindiv">
+      <h1>Mi Calculadora</h1>
+      <br />
+      Amount:
+      <input
+        type="number"
+        placeholder="Enter the amount to invest"
+        id="principal"
+      />
+      <br />
+      <br />
+      Rate (%):
+      <input type="number" placeholder="Enter the rate %" id="rate" /> <br />
+      <br />
+      No. of Years:
+      <select id="years">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <!--fill in the rest of the values1-->
+      </select>
+      <br />
+      <br />
+      Interest rate:
+      <input
+        type="range"
+        id="rate"
+        min="1"
+        max="10"
+        step="0.25"
+        value="10.25"
+        oninput="showVal(this.value)"
+        onchange="showVal(this.value)"
+      /><span id="rate_val"></span>
+      <br />
+      <br />
+      <button onclick="compute()">Calculate</button>
+      <span id="result"></span>
+      <br />
+      <p>Principal Amount: <span id="output_1"></span></p>
+      <p>Total Interest: <span id="output_2"></span></p>
+      <p>Total Value: <span id="output_3"></span></p>
+      <br />
+      <p>This calculator belongs to symbiotik_007 ©</p>
+      <p>© Everyone Can Get Rich</p>
+    </div>
+    <footer></footer>
+  </body>
 </html>
