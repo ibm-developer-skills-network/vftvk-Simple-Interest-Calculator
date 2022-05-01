@@ -16,7 +16,7 @@ body {
     padding: 40px;
     border-radius: 25px;
     align: center;
-    transform: translate(100%,100%);
+    transform: translate(150%,50%);
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
@@ -24,4 +24,13 @@ body {
 
 input{
     width: 60%;
+    border-radius: 7px;
+}
+
+button{
+    font-size: 16px;
+    width: 120px;
+    height: 20px;
+    border-radius: 6px;
+    border: none;
 }
