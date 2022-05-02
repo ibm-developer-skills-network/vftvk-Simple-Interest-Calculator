@@ -1,4 +1,91 @@
-body {background-color:tan;}
-h1{color:green;}
+/*-----Initial style for the page-----*/
+*{
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;           
+}
 
+body {
+    background-color:black;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 13px;
+    margin: none;
+    padding: none;
+}
+/*------------------------------------*/
+
+/*----White Background for the site---*/
+#back_form{
+    background-color: white;
+    border-radius: 25px;
+    padding: 25 15 15 15;
+}
+/*------------------------------------*/
+
+/*---------Website Title Style--------*/
+#back_form > #form_title {
+    color: gray;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+}
+/*------------------------------------*/
+
+/*-------Form and Inputs Styles-------*/
+#back_form > #form_style {
+    max-width: 300px;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#back_form > form {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    margin-bottom: 2px;
+    border-width: 1px;
+    border-color: darkgray;
+    
+}
+
+#int_rate_out {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    width: 50px;
+    font-size: 15px;
+    margin: 10 0 10 0;
+}
+
+#int_rate {
+    width: 100px;
+    margin: 10 0 10 0;
+}
+
+#amount {
+
+    margin: 10 0 10 0;
+}
+
+#num_years {
+    margin: 10 0 10 0;
+}
+
+#sub_button {
+    padding: 2 5 2 5;
+}
+/*------------------------------------*/
 
