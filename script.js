@@ -7,7 +7,7 @@ function updateRate() {
 
 function compute() {
     var principal = document.getElementById("principal").value;
-    if(parseInt(principal) <=0)
+    if(parseInt(principal) <=0 || principal == "")
     {
         alert("Enter a positive number.");
         document.getElementById("principal").focus();
