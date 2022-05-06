@@ -1,4 +1,39 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: arial;
+    color: white
+}
 
+h1 {
+    color: grey;
+    font-family: verdana;
+    /* white-space: nowrap; */
+}
 
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 480px;
+    padding: 20px;
+    border-radius: 25px;
+    margin:auto;
+    word-wrap: normal;
+
+}
+
+.secondiv{
+
+    text-align: left;
+    width: 400px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+.inputs{
+    padding: 2px;
+}
