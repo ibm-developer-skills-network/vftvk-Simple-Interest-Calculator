@@ -1,4 +1,72 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+  }
+  h1 {
+    color: grey;
+    font-family: verdana;
+  }
+  
+  .maindiv {
+    background-color: #fff;
+    color: #000;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    text-align: left;
+  
+    justify-content: center;
+  }
+  
+  .GetInfo {
+    width: 450px;
+    font-weight: 550;
+    margin-left: 90px;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="range"] {
+    -webkit-appearance: none !important;
+    background: rgba(216, 214, 214, 0.76);
+    height: 7px;
+    border-radius: 40px;
+    border: 0.2px solid;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: rgb(21, 101, 221);
+    height: 13px;
+    border-radius: 20px;
+    width: 13px;
+  }
+  
+  #principal {
+    margin-left: 56px;
+    margin-bottom: 15px;
+  }
+  #rate {
+    margin-left: 26px;
+    margin-bottom: 15px;
+  }
+  
+  #years {
+    margin-left: 30px;
+    margin-bottom: 16px;
+  }
+  
+  #result {
+    margin-bottom: 16px;
+  }
+  
+  .highlight {
+    background-color: #ffff00;
+  }
+  
