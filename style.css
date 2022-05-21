@@ -1,4 +1,71 @@
-body {background-color:tan;}
-h1{color:green;}
+body 
+{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
 
+h1
+{
+    color: grey;
+    font-family: Verdana;
+}
 
+.maindiv
+{
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #result
+{
+    display: none;
+} */
+
+.Given
+{
+    margin-left: 40px;
+}
+
+table td
+{
+    padding-bottom: 5px;
+}
+
+#compute
+{
+    margin-bottom: 5px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 140px;
+}
+#principal{
+    height: 25px;
+    width: 150px;
+}
+
+#years{
+    height: 35px;
+    width: 40px;
+}
+
+#footer
+{
+    margin-top: 10px;
+}
+
+.labels
+{
+    width: 100px;
+}
+
+.highlight
+{
+    background-color: yellow;
+}
