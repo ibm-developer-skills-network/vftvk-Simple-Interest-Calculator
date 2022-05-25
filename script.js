@@ -15,7 +15,7 @@ function compute()
 
 function refreshSlider(){
 rate.value
-document.getElementById("rate_val").innerText = rate.value + "%"}
+document.getElementById("rateLabel").innerText = rate.value + "%"}
 
 finishPage = () =>{
     var rate = document.getElementById("rate");
