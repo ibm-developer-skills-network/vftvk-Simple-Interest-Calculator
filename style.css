@@ -1,17 +1,25 @@
 body {
-background-color:black;
-font-family: Arial;
-color: white;
+    background-color:black;
+    font-family:arial;
+    color:white;
 }
-h1{color:grey;
-font-family: Verdana;}
-
-.maindiv{
-background-color: white;
-color:black;
-width: 500px;
-padding: 20px;
-border-radius: 25px;
-margin: 0 auto;
+h1 {
+    color:grey;
+    font-family:verdana;
+}
+.maindiv {
+    background: white;
+    color: black;
+    width: 400px;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0 auto;
 }
 
+.form-field {
+    margin: 10px 0;
+}
+
+.field-label {
+    display: inline-block;
+    width: 150px;
