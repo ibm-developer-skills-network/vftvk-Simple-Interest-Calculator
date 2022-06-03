@@ -1,16 +1,69 @@
 <html>
-    <head>
-    <script src="script.js"></script>
+
+<head>
+    
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <title>Web App - Simple Interest Calculator</title>
+    
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<body>
+    <div class="maindiv">
+        <h1 id="sectioncalculator"> Simple Interest Calculator</h1>
+        
+            <form action="#" id="formcalculator">
 
-        <button onclick="compute()">Compute</button>
-    </body>
+                <label for="principal" id="amount">Amount</label>
+                <input type="text" id="principal">
+    
+                <br /> <br />
+    
+                <label for="rate">Interest Rate</label>
+                <input type="range" id="rate" min="1" max="20" step="0.25">
+                <span id="rate_value">10.5%</span>
+                <br/><br/>           
+    
+                <label for="years">No. of years</label>
+                <select  id="years">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br> <br>
+    
+                <label for="interest" id="interest"></label>
+                <button id="boton">Compute Interest</button>            
+                <br />   
+                
+    
+            </form>
+
+         
+        
+        <p id="result">
+            If you deposite <mark id="deposito"></mark> <br/> at the interest of <mark id="interes"></mark> %. <br/> You will receive an amount of <mark id="devolver"></mark> <br/> the year <mark id="endyear"></mark>
+        </p>
+        <br/>
+        <footer id="copyright">&#169 Eric Armando Herrera Alfonso</footer>
+        
+
+
+    </div>
+    
+    <script src="script.js"></script>
+
+
+    
+
+
+</body>
+
 </html>
+

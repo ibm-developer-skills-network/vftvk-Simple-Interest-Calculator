@@ -1,4 +1,47 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family: arial;
+    color: white;
+}
+#sectioncalculator{
+    font-family: Verdana;
+    color: gray;
+    
+}
 
+.maindiv{
+    background-color: white;
+    color: black;
+    border: 3px solid green;
+    border-radius: 25px;
+    margin: auto;
+    padding: 20px;
+    width: 520px;
+}
 
+#formcalculator{
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal{
+    margin-left: 82;
+}
+#rate{
+    margin-left: 44px;
+}
+
+#years{
+    margin-left: 52px;
+}
+#reset{
+    margin-left: 20px;
+}
+#result{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+}
+#copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
