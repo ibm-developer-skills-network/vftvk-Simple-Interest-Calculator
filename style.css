@@ -1,17 +1,13 @@
-body {
-  background-color:black;
-  padding:10%;
+body {background-color:black;}
+h1{color:grey;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{
-  color:black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+ 
 .maindiv{
-    background-color:#54E346;
+    background-color: white;
     color: black;
     width: 300px;
-    padding: 100px;
+    padding: 20px;
     border-radius: 25px;
     margin: auto;
 }
