@@ -4,15 +4,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* container */
-.container {
+/* maindiv */
+.maindiv {
   background-color: white;
-  border-radius: 30px;
+  border-radius: 25px;
   margin: 8px 50px;
 }
-.container h1 {
+.maindiv h1 {
   font-family: "Noto Sans", sans-serif;
-  color: gray;
+  color: grey;
   padding: 30px 20px;
   padding-bottom: 0px;
 }
@@ -41,6 +41,7 @@ input::-webkit-inner-spin-button {
 }
 button {
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 .highlight {
   background-color: yellow;
