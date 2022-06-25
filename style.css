@@ -1,4 +1,52 @@
-body {background-color:tan;}
-h1{color:green;}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Roboto:wght@500&display=swap");
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
 
+/* container */
+.container {
+  background-color: white;
+  border-radius: 30px;
+  margin: 8px 50px;
+}
+.container h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: gray;
+  padding: 30px 20px;
+  padding-bottom: 0px;
+}
 
+/* section */
+.section {
+  padding: 0 97px;
+}
+.field-options {
+  padding: 6px 0;
+}
+#principal {
+  width: 130px;
+  margin-left: 45px;
+}
+#rate {
+  width: 115px;
+  margin-left: 18px;
+}
+#years {
+  margin-left: 18px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+button {
+  font-family: "Roboto", sans-serif;
+}
+.highlight {
+  background-color: yellow;
+}
+
+/* footer */
+footer {
+  padding: 1px 20px;
+}
