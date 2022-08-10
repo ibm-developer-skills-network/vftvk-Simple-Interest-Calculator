@@ -1,16 +1,58 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <script src="script.js"></script>
+
+<head>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<body>
+    <div class="maindiv">
+        <h1>
+            Simple Intrest Calculator
+        </h1>
+        <table>
+            <tr>
+                <td> <b> Amount </b> </td>
+                <td> <input type="text" id="principal" name="amount"> </td>
+            </tr>
+            <tr>
+                <td> <b> Interest Rate </b> </td>
+                <td> <input type="range" min="1.0" max="20.0" id="rateVal" step="0.25">
+                    <b> <label id="rateDisplay"></label>% </b>
+                </td>
+            </tr>
+            <tr>
+                <td> <b> No. of years </b> </td>
+                <td> <select name="number" id="year">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select> </td>
+            </tr>
+            <tr>
+                <td> <button onclick="compute()"> <b>Compute Interest</b> </button> </td>
+                <td> </td>
+            </tr>
+        </table>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <div id="result"> </div>
+
+        <footer> <b> &#169; Everyone Can Get Rich </b> </footer>
+    </div>
+
+    <script>
+        var rangeslider = document.getElementById("rateVal");
+        var output = document.getElementById("rateDisplay");
+        output.innerHTML = parseFloat(rangeslider.value).toFixed(2);
+        rangeslider.oninput = function () 
+        {
+            output.innerHTML = this.value;
+        }
+    </script>
+
+</body>
+
 </html>
