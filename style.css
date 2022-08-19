@@ -1,4 +1,15 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black; font-family:arial;color:white; justify-content: center; align-content: center;}
 
+h1{color:gray; font-family: verdana;}
 
+.maindiv {
+    background-color:white; 
+    color:black; 
+    width: 500px; 
+    padding: 20px; 
+    border-radius: 25px; 
+    align-content: center;
+    margin:auto 
+}
+
+footer {justify-content: left;}
