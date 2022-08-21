@@ -1,3 +1,3 @@
 # coding-project-template
 
-HTTP, CSS and JavaScript Final Project for the EDX Course "Introduction to Cloud Development with HTML, CSS, JavaScript"
+HTML, CSS and JavaScript Final Project Submission for the EDX Course "Introduction to Cloud Development with HTML, CSS, JavaScript"
