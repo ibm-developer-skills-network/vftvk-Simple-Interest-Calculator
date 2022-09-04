@@ -1,4 +1,47 @@
-body {background-color:tan;}
-h1{color:green;}
+
+body {
+    background-color:black;
+    font-family: Arial;
+    width: 300px;
+}
+h1{color:grey;
+    font-family: Verdana; 
+    font-size: 650%;
+    padding-left: 25px;
+    
+} 
+.kouti {
+    color: rgb(14, 13, 13); 
+    text-align:left;
+    padding-left: 260px;
+    font-size: 150%;
+}
+.kouti label {
+    font-weight: 600px;
+    line-height: 30px;
+    width: 150px;
+    display: inline-block;
+}
+
+p.demo {text-align: left; padding-left: 10px;}
+.maindiv {background-color: white; 
+    width: 85%; height:85%;
+    padding: 20px;
+    border-radius: 25px;
+    position: absolute;
+top:50%; left:50%; transform: translate(-50%, -50%);}
+
+footer {
+    padding-left: 0px;
+    position: absolute;
+    bottom: 40px;
+    font-size: 23px;
+}
+.yellow {
+    background-color: yellow;
+}
+
+
+button { font-size: 19px;}
 
 
