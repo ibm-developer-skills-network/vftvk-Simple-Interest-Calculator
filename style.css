@@ -1,4 +1,38 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
 
+h1 {
+    color:grey;
+    font-family:verdana;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.maindiv {
+    background-color:white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
 
