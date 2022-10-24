@@ -1,4 +1,22 @@
-body {background-color:tan;}
-h1{color:green;}
-
+body {background-color:black;font-family:arial;color:white}
+h1{color:grey;font-family:verdana}
+.mainDiv{
+  position:absolute;left: 30%;
+  background-color: white;color: black; 
+  width: 500px; padding: 20px;
+  height: 320px;
+  border-radius: 25px
+}
+.secondDiv{
+  margin-left: 60px;
+  text-align-last: left
+}
+footer{
+  position: absolute;
+  text-align-last: left;
+  margin-left: -70px
+}
+th{
+  height: 25px;
+}
 
