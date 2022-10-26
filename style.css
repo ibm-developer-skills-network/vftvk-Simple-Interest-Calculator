@@ -1,16 +1,27 @@
 body {
-    background-color:#000;
-    font-family: arial;
-    color: white;
+  background-color:#000;
+  font-family: arial;
+  color: white;
 }
 
 h1{color:grey;}
 
 .maindiv {
-    background-color: white;
-    color: black;
-    width: 300px;
-    padding: 20px;
-    border-radius: 25px;
-    margin: 0 auto;
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.col-left {
+width: 40%;
+float: left;
+text-align: left;
+}
+
+.col-right {
+width: 50%;
+float: right;
 }

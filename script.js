@@ -1,11 +1,11 @@
 
-
+//compute and display the results  
 function compute()
 {
-    //alert("compute");
-
+    //grab the principal amount
     var principal = document.getElementById("principal").value;
 
+    //if the principal amount is greater than zero, then continue
     if (principal > 0)
     {
         var rate = document.getElementById("rate").value;
@@ -13,6 +13,7 @@ function compute()
         var interest = principal * years * rate /100;
         var year = new Date().getFullYear()+parseInt(years);
 
+        //
         var str = "<p>";
         str += "If you deposit <mark>$ " + principal; 
         str += "</mark> at an interest rate of <mark>" + rate + "%</mark>,";
@@ -22,7 +23,9 @@ function compute()
         document.getElementById("result").innerHTML = str;
     }
     else {
-            alert("Enter a positive number for the Amount");
+        //if the principal amount is less than or equal to zero, 
+        //then alert the user to enter a positive number
+        alert("Enter a positive number for the Amount");
     }
 }
 
