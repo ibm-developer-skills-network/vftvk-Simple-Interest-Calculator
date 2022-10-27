@@ -24,4 +24,5 @@ text-align: left;
 .col-right {
 width: 50%;
 float: right;
+border-radius: 10px;
 }

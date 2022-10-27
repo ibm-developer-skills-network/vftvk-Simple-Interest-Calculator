@@ -26,6 +26,7 @@ function compute()
         //if the principal amount is less than or equal to zero, 
         //then alert the user to enter a positive number
         alert("Enter a positive number for the Amount");
+        document.getElementById("principal").focus();
     }
 }
 
