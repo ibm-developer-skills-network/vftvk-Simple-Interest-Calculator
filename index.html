@@ -1,16 +1,47 @@
-<html>
+<!DOCTYPE html>
     <head>
+        <title>Simple Interes Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <label for = "principal"> Amount: </label>
+            <input type="number"  id="principal">  
+            <br/>
+            <label for = "rate">Rate: </label> 
+            <input type="range" 
+                id="rate" 
+                min="1" 
+                max="20" 
+                step="0.5"
+                value="10.25"
+                onchange="updateRate()">
+            <span id="rate_val">10.25%</span>  
+            <br/>
+            <label for="years">No. of Years : </label>
+            <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select> 
+            <br/>
+            <button onclick="compute()">Compute Interest</button>
+            <br>
+            <label for="result">Interest :</label>
+            <br>
+            <span id="result"></span><br>
+            <footer>
+                &#169; This Calculator belongs to John
+            </footer>
+        </div>
     </body>
 </html>
