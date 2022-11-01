@@ -1,11 +1,11 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;}
+
 div.outer{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
     color: #8AF;
     padding: 0px 20px;
 }
