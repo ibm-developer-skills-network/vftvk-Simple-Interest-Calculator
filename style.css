@@ -6,7 +6,7 @@ div.outer{
     -moz-border-radius: 20px;
     border-radius: 20px;
     overflow: hidden;
-    background-color: black;
+    background-color: white;
     color: white ;
     padding: 0px 20px;
 }
