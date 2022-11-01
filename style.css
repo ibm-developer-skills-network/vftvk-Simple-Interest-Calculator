@@ -1,12 +1,13 @@
 body {background-color:black;}
 h1 {color: #727472;}
+p {color: Black;}
 div.outer{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     overflow: hidden;
     background-color: white;
-    color: black;
+    color: white ;
     padding: 0px 20px;
 }
 
