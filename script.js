@@ -3,8 +3,8 @@ function compute()
     p = document.getElementById("principal").value;
     q = document.getElementById("rate").value;
     r = document.getElementById("years").value;
-    a = document.getElementById("results");
+    results = document.getElementById("result");
     
-    a.innerHTML = "The interest is " + (p*n*r/100);
+    results.innerHTML = "The interest is " + (p*q*r/100);
 }
         
