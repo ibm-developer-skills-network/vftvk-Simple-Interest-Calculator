@@ -2,10 +2,6 @@ body {
     background-color:black;
     color:Black;
 }
-h1{
-    color:ace;
-    align:center;
-}
 div.outer{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -15,5 +11,8 @@ div.outer{
     color: Black;
     padding: 0px 20px;
 }
-
+h1{
+    color:#555d50;
+    align:center;
+}
 
