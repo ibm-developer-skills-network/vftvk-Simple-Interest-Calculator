@@ -6,13 +6,15 @@
     <body>
         <div class="outer">
             <h1><div align=center>Simple Interest Calculator</div></h1>
+         
+        <table>
+            <th>Amount <input type="number"  id="principal"> </th> <br/>
+            <th><tr>Rate</tr> <tr><input type="number"  id="rate"></tr> </th> <br/>
+        <th><tr>No. of Years</tr> <tr><input type="number"  id="years"></tr> </th> <br/>
+            
+        <th><tr>Interest : <span id="result"></span></tr></th><br>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button> <br/>
+         <th><tr><button onclick="compute()">Compute</button></tr> </th> </table> <br/>
             <p>©Everyone Can Get Rich</p>
         </div>    
     </body>
