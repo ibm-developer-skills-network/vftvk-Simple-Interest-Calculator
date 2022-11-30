@@ -1,16 +1,44 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
+    <title>Web App - Simple Interest Calculator</title>
+</head>
+<div class="maindiv">
     <body>
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+        <div class="subdiv">
+            <form id="form1" onsubmit="return checkdata()">
+                <label for="principal">Amount</label>
+                <input type="number" id="principal" name="principal">  <br />
+                <label for="rate">Interest Rate</label>
+                <input type="range" id="rate" name="rate" min="1" max="20" value="10.25" step="0.25" onchange="return updateRate()">
+                <span id="rate_val">
+                    10.25%
+                </span></br>
+                <label for="years">No. of Years :</label>
+                <select id="years" name="years">
+                    </br></br>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></br>
+                <button type="button" onclick="compute()">Compute Interest</button></br>
+                <span class="resval" id="result"></span>
+            </form>
+        </div>
     </body>
+    <footer>
+        &#169; Everyone Can Get Rich
+    </footer>
+</div>
 </html>
+
