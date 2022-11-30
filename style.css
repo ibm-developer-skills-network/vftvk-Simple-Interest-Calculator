@@ -1,4 +1,37 @@
-body {background-color:tan;}
-h1{color:green;}
+/* body css  */
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+    margin: 50px
+}
+
+/* head css  */
+h1 {
+    color: grey;
+    font-family: verdana
+}
+
+/* label css  */
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+
+.maindiv {
+    background-color: white;
+    margin: auto;
+    border-radius: 25px;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    line-height: 30px
+}
+
+.subdiv {
+    margin-left: 60px
+}
+
 
 
