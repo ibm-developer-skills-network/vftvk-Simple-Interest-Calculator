@@ -1,4 +1,18 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial;
+    color: rgb(148, 94, 94);
+}
+h1 {
+    color: grey;
+    font-family: verdana;
+}
 
-
+.maindiv {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
