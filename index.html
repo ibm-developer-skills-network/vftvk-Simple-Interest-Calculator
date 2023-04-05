@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <head>
-    <title>Web App for Simple Interest Calculation</title>
+    <title>Web App for Interest Calculation</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="maindiv">
-        <h1>Simple Interest Calculation</h1>
-        Amount: <input id="p"><br/>
-        Rate: <input type="range" id="r" min="1" max="20" step="0.25" 
-                value="10.25" oninput="updateRate()">
-        <span id="rate_val">10.25%</span>
-    </br>
-        No. of Years:
-        <select name="years" id="t">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        <br/>
+        <h1>Interest Calculator</h1>
+        <div id="interest_type">
+            <input type="radio" id="simple" name="interest_type" 
+            value="simple" checked onchange="toggleInterestType()"> 
+            Simple Interest
+            <input type="radio" id="compound" name="interest_type" 
+            value="compound" onchange="toggleInterestType()"> 
+            Compound Interest
+        </div>
+        Principal: <input id="p"><br>
+        Rate: <span id="rate_val">10.25%</span>
+        <input type="range" id="r" value="default_val"
+            min="0"  max="20" step="0.25" 
+            default_val="10.25" oninput="updateRate()">
+        No. of Years: <input type="number" id="t" min="1" max="10" value="1">
+        <br>
+        <br>
+        <div id="compound_div" style="display: none">
+            Compounding Frequency:
+            <select id="n" onchange="calculateCompound()">
+                <option value="1">Annually</option>
+                <option value="2">Semi-annually</option>
+                <option value="4">Quarterly</option>
+                <option value="12">Monthly</option>
+            </select>
+        </div>
+        <br>
         <button onclick="calculate()">Calculate</button>
-        <br/>
-
-        <span id="result">
-
-        </span>
+        <br>
+        <div id="result"></div>
     </div>
-    <footer>
-        &#169; This Calculator belongs to --Ahmed Borle--
-    </footer>
+    <footer>&#169; This Calculator belongs to --Ahmed Borle--</footer>
 </body>
-</html>
