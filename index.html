@@ -1,16 +1,80 @@
-<html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Interest Calculator</title>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+  <!-- Styles first -->
+  <link rel="stylesheet" href="style.css" />
 
-        <button onclick="compute()">Compute</button>
-    </body>
+  <!-- Script deferred so DOM is ready when it runs -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="page-title">
+    <header class="header">
+      <h1 id="page-title">Simple Interest Calculator</h1>
+      <div class="header-actions">
+        <button id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+          ☀️ Light
+        </button>
+      </div>
+    </header>
+
+    <form id="si-form" novalidate>
+      <div class="row">
+        <label for="principal">Amount</label>
+        <input
+          type="number"
+          id="principal"
+          name="principal"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+          placeholder="e.g. 1000"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <label for="rate">Rate (% per year)</label>
+        <input
+          type="number"
+          id="rate"
+          name="rate"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+          placeholder="e.g. 5"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <label for="years">No. of Years</label>
+        <input
+          type="number"
+          id="years"
+          name="years"
+          min="0"
+          step="0.01"
+          inputmode="decimal"
+          placeholder="e.g. 2"
+          required
+        />
+      </div>
+
+      <div class="row result-row" aria-live="polite">
+        <strong>Interest:</strong>
+        <span id="result" class="result-value">—</span>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" id="compute" class="primary">Compute</button>
+        <button type="button" id="reset" class="ghost">Reset</button>
+      </div>
+    </form>
+  </main>
+</body>
 </html>
