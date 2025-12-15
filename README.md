@@ -1,1 +1,3 @@
-# coding-project-template
+#Simple Interest Calculator
+
+The Simple Interest Calculator is an open source application developed to help users quickly compute simple interest for financial planning. The application is hosted on GitHub and designed to be collaborative, allowing developers from around the world to contribute improvements. The repository includes supporting documentation such as a Code of Conduct, contributing guidelines, and is licensed under the Apache License 2.0. Updates and corrections to the application are managed through Git CLI and pull requests to ensure accuracy and maintain community collaboration.
